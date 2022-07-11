@@ -1,0 +1,33 @@
+{
+  "name": "package-name",
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@7.1.7",
+  "description": "Starter template for TypeScript library",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "TypeScript",
+    "Template Library"
+  ],
+  "homepage": "https://github.com/flingyp/package-name#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flingyp/package-name.git"
+  },
+  "bugs": "https://github.com/flingyp/package-name/issues",
+  "author": "FlingYP",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.7.4"
+  }
+}
