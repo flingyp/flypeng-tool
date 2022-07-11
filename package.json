@@ -9,7 +9,9 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "release": "standard-version",
-    "first-release": "pnpm run release -- --first-release"
+    "first-release": "pnpm run release -- --first-release",
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "files": [
     "dist"
@@ -27,16 +29,34 @@
   "author": "FlingYP",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^7.0.0",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "standard-version": "^9.5.0",
     "typescript": "^4.7.4"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
