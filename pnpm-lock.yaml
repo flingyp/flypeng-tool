@@ -1,44 +1,55 @@
 lockfileVersion: 5.4
 
-specifiers:
-  '@commitlint/cli': ^17.0.3
-  '@commitlint/config-conventional': ^17.0.3
-  '@types/node': ^18.0.3
-  '@typescript-eslint/eslint-plugin': ^5.30.5
-  '@typescript-eslint/parser': ^5.30.5
-  commitizen: ^4.2.4
-  cz-conventional-changelog: ^3.3.0
-  eslint: ^7.32.0
-  eslint-config-airbnb-base: ^15.0.0
-  eslint-config-prettier: ^8.5.0
-  eslint-plugin-import: ^2.26.0
-  eslint-plugin-prettier: ^4.2.1
-  husky: ^7.0.0
-  lint-staged: ^13.0.3
-  prettier: ^2.7.1
-  standard-version: ^9.5.0
-  typescript: ^4.7.4
-  unbuild: ^0.7.4
+importers:
 
-devDependencies:
-  '@commitlint/cli': 17.0.3
-  '@commitlint/config-conventional': 17.0.3
-  '@types/node': 18.0.3
-  '@typescript-eslint/eslint-plugin': 5.30.6_pnchpeaxcl7qzqefdpjnotsbiu
-  '@typescript-eslint/parser': 5.30.6_hxadhbs2xogijvk7vq4t2azzbu
-  commitizen: 4.2.4
-  cz-conventional-changelog: 3.3.0
-  eslint: 7.32.0
-  eslint-config-airbnb-base: 15.0.0_hpmu7kn6tcn2vnxpfzvv33bxmy
-  eslint-config-prettier: 8.5.0_eslint@7.32.0
-  eslint-plugin-import: 2.26.0_37aegrfvhaergwpsqtcxz36fjq
-  eslint-plugin-prettier: 4.2.1_7gsvg5lgwpfdww3i7smtqxamuy
-  husky: 7.0.4
-  lint-staged: 13.0.3
-  prettier: 2.7.1
-  standard-version: 9.5.0
-  typescript: 4.7.4
-  unbuild: 0.7.4
+  .:
+    specifiers:
+      '@commitlint/cli': ^17.0.3
+      '@commitlint/config-conventional': ^17.0.3
+      '@types/node': ^18.0.3
+      '@typescript-eslint/eslint-plugin': ^5.30.5
+      '@typescript-eslint/parser': ^5.30.5
+      commitizen: ^4.2.4
+      cz-conventional-changelog: ^3.3.0
+      eslint: ^7.32.0
+      eslint-config-airbnb-base: ^15.0.0
+      eslint-config-prettier: ^8.5.0
+      eslint-plugin-import: ^2.26.0
+      eslint-plugin-prettier: ^4.2.1
+      husky: ^7.0.0
+      lint-staged: ^13.0.3
+      prettier: ^2.7.1
+      standard-version: ^9.5.0
+      typescript: ^4.7.4
+      unbuild: ^0.7.4
+    devDependencies:
+      '@commitlint/cli': 17.0.3
+      '@commitlint/config-conventional': 17.0.3
+      '@types/node': 18.0.3
+      '@typescript-eslint/eslint-plugin': 5.30.6_pnchpeaxcl7qzqefdpjnotsbiu
+      '@typescript-eslint/parser': 5.30.6_hxadhbs2xogijvk7vq4t2azzbu
+      commitizen: 4.2.4
+      cz-conventional-changelog: 3.3.0
+      eslint: 7.32.0
+      eslint-config-airbnb-base: 15.0.0_hpmu7kn6tcn2vnxpfzvv33bxmy
+      eslint-config-prettier: 8.5.0_eslint@7.32.0
+      eslint-plugin-import: 2.26.0_37aegrfvhaergwpsqtcxz36fjq
+      eslint-plugin-prettier: 4.2.1_7gsvg5lgwpfdww3i7smtqxamuy
+      husky: 7.0.4
+      lint-staged: 13.0.3
+      prettier: 2.7.1
+      standard-version: 9.5.0
+      typescript: 4.7.4
+      unbuild: 0.7.4
+
+  example/vanilla-example-template:
+    specifiers:
+      package-name: workspace:^0.1.0
+      vite: ^3.0.0
+    dependencies:
+      package-name: link:../..
+    devDependencies:
+      vite: 3.0.0
 
 packages:
 
@@ -3259,6 +3270,12 @@ packages:
     resolution: {integrity: sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=}
     dev: true
 
+  /nanoid/3.3.4:
+    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+    dev: true
+
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
@@ -3566,6 +3583,15 @@ packages:
       jsonc-parser: 3.1.0
       mlly: 0.5.4
       pathe: 0.3.2
+    dev: true
+
+  /postcss/8.4.14:
+    resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
     dev: true
 
   /prelude-ls/1.2.1:
@@ -3925,6 +3951,11 @@ packages:
     dependencies:
       ansi-styles: 6.1.0
       is-fullwidth-code-point: 4.0.0
+    dev: true
+
+  /source-map-js/1.0.2:
+    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
+    engines: {node: '>=0.10.0'}
     dev: true
 
   /source-map/0.6.1:
@@ -4410,6 +4441,33 @@ packages:
     dependencies:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /vite/3.0.0:
+    resolution: {integrity: sha512-M7phQhY3+fRZa0H+1WzI6N+/onruwPTBTMvaj7TzgZ0v2TE+N2sdLKxJOfOv9CckDWt5C4HmyQP81xB4dwRKzA==}
+    engines: {node: '>=14.18.0'}
+    hasBin: true
+    peerDependencies:
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.14.49
+      postcss: 8.4.14
+      resolve: 1.22.1
+      rollup: 2.77.0
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /which-boxed-primitive/1.0.2:

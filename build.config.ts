@@ -2,7 +2,7 @@
 import { defineBuildConfig } from 'unbuild'
 
 export default defineBuildConfig({
-  entries: ['./src/index'],
+  entries: ['./core/index'],
   outDir: 'dist',
   clean: true,
   declaration: true,
