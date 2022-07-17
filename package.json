@@ -4,14 +4,16 @@
   "type": "module",
   "packageManager": "pnpm@7.1.7",
   "description": "Starter template for TypeScript library",
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.esm.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "release": "standard-version",
     "first-release": "pnpm run release -- --first-release",
     "prepare": "husky install",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "build": "unbuild",
+    "dev": "unbuild --stub"
   },
   "files": [
     "dist"
@@ -45,7 +47,8 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "standard-version": "^9.5.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "unbuild": "^0.7.4"
   },
   "lint-staged": {
     "src/**/*.{js,ts}": [
