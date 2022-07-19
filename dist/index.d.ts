@@ -1,4 +1,2 @@
-declare const helloWorld: string;
-declare const add: (a: number, b: number) => number;
-
-export { add, helloWorld };
+export * from 'D:/WebWorkPlace/ts-library-template/core/index';
+export { default } from 'D:/WebWorkPlace/ts-library-template/core/index';

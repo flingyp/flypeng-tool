@@ -1,6 +1,2 @@
-const helloWorld = "Hello World";
-const add = (a, b) => {
-  return a + b;
-};
-
-export { add, helloWorld };
+import jiti from "file:///D:/WebWorkPlace/ts-library-template/node_modules/.pnpm/jiti@1.14.0/node_modules/jiti/lib/index.js";
+export default jiti(null, { interopDefault: true })('D:/WebWorkPlace/ts-library-template/core/index');
