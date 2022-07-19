@@ -4,16 +4,16 @@
   "type": "module",
   "packageManager": "pnpm@7.1.7",
   "description": "Starter template for TypeScript library",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/bundle.cjs",
+  "module": "./dist/bundle.mjs",
+  "types": "./dist/bundle.d.ts",
   "scripts": {
     "release": "standard-version",
     "first-release": "pnpm run release -- --first-release",
     "prepare": "husky install",
     "commit": "git-cz",
-    "build": "unbuild",
-    "dev": "unbuild --stub"
+    "dev": "rollup --config rollup.config.ts --watch",
+    "build": "rollup --config rollup.config.ts"
   },
   "files": [
     "dist"
@@ -33,6 +33,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
+    "@rollup/plugin-typescript": "^8.3.3",
     "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
@@ -46,6 +47,8 @@
     "husky": "^7.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "rollup": "^2.77.0",
+    "rollup-plugin-dts": "^4.2.2",
     "standard-version": "^9.5.0",
     "typescript": "^4.7.4"
   },
