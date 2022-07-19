@@ -1,6 +1,6 @@
 {
   "name": "package-name",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "packageManager": "pnpm@7.1.7",
   "description": "Starter template for TypeScript library",
