@@ -1,8 +1,12 @@
 import { execSync } from 'child_process'
 import chalk from 'chalk'
-
 import { inquireVersion } from './inquirer'
 
+// NPM 发包流程
+// 1. 询问发什么版本的包 major minor patch
+// 2. 执行这个 release:changelog:${version}
+// 3. 发包 npm publish
+// 4. 提交到远程仓库中 git push origin main
 async function initRelease() {
   const version = await inquireVersion()
   execSync(`standard-version --release-as ${version}`)
@@ -14,9 +18,3 @@ async function initRelease() {
 }
 
 initRelease()
-
-// NPM 发包流程
-// 1. 询问发什么版本的包 major minor patch
-// 2. 执行这个 release:changelog:${version}
-// 3. 发包 npm publish
-// 4. 提交到远程仓库中 git push origin main
