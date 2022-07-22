@@ -10,6 +10,8 @@
   "scripts": {
     "dev": "rollup --config rollup.config.ts --watch",
     "build": "rollup --config rollup.config.ts",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
     "release": "standard-version",
     "prepare": "husky install",
     "commit": "git-cz"
@@ -38,6 +40,7 @@
     "@types/node": "^18.0.3",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
+    "@vitest/ui": "^0.18.1",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
@@ -52,7 +55,8 @@
     "rollup-plugin-dts": "^4.2.2",
     "standard-version": "^9.5.0",
     "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vitest": "^0.18.1"
   },
   "lint-staged": {
     "src/**/*.{js,ts}": [
