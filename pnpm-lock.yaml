@@ -23,11 +23,12 @@ importers:
       rollup: ^2.77.0
       rollup-plugin-dts: ^4.2.2
       standard-version: ^9.5.0
+      tslib: ^2.4.0
       typescript: ^4.7.4
     devDependencies:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
-      '@rollup/plugin-typescript': 8.3.3_55kiftncucr43pz4hskma6yi2q
+      '@rollup/plugin-typescript': 8.3.3_sbpikdwgo7pbmeew3vug7t5zyu
       '@types/node': 18.0.3
       '@typescript-eslint/eslint-plugin': 5.30.6_pnchpeaxcl7qzqefdpjnotsbiu
       '@typescript-eslint/parser': 5.30.6_hxadhbs2xogijvk7vq4t2azzbu
@@ -44,6 +45,7 @@ importers:
       rollup: 2.77.0
       rollup-plugin-dts: 4.2.2_55kiftncucr43pz4hskma6yi2q
       standard-version: 9.5.0
+      tslib: 2.4.0
       typescript: 4.7.4
 
 packages:
@@ -316,7 +318,7 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@rollup/plugin-typescript/8.3.3_55kiftncucr43pz4hskma6yi2q:
+  /@rollup/plugin-typescript/8.3.3_sbpikdwgo7pbmeew3vug7t5zyu:
     resolution: {integrity: sha512-55L9SyiYu3r/JtqdjhwcwaECXP7JeJ9h1Sg1VWRJKIutla2MdZQodTgcCNybXLMCnqpNLEhS2vGENww98L1npg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -330,6 +332,7 @@ packages:
       '@rollup/pluginutils': 3.1.0_rollup@2.77.0
       resolve: 1.22.1
       rollup: 2.77.0
+      tslib: 2.4.0
       typescript: 4.7.4
     dev: true
 

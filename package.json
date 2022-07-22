@@ -1,5 +1,5 @@
 {
-  "name": "ytools",
+  "name": "ytooluse",
   "version": "0.0.0",
   "type": "module",
   "packageManager": "pnpm@7.5.2",
@@ -19,15 +19,17 @@
     "dist"
   ],
   "keywords": [
+    "Tool",
+    "YToolUse",
     "TypeScript",
-    "Template Library"
+    "Tool Library"
   ],
-  "homepage": "https://github.com/flingyp/ytools#readme",
+  "homepage": "https://github.com/flingyp/YToolUse#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flingyp/ytools.git"
+    "url": "git+https://github.com/flingyp/YToolUse.git"
   },
-  "bugs": "https://github.com/flingyp/ytools/issues",
+  "bugs": "https://github.com/flingyp/YToolUse/issues",
   "author": "FlingYP",
   "license": "MIT",
   "devDependencies": {
@@ -50,6 +52,7 @@
     "rollup": "^2.77.0",
     "rollup-plugin-dts": "^4.2.2",
     "standard-version": "^9.5.0",
+    "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
   "lint-staged": {
