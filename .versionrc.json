@@ -7,7 +7,7 @@
     { "type": "docs", "hidden": true },
     { "type": "style", "hidden": true },
     { "type": "refactor", "hidden": true },
-    { "type": "perf", "hidden": "Code Perf" },
-    { "type": "test", "hidden": "Modify Test" }
+    { "type": "perf", "hidden": true },
+    { "type": "test", "hidden": true }
   ]
 }

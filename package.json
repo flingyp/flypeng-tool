@@ -1,19 +1,19 @@
 {
-  "name": "package-name",
-  "version": "0.1.1",
+  "name": "ytools",
+  "version": "0.0.0",
   "type": "module",
-  "packageManager": "pnpm@7.1.7",
-  "description": "Starter template for TypeScript library",
+  "packageManager": "pnpm@7.5.2",
+  "description": "Integrate a collection of common tools and methods",
   "main": "./dist/bundle.cjs",
   "module": "./dist/bundle.mjs",
   "types": "./dist/bundle.d.ts",
   "scripts": {
+    "dev": "rollup --config rollup.config.ts --watch",
+    "build": "rollup --config rollup.config.ts",
     "release": "standard-version",
     "first-release": "pnpm run release -- --first-release",
     "prepare": "husky install",
-    "commit": "git-cz",
-    "dev": "rollup --config rollup.config.ts --watch",
-    "build": "rollup --config rollup.config.ts"
+    "commit": "git-cz"
   },
   "files": [
     "dist"
@@ -22,12 +22,12 @@
     "TypeScript",
     "Template Library"
   ],
-  "homepage": "https://github.com/flingyp/package-name#readme",
+  "homepage": "https://github.com/flingyp/ytools#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flingyp/package-name.git"
+    "url": "git+https://github.com/flingyp/ytools.git"
   },
-  "bugs": "https://github.com/flingyp/package-name/issues",
+  "bugs": "https://github.com/flingyp/ytools/issues",
   "author": "FlingYP",
   "license": "MIT",
   "devDependencies": {
