@@ -9,7 +9,7 @@ import { inquireVersion } from './inquirer'
 // 3. 发包 npm publish
 // 4. 提交到远程仓库中 git push origin main
 async function initRelease() {
-  execSync('npm run test', { stdio: 'inherit' })
+  execSync('vitest --watch=false', { stdio: 'inherit' })
   console.log(chalk.blueBright('所有测试用例通过!'))
   const version = await inquireVersion()
   execSync(`standard-version --release-as ${version}`, { stdio: 'inherit' })
