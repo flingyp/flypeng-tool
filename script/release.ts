@@ -4,7 +4,12 @@ import { inquireVersion } from './inquirer'
 
 // NPM 发包流程文件
 // 0. 执行 npm run test 确保所有测试用例通过
-// 1. 询问发什么版本的包 major minor patch
+// 1. 询问发什么版本的包 major minor patch\
+/**
+ * standard-version --release-as major
+ * standard-version --release-as minor
+ * standard-version --release-as patch
+ */
 // 2. 执行这个 release:changelog:${version}
 // 3. 发包 npm publish
 // 4. 提交到远程仓库中 git push origin main

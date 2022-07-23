@@ -12,15 +12,13 @@
     "build": "rollup --config rollup.config.ts",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "esno script/docs.ts && vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "release": "esno script/release.ts",
-    "release:changelog:major": "standard-version --release-as major",
-    "release:changelog:minor": "standard-version --release-as minor",
-    "release:changelog:patch": "standard-version --release-as patch",
     "prepare": "husky install",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "test:docs": "esno script/docs.ts"
   },
   "files": [
     "dist"

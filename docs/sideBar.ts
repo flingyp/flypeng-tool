@@ -1,0 +1,1 @@
+export default JSON.parse('[{"text":"Core Functions","items":[{"text":"useRandomInteger","link":"/core/useRandomInteger/"}]}]')
