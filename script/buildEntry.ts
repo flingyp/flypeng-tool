@@ -5,10 +5,10 @@ import { getAbsolutePath, isFile, isDirectory } from './utils'
 const buildEntryFile = async () => {
   const packagesAbsolutePath = getAbsolutePath('../packages')
   const resultFiles = readdirSync(packagesAbsolutePath)
-  // 过滤所有文件 和 __template__ 文件夹
+  // 过滤所有文件
   const directories = resultFiles.filter(filePath => {
     const _path = `${packagesAbsolutePath}/${filePath}`
-    if (filePath !== '__template__' && !isFile(_path) && isDirectory(_path)) {
+    if (!isFile(_path) && isDirectory(_path)) {
       return filePath
     }
   })

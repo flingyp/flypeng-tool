@@ -5,8 +5,8 @@
 生成指定区间内随机整数
 
 <script lang="ts" setup>
-	import DemoContainer from '../.vitepress/components/DemoContainer.vue'
-	import useRandomInteger from './useRandomInteger.vue'
+	import DemoContainer from '../../.vitepress/components/DemoContainer.vue'
+	import useRandomInteger from './index.vue'
 </script>
 
 ## 基本使用

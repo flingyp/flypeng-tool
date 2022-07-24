@@ -21,10 +21,10 @@ import { getAbsolutePath, isFile, isDirectory } from './utils'
 // resultFiles：packages 下所有的文件和文件夹
 const packagesAbsolutePath = getAbsolutePath('../packages')
 const resultFiles = readdirSync(packagesAbsolutePath)
-// 过滤所有文件 和 __template__ 文件夹
+// 过滤所有文件
 const directories = resultFiles.filter(filePath => {
   const _path = `${packagesAbsolutePath}/${filePath}`
-  if (filePath !== '__template__' && !isFile(_path) && isDirectory(_path)) {
+  if (!isFile(_path) && isDirectory(_path)) {
     return filePath
   }
 })
@@ -36,7 +36,7 @@ directories.forEach(directory => {
   const fileContent = readFileSync(indexFilePath, { encoding: 'utf8' })
   const functionRegExp = /export { default as (\w*) } from '(.*)'/g
   let functionImportCode = fileContent.match(functionRegExp)?.filter(importCode => {
-    if (importCode === "export { default as __template__ } from '../__template__'") return false
+    // if (importCode === "export { default as __template__ } from '../__template__'") return false
     return true
   })
 
@@ -65,7 +65,7 @@ for (const key in functionsArrays) {
   generateItem.items = functionsArrays[key].map(name => {
     return {
       text: name,
-      link: `/${key}/${name}`
+      link: `/${key}/${name}/`
     }
   })
   generateSideBar.push(generateItem)
@@ -84,7 +84,7 @@ const generateNavBar: Bar[] = []
 directories.forEach(moduleName => {
   const generateItem: Bar = { text: '', link: '' }
   generateItem.text = `${moduleName.replace(moduleName[0], moduleName[0].toUpperCase())}`
-  generateItem.link = `/${moduleName}/${functionsArrays[moduleName][0]}`
+  generateItem.link = `/${moduleName}/${functionsArrays[moduleName][0]}/`
   generateNavBar.push(generateItem)
 })
 

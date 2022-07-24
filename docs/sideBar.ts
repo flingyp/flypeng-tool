@@ -1,1 +1,1 @@
-export default JSON.parse('[{"text":"Number Functions","items":[{"text":"useRandomInteger","link":"/number/useRandomInteger"}]}]')
+export default JSON.parse('[{"text":"Number Functions","items":[{"text":"useRandomInteger","link":"/number/useRandomInteger/"}]}]')
