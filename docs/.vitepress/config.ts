@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // @ts-ignore
 import sideBar from '../sideBar'
+// @ts-ignore
+import navBar from '../navBar'
 
 const defaultSideBar = [
   {
@@ -11,6 +13,10 @@ const defaultSideBar = [
 ]
 
 const docsSideBar = [...defaultSideBar, ...sideBar]
+
+const defaultNav = [{ text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] }]
+
+const docsNav = [...defaultNav, ...navBar]
 
 export default defineConfig({
   title: '@flypeng/tool',
@@ -22,7 +28,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    nav: [{ text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] }],
+    nav: docsNav,
     sidebar: docsSideBar,
     socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/-flingyp-util' }]
   }

@@ -16,6 +16,7 @@ import { getAbsolutePath, isFile, isDirectory } from './utils'
 // 	}
 // ]
 // 4. 把生成的数据生成一个TS文件，放在 docs/sideBar.ts 导出去
+// 5. 生成顶部栏 和 侧边栏同理
 
 // resultFiles：packages 下所有的文件和文件夹
 const packagesAbsolutePath = getAbsolutePath('../packages')
@@ -48,17 +49,18 @@ directories.forEach(directory => {
 })
 // 所有目录下引入的工具方法
 // console.log('functionsArrays：', functionsArrays)
-interface SideBar {
+interface Bar {
   text: string
-  items: { text: string; link: string }[]
+  link?: string
+  items?: { text: string; link: string }[]
 }
 // 	{
 // 		text: 'Core Functions',
 // 		items: [{ text: 'useRandomInteger', link: '/useRandomInteger/' }]
 // 	}
-const generateSideBar: SideBar[] = []
+const generateSideBar: Bar[] = []
 for (const key in functionsArrays) {
-  const generateItem: SideBar = { text: '', items: [] }
+  const generateItem: Bar = { text: '', items: [] }
   generateItem.text = `${key.replace(key[0], key[0].toUpperCase())} Functions`
   generateItem.items = functionsArrays[key].map(name => {
     return {
@@ -70,9 +72,23 @@ for (const key in functionsArrays) {
 }
 // console.log('generateSideBar：', generateSideBar)
 
+// generate sideBar
 // write content to docs/sideBar.ts
 writeFileSync(
   getAbsolutePath('../docs/sideBar.ts'),
   `export default JSON.parse('${JSON.stringify(generateSideBar)}')`,
   { encoding: 'utf8' }
 )
+
+const generateNavBar: Bar[] = []
+directories.forEach(moduleName => {
+  const generateItem: Bar = { text: '', link: '' }
+  generateItem.text = `${moduleName.replace(moduleName[0], moduleName[0].toUpperCase())}`
+  generateItem.link = `/${moduleName}/${functionsArrays[moduleName][0]}`
+  generateNavBar.push(generateItem)
+})
+
+// generate navBar
+writeFileSync(getAbsolutePath('../docs/navBar.ts'), `export default JSON.parse('${JSON.stringify(generateNavBar)}')`, {
+  encoding: 'utf8'
+})
