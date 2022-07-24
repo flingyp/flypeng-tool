@@ -63,7 +63,7 @@ for (const key in functionsArrays) {
   generateItem.items = functionsArrays[key].map(name => {
     return {
       text: name,
-      link: `/${key}/${name}/`
+      link: `/${key}/${name}`
     }
   })
   generateSideBar.push(generateItem)

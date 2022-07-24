@@ -11,13 +11,11 @@
     "dev": "npm run build:entry && rollup --config rollup.config.ts --watch",
     "build": "rollup --config rollup.config.ts",
     "build:entry": "esno script/buildEntry.ts",
+    "docs:dev": "cd docs && npm run dev",
+    "docs:build": "cd docs && npm run docs",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "docs:dev": "esno script/docs.ts && vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
     "release": "esno script/release.ts",
-    "prepare": "husky install",
     "commit": "git-cz"
   },
   "files": [
@@ -55,7 +53,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "esno": "^0.16.3",
-    "fast-glob": "^3.2.11",
     "husky": "^7.0.0",
     "inquirer": "^9.0.2",
     "lint-staged": "^13.0.3",
@@ -65,9 +62,7 @@
     "standard-version": "^9.5.0",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4",
-    "vitepress": "1.0.0-alpha.4",
-    "vitest": "^0.18.1",
-    "vue": "^3.2.37"
+    "vitest": "^0.18.1"
   },
   "lint-staged": {
     "src/**/*.{js,ts}": [
