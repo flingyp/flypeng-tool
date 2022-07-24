@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/flingyp/YToolUse/compare/v1.0.0...v1.1.0) (2022-07-24)
+
+
+### 📦‍ Build System | 打包构建
+
+* auto generate entry file by buildEntry.ts script file ([7509b85](https://github.com/flingyp/YToolUse/commit/7509b85d84072c7975081950528df4cd736f635f))
+
+
+### ✏️ Documentation | 文档
+
+* 修改文档相关样式。站点图片，代码块 ([8b9ce96](https://github.com/flingyp/YToolUse/commit/8b9ce96bc0f6225f3b7e071f0662aa6e97cc03ad))
+* **script/dosc.ts:** auto generate docs sideBar script file ([b3fafc0](https://github.com/flingyp/YToolUse/commit/b3fafc01192e9693b2c0a104bd8879342abfbee2))
+
+
+### ✨ Features | 新功能
+
+* 删除core模块，添加Number Functions模块 ([189e1ea](https://github.com/flingyp/YToolUse/commit/189e1ea8f28f9738150dbcbaac7625f0ee5d9f66))
+
+
+### ♻️ Code Refactoring | 代码重构
+
+* 添加template模板模块。docs模板、function模板 ([4c59c82](https://github.com/flingyp/YToolUse/commit/4c59c82b42e344c1aa9a025e0e8f38353332b382))
+
 ## 1.0.0 (2022-07-23)
 
 
