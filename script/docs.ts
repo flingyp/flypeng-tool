@@ -1,6 +1,4 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs'
-import path from 'path'
-import { fileURLToPath } from 'url'
 
 import { getAbsolutePath, isFile, isDirectory } from './utils'
 
@@ -30,7 +28,7 @@ const directories = resultFiles.filter(filePath => {
   }
 })
 // 所有目录名称
-console.log('directories：', directories)
+// console.log('directories：', directories)
 const functionsArrays: Record<string, string[]> = {}
 directories.forEach(directory => {
   const indexFilePath = `${packagesAbsolutePath}/${directory}/index.ts`
@@ -49,8 +47,7 @@ directories.forEach(directory => {
   functionsArrays[directory] = functions
 })
 // 所有目录下引入的工具方法
-console.log('functionsArrays：', functionsArrays)
-
+// console.log('functionsArrays：', functionsArrays)
 interface SideBar {
   text: string
   items: { text: string; link: string }[]
@@ -71,7 +68,7 @@ for (const key in functionsArrays) {
   })
   generateSideBar.push(generateItem)
 }
-console.log('generateSideBar：', generateSideBar)
+// console.log('generateSideBar：', generateSideBar)
 
 // write content to docs/sideBar.ts
 writeFileSync(

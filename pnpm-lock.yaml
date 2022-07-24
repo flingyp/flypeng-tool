@@ -21,6 +21,7 @@ importers:
       eslint-plugin-import: ^2.26.0
       eslint-plugin-prettier: ^4.2.1
       esno: ^0.16.3
+      fast-glob: ^3.2.11
       husky: ^7.0.0
       inquirer: ^9.0.2
       lint-staged: ^13.0.3
@@ -51,6 +52,7 @@ importers:
       eslint-plugin-import: 2.26.0_37aegrfvhaergwpsqtcxz36fjq
       eslint-plugin-prettier: 4.2.1_7gsvg5lgwpfdww3i7smtqxamuy
       esno: 0.16.3
+      fast-glob: 3.2.11
       husky: 7.0.4
       inquirer: 9.0.2
       lint-staged: 13.0.3

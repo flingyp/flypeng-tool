@@ -1,4 +1,4 @@
-import { readdirSync, lstatSync } from 'fs'
+import { lstatSync } from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 

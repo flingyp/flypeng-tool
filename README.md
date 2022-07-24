@@ -12,5 +12,5 @@
 ## Usage
 
 ```ts
-import { core } from '@flypeng/tool'
+import { useRandomInteger } from '@flypeng/tool'
 ```

@@ -8,8 +8,9 @@
   "module": "./dist/bundle.mjs",
   "types": "./dist/bundle.d.ts",
   "scripts": {
-    "dev": "rollup --config rollup.config.ts --watch",
+    "dev": "npm run build:entry && rollup --config rollup.config.ts --watch",
     "build": "rollup --config rollup.config.ts",
+    "build:entry": "esno script/buildEntry.ts",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "docs:dev": "esno script/docs.ts && vitepress dev docs",
@@ -17,8 +18,7 @@
     "docs:serve": "vitepress serve docs",
     "release": "esno script/release.ts",
     "prepare": "husky install",
-    "commit": "git-cz",
-    "test:docs": "esno script/docs.ts"
+    "commit": "git-cz"
   },
   "files": [
     "dist"
@@ -55,6 +55,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "esno": "^0.16.3",
+    "fast-glob": "^3.2.11",
     "husky": "^7.0.0",
     "inquirer": "^9.0.2",
     "lint-staged": "^13.0.3",
