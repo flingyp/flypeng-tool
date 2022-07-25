@@ -33,4 +33,4 @@ jobs:
           # 发布在 gh-pages 分支，会自动创建
           branch: gh-pages
           # 将打包后的 dist 目录放到 gh-pages 分支
-          folder: dist
+          folder: docs/.vitepress/dist
