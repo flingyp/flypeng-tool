@@ -1,1 +1,1 @@
-export default JSON.parse('[{"text":"Number","link":"/number/useRandomInteger/"}]')
+export default JSON.parse('[{"text":"Common","link":"/common/useIsMobile/"},{"text":"Number","link":"/number/useRandomInteger/"}]')
