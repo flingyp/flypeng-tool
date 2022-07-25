@@ -6,7 +6,7 @@ importers:
     specifiers:
       '@commitlint/cli': ^17.0.3
       '@commitlint/config-conventional': ^17.0.3
-      '@flypeng/tool': workspace:^1.1.0
+      '@flypeng/tool': workspace:^1.2.0
       '@rollup/plugin-typescript': ^8.3.3
       '@types/inquirer': ^8.2.1
       '@types/node': ^18.0.3
