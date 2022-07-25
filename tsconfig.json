@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "target": "es2018",
     "module": "esnext",
-    "lib": ["esnext"],
+    "lib": ["esnext", "DOM"],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
@@ -14,5 +14,6 @@
     "paths": {
       "tslib": ["node_modules/tslib/tslib.d.ts"]
     }
-  }
+  },
+  "exclude": ["**/node_modules", "**/dist"]
 }
