@@ -1,13 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+  const prefixUrl = 'https://github.com/flingyp/flypeng-tool/blob/main/packages'
+  // get module and file pathname
+  const moduleFilePath = window.location.pathname.match(/\/flypeng-tool\/(.+)\//)[1]
+  const sourcePath = `${prefixUrl}/${moduleFilePath}/index.ts`
+</script>
 
 <template>
   <div id="demo-container">
     <label>
-      <a
-        href="https://github.com/flingyp/-flingyp-util/blob/main/packages/core/useRandomInteger/index.ts"
-        target="__blank"
-        >Source</a
-      >
+      <a :href="sourcePath" target="__blank">Source</a>
     </label>
 
     <slot>demo here</slot>
