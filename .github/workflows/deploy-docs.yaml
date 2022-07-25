@@ -22,10 +22,12 @@ jobs:
         run: npm install pnpm -g
       # 下载依赖
       - name: Install dependencies and Build
-        run: pnpm install && cd docs && pnpm install
-      # 打包
-      - name: Build VitePress Docs
-        run: pnpm run build
+        run: pnpm install
+      # Docs 安装依赖
+      - name: Docs install dependencies
+        run: cd docs && pnpm install
+      - name: Build
+        run: cd docs && pnpm run build
       # 发布
       # 发布在 gh-pages 分支，会自动创建
       # 将打包后的 dist 目录放到 gh-pages 分支
