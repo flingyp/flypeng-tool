@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/flingyp/YToolUse/compare/v1.1.0...v1.2.0) (2022-07-25)
+
+
+### ✏️ Documentation | 文档
+
+* Get Started Perfect ([1680d65](https://github.com/flingyp/YToolUse/commit/1680d65c3abf0bbf6ad88424825be1cc524b0d11))
+
+
+### ✨ Features | 新功能
+
+* creat deply-docs actions ([11742fc](https://github.com/flingyp/YToolUse/commit/11742fce80a475edc1aed10aedcba8d2b99ceab1))
+* **useIsMobile:** new Function ([0d9b51d](https://github.com/flingyp/YToolUse/commit/0d9b51d789690f384b239bee704440af1cec1d20))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 处理文档打包报 window is not defined错误 ([64e1bc7](https://github.com/flingyp/YToolUse/commit/64e1bc79635d3645db8cdab4c83e7a90e902ffeb))
+* actions syntax error ([69145eb](https://github.com/flingyp/YToolUse/commit/69145eb5640ec9f98b8349f022fdc0c62091c055))
+* actions syntax error ([f386759](https://github.com/flingyp/YToolUse/commit/f386759b04d2cb6a5bf061b59c6a1214e6dcc348))
+* change build command ([fc97761](https://github.com/flingyp/YToolUse/commit/fc977619992c606f68b277ba751e044b51c734a1))
+* change build path ([8d46db1](https://github.com/flingyp/YToolUse/commit/8d46db199d4c26d361a721f50ce50b25fe37f042))
+* change gh-pages build folder ([e7ca96f](https://github.com/flingyp/YToolUse/commit/e7ca96f766813d8712a70c0a3eee376ff9437de1))
+* docs install dependency ([d9ad80b](https://github.com/flingyp/YToolUse/commit/d9ad80b9fa85b12aada7c41ebcbb9020ec61d348))
+* update deploy-docs file format ([c2dde3e](https://github.com/flingyp/YToolUse/commit/c2dde3ef96fa60e2fa816c6630caa63342fdcc17))
+
 ## [1.1.0](https://github.com/flingyp/YToolUse/compare/v1.0.0...v1.1.0) (2022-07-24)
 
 
