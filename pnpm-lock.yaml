@@ -6,6 +6,7 @@ importers:
     specifiers:
       '@commitlint/cli': ^17.0.3
       '@commitlint/config-conventional': ^17.0.3
+      '@flypeng/tool': workspace:^1.1.0
       '@rollup/plugin-typescript': ^8.3.3
       '@types/inquirer': ^8.2.1
       '@types/node': ^18.0.3
@@ -36,6 +37,7 @@ importers:
     devDependencies:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
+      '@flypeng/tool': 'link:'
       '@rollup/plugin-typescript': 8.3.3_sbpikdwgo7pbmeew3vug7t5zyu
       '@types/inquirer': 8.2.1
       '@types/node': 18.0.3
