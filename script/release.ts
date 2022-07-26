@@ -22,6 +22,7 @@ async function initRelease() {
   execSync('npm publish', { stdio: 'inherit' })
   console.log(chalk.blueBright('NPM发布完成!'))
   execSync('git push origin main', { stdio: 'inherit' })
+  execSync('git push origin --tags', { stdio: 'inherit' })
   console.log(chalk.blueBright('代码提交到远程仓库中!'))
 }
 
