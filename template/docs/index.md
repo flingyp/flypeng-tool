@@ -15,6 +15,12 @@ useTemplate 基本介绍
 import { useTemplate } from '@flypeng/tool'
 ```
 
+## 类型声明
+
+```ts
+类型声明
+```
+
 ## 在线演示
 
 <DemoContainer>
