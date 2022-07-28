@@ -1,8 +1,15 @@
 <script lang="ts" setup>
+  import { onMounted } from 'vue'
+
   const prefixUrl = 'https://github.com/flingyp/flypeng-tool/blob/main/packages'
   // get module and file pathname
-  const moduleFilePath = window.location.pathname.match(/\/flypeng-tool\/(.+)\//)[1]
-  const sourcePath = `${prefixUrl}/${moduleFilePath}/index.ts`
+  let moduleFilePath = null
+  let sourcePath = null
+
+  onMounted(() => {
+    moduleFilePath = window.location.pathname.match(/\/flypeng-tool\/(.+)\//)[1]
+    sourcePath = `${prefixUrl}/${moduleFilePath}/index.ts`
+  })
 </script>
 
 <template>
