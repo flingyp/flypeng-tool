@@ -12,10 +12,13 @@
 
 ## 🚀 Features
 
-🌈 Docs：Concise documentation and demo presentation
-⚡ Type：Typescript to provide good type prompt
-✨ Tree Shaking：Only import the functions you need
-☀️ Flexible：Universal and practical the functions
+🌈 **Docs**：Concise documentation and demo presentation
+
+⚡ **Type**：Typescript to provide good type prompt
+
+✨ **Tree Shaking**：Only import the functions you need
+
+☀️ **Flexible**：Universal and practical the functions
 
 ## 📦 Installation
 
