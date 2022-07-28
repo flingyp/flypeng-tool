@@ -31,7 +31,7 @@ interface LocationInfo {
  * 返回当前页面链接相关信息
  * @returns
  */
-declare function useLocationInfo(): Readonly<Partial<LocationInfo>>
+declare function useLocationInfo(): Readonly<Partial<LocationInfo>> | null
 ```
 
 ## 在线演示
