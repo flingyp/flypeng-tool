@@ -17,7 +17,7 @@
 
 <style scoped>
   #demo-container {
-    font-size: var(--vt-doc-code-font-size);
+    font-size: var(--vp-code-font-size);
     background: var(--vp-code-block-bg);
     padding: 2em;
     position: relative;

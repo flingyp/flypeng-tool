@@ -1,8 +1,8 @@
 export interface DataSensitiveOptions {
-  sensitiveSource: string
-  startIndex?: number
-  endIndex?: number
-  replaceSource?: string
+  sensitiveSource: string // 脱敏源
+  startIndex?: number // 开始下标
+  endIndex?: number // 结束下标（包括）
+  replaceSource?: string // 脱敏符号
 }
 
 /**

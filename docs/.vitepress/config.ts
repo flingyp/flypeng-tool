@@ -8,7 +8,10 @@ import navBar from '../navBar'
 const defaultSideBar = [
   {
     text: 'Guide',
-    items: [{ text: 'Get Started', link: '/guide/' }]
+    items: [
+      { text: 'Get Started', link: '/guide/' },
+      { text: 'Dev Function', link: '/guide/devFunction' }
+    ]
   }
 ]
 
