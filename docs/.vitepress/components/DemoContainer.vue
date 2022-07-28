@@ -8,7 +8,7 @@
 
   onMounted(() => {
     moduleFilePath.value = window.location.pathname.match(/\/flypeng-tool\/(.+)\//)[1]
-    sourcePath.value = `${prefixUrl}/${moduleFilePath}/index.ts`
+    sourcePath.value = `${prefixUrl}/${moduleFilePath.value}/index.ts`
   })
 </script>
 
