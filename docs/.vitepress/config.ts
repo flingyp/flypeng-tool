@@ -10,7 +10,8 @@ const defaultSideBar = [
     text: 'Guide',
     items: [
       { text: 'Get Started', link: '/guide/' },
-      { text: 'Dev Function', link: '/guide/devFunction' }
+      { text: 'Dev Function', link: '/guide/devFunction' },
+      { text: 'Contributing', link: '/guide/contributing' }
     ]
   }
 ]
