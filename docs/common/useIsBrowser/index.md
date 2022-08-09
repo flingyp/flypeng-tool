@@ -5,7 +5,6 @@
 判断当前环境是否为浏览器环境。
 
 <script lang="ts" setup>
-	import DemoContainer from '../../.vitepress/components/DemoContainer.vue'
 	import useIsBrowser from './index.vue'
 </script>
 

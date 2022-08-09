@@ -5,7 +5,6 @@
 useTemplate 基本介绍
 
 <script lang="ts" setup>
-	import DemoContainer from '../../.vitepress/components/DemoContainer.vue'
 	import useTemplate from './index.vue'
 </script>
 

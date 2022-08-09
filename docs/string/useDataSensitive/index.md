@@ -5,7 +5,6 @@
 敏感数据进行脱敏处理
 
 <script lang="ts" setup>
-	import DemoContainer from '../../.vitepress/components/DemoContainer.vue'
 	import useDataSensitive from './index.vue'
 </script>
 

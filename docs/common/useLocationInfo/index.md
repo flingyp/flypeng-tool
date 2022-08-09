@@ -5,7 +5,6 @@
 返回当前页面链接相关信息
 
 <script lang="ts" setup>
-	import DemoContainer from '../../.vitepress/components/DemoContainer.vue'
 	import useLocationInfo from './index.vue'
 </script>
 

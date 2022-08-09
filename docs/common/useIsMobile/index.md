@@ -5,7 +5,6 @@
 判断当前是 PC 端还是 Mobile 端。是 Pc 端返回 False， Mobile 返回 True
 
 <script lang="ts" setup>
-	import DemoContainer from '../../.vitepress/components/DemoContainer.vue'
 	import useIsMobile from './index.vue'
 </script>
 

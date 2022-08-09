@@ -5,7 +5,6 @@
 生成指定长度的随机字符串，包含中文数组 （默认长度 10）
 
 <script lang="ts" setup>
-	import DemoContainer from '../../.vitepress/components/DemoContainer.vue'
 	import useRandomString from './index.vue'
 </script>
 

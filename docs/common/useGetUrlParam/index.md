@@ -5,8 +5,7 @@
 获取 URL 参数中指定参数值
 
 <script lang="ts" setup>
-	import DemoContainer from '../../.vitepress/components/DemoContainer.vue'
-	import useGetUrlParam from './index.vue'
+import useGetUrlParam from './index.vue'
 </script>
 
 ## 基本使用
