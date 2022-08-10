@@ -1,6 +1,6 @@
 {
   "name": "@flypeng/tool",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "type": "commonjs",
   "packageManager": "pnpm@7.6.0",
   "description": "Integrate a collection of common tools and methods",
