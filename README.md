@@ -22,6 +22,8 @@
 
 ## 📦 Installation
 
+`@Flypeng/tool` will be constantly updated. If you find that the tool functions in the document do not exist or have not been exported during use. The tool can be updated to the latest version in time.
+
 ```sh
 npm install @flypeng/tool
 
@@ -31,6 +33,8 @@ pnpm install @flypeng/tool
 ```
 
 ## 🎉 Usage
+
+All tool function names are prefixed with **`use`**. The advantage of this method is that when importing all tool functions, you will first enter **`use`** to list all tool functions.Cooperate with function related comments to maximize editor prompts
 
 ```ts
 import { useRandomInteger, useIsMobile, useGetUrlParam } from '@flypeng/tool'
