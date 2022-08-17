@@ -34,7 +34,7 @@ Input 频繁搜索的案例
     useDebounce(() => {
       const inputDom = e.target as HTMLInputElement
       content.value = inputDom.value
-    }, 500)()
+    }, 2000)()
   }
 
   onMounted(() => {})

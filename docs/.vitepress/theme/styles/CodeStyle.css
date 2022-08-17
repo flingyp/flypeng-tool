@@ -1,6 +1,10 @@
 :root {
   --vp-c-accent: #35495e;
-  --vp-c-brand: #44bd87;
+  --vp-c-brand: #f4511e;
+	--vp-c-brand-light: #ff844c;
+	--vp-c-brand-lighter: #ff7543;
+	--vp-c-brand-dark: #b91400;
+	--vp-c-brand-darker: #9f0000;
   --vp-c-text-code: #5d6f5d;
   --vp-code-block-bg: rgba(125, 125, 125, 0.04);
   --vp-c-disabled-bg: rgba(125, 125, 125, 0.2);
