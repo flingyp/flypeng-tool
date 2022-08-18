@@ -30,20 +30,19 @@ Input 频繁搜索的案例
   import { useDebounce } from '@flypeng/tool'
   import { ref, onMounted } from 'vue'
   const content = ref<string>('')
-  const inputChange = e => {
-    useDebounce(() => {
-      const inputDom = e.target as HTMLInputElement
-      content.value = inputDom.value
-    }, 2000)()
+  const inputDom = ref<HTMLInputElement | null>(null)
+  const inputChange = () => {
+    content.value = inputDom.value?.value as string
   }
-
-  onMounted(() => {})
+  onMounted(() => {
+    inputDom.value?.addEventListener('input', useDebounce(inputChange, 500))
+  })
 </script>
 
 <template>
   <div>
     <div style="margin-bottom: 4px">输入的内容：{{ content }}</div>
-    <input type="text" @input="inputChange" placeholder="请输入内容" />
+    <input ref="inputDom" type="text" placeholder="请输入内容" />
   </div>
 </template>
 
