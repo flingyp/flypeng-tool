@@ -1,6 +1,10 @@
 import { defineConfig } from 'rollup'
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
+import { terser } from 'rollup-plugin-terser'
+
+const currentNodeEnv = process.env.NODE_ENV
+const isCompressLibrary = currentNodeEnv === 'prod' ? terser({ module: true, toplevel: true }) : null
 
 export default defineConfig([
   {
@@ -16,7 +20,7 @@ export default defineConfig([
         format: 'esm'
       }
     ],
-    plugins: [typescript({ compilerOptions: { lib: ['esnext'] } })],
+    plugins: [typescript({ compilerOptions: { lib: ['esnext'] } }), isCompressLibrary],
     watch: {
       exclude: 'node_modules/**'
     }
