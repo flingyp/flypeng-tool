@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/flingyp/flypeng-tool/compare/v1.4.0...v1.4.1) (2022-08-19)
+
+
+### ✨ Features | 新功能
+
+* **useDebounce:** new Function ([f747352](https://github.com/flingyp/flypeng-tool/commit/f7473520b66bbc600c62f7f3b80a794aa8172294))
+* **useThrottle:** new Function ([f67c262](https://github.com/flingyp/flypeng-tool/commit/f67c262e6e5d8525d940a69bca12a24679d340e0))
+
+
+### ✏️ Documentation | 文档
+
+* theme change ([867add7](https://github.com/flingyp/flypeng-tool/commit/867add7161db19c0d90aebb041964df8a4feb144))
+* useDebounce example code change ([c8691b6](https://github.com/flingyp/flypeng-tool/commit/c8691b668b206c046892e6573a5773e792d17d85))
+* **useDebounce:** 修改文档案例 ([f794498](https://github.com/flingyp/flypeng-tool/commit/f794498c1d6756f83011717e90e50c8e32f93b77))
+
 ## [1.4.0](https://github.com/flingyp/YToolUse/compare/v1.3.0...v1.4.0) (2022-08-10)
 
 ### 🐛 Bug Fixes | Bug 修复
