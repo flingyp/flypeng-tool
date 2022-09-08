@@ -1,14 +1,6 @@
 # useDataSensitive
 
-## 基本介绍
-
-敏感数据进行脱敏处理
-
-<script lang="ts" setup>
-	import useDataSensitive from './index.vue'
-</script>
-
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useDataSensitive } from '@flypeng/tool'
@@ -25,7 +17,11 @@ useDataSensitive({
 })
 ```
 
-## 类型声明
+## Online Demo
+
+<preview path="./index.vue" title="useDataSensitive" description="敏感数据进行脱敏处理"></preview>
+
+## Type Declaration
 
 ```ts
 interface DataSensitiveOptions {
@@ -41,9 +37,3 @@ interface DataSensitiveOptions {
  */
 declare function useDataSensitive(options: DataSensitiveOptions): string | undefined
 ```
-
-## 在线演示
-
-<DemoContainer>
-	<useDataSensitive />
-</DemoContainer>

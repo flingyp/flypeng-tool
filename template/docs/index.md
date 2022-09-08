@@ -1,26 +1,26 @@
 # useTemplate
 
-## 基本介绍
+## Introduction
 
-useTemplate 基本介绍
+useTemplate Introduction
 
 <script lang="ts" setup>
 	import useTemplate from './index.vue'
 </script>
 
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useTemplate } from '@flypeng/tool'
 ```
 
-## 类型声明
+## Type Declaration
 
 ```ts
-类型声明
+Type Declaration
 ```
 
-## 在线演示
+## Online Demo
 
 <DemoContainer>
 	<useTemplate />

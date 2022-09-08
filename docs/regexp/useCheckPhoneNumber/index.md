@@ -1,10 +1,10 @@
 # useCheckPhoneNumber
 
-## 基本介绍
+## Introduction
 
 校验电话号码格式是否正确
 
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useCheckPhoneNumber } from '@flypeng/tool'
@@ -12,7 +12,7 @@ import { useCheckPhoneNumber } from '@flypeng/tool'
 const isChecked = useCheckPhoneNumber('13148367212')
 ```
 
-## 类型声明
+## Type Declaration
 
 ```ts
 /**

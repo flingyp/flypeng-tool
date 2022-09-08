@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { componentPreview } from '@vitepress-demo-preview/plugin'
 
 // @ts-ignore
 import sideBar from '../sideBar'
@@ -30,6 +31,9 @@ export default defineConfig({
     theme: {
       light: 'vitesse-light',
       dark: 'vitesse-dark'
+    },
+    config(md) {
+      md.use(componentPreview)
     }
   },
   themeConfig: {

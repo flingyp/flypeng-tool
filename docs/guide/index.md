@@ -31,4 +31,4 @@ const randomInteger = useRandomInteger(10, 100) // Integer in [10, 100]
 
 2. 使用 vitest 进行功能测试，每个实用函数应配备 `index.test.ts` 测试文件
 
-3. 工具箱使用 vitepress 文档，各种实用函数基本介绍、在线 Demo 演示编写。确保在不好书写测试用例的情况下，进行 Demo 演示
+3. 工具箱使用 vitepress 文档，各种实用函数 Introduction、在线 Demo 演示编写。确保在不好书写测试用例的情况下，进行 Demo 演示

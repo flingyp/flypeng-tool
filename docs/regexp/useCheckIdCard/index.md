@@ -1,10 +1,10 @@
 # useCheckIdCard
 
-## 基本介绍
+## Introduction
 
 校验身份证号码格式是否正确
 
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useCheckIdCard } from '@flypeng/tool'
@@ -12,7 +12,7 @@ import { useCheckIdCard } from '@flypeng/tool'
 const isChecked = useCheckIdCard('110101199006075838')
 ```
 
-## 类型声明
+## Type Declaration
 
 ```ts
 /**

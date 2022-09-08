@@ -1,10 +1,10 @@
 # useCheckEmailUrl
 
-## 基本介绍
+## Introduction
 
 校测邮箱地址是否有效
 
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useCheckEmailUrl } from '@flypeng/tool'
@@ -12,7 +12,7 @@ import { useCheckEmailUrl } from '@flypeng/tool'
 const isCheck = useCheckEmailUrl('flypeng@gmail.com')
 ```
 
-## 类型声明
+## Type Declaration
 
 ```ts
 /**

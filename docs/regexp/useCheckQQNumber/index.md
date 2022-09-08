@@ -1,10 +1,10 @@
 # useCheckQQNumber
 
-## 基本介绍
+## Introduction
 
 校验 QQ 号码（5-11 位）格式是否正确
 
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useCheckQQNumber } from '@flypeng/tool'
@@ -13,7 +13,7 @@ const isCheckedOne = useCheckQQNumber('1915801633') // true
 const isCheckedTwo = useCheckQQNumber('121580163387') // false
 ```
 
-## 类型声明
+## Type Declaration
 
 ```ts
 /**
