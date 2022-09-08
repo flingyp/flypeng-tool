@@ -1,10 +1,10 @@
 # useCheckIncludeChinese
 
-## 基本介绍
+## Introduction
 
 检测字符串中是否包含中文
 
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useCheckIncludeChinese } from '@flypeng/tool'
@@ -13,7 +13,7 @@ const isCheckedOne = useCheckPhoneNumber('Hello-World') // false
 const isCheckedTwo = useCheckPhoneNumber('早上好') //  true
 ```
 
-## 类型声明
+## Type Declaration
 
 ```ts
 /**

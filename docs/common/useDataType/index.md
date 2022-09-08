@@ -1,10 +1,10 @@
 # useDataType
 
-## 基本介绍
+## Introduction
 
 返回变量的数据类型
 
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useDataType } from '@flypeng/tool'
@@ -12,7 +12,7 @@ import { useDataType } from '@flypeng/tool'
 const dataType = useDataType(2) // number
 ```
 
-## 类型声明
+## Type Declaration
 
 ```ts
 /**

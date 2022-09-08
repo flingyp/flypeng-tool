@@ -5,5 +5,3 @@
 <template>
   <div>isMobile：{{ useIsMobile() }}</div>
 </template>
-
-<style scoped></style>

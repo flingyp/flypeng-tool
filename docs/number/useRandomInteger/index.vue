@@ -3,7 +3,5 @@
 </script>
 
 <template>
-  <div>
-    <span>生成的随机整数：{{ useRandomInteger(10, 100) }}</span>
-  </div>
+  <div>生成的随机整数：{{ useRandomInteger(10, 100) }}</div>
 </template>

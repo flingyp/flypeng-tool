@@ -1,14 +1,6 @@
 # useGetUrlParam
 
-## 基本介绍
-
-获取 URL 参数中指定参数值
-
-<script lang="ts" setup>
-import useGetUrlParam from './index.vue'
-</script>
-
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useGetUrlParam } from '@flypeng/tool'
@@ -21,7 +13,11 @@ const param2 = useGetUrlParam('name', '?name=@flypeng/tool&description=工具库
 const param3 = useGetUrlParam('description', '?name=@flypeng/tool&description=工具库')
 ```
 
-## 类型声明
+## Online Demo
+
+<preview path="./index.vue" title="useGetUrlParam" description="获取 URL 参数中指定参数值"></preview>
+
+## Type Declaration
 
 ```ts
 /**
@@ -32,9 +28,3 @@ const param3 = useGetUrlParam('description', '?name=@flypeng/tool&description=�
  */
 declare function useGetUrlParam(param: string, origin?: string): string | null
 ```
-
-## 在线演示
-
-<DemoContainer>
-	<useGetUrlParam />
-</DemoContainer>

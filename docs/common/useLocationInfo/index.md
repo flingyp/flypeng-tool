@@ -1,21 +1,10 @@
 # useLocationInfo
 
-## 基本介绍
+## Introduction
 
 返回当前页面链接相关信息
 
-<script lang="ts" setup>
-	import useLocationInfo from './index.vue'
-</script>
-
-## 基本使用
-
-```ts
-import { useLocationInfo } from '@flypeng/tool'
-const locationInfo = useLocationInfo()
-```
-
-## 类型声明
+## Type Declaration
 
 ```ts
 interface LocationInfo {
@@ -33,8 +22,6 @@ interface LocationInfo {
 declare function useLocationInfo(): Readonly<Partial<LocationInfo>> | null
 ```
 
-## 在线演示
+## Online Demo
 
-<DemoContainer>
-	<useLocationInfo />
-</DemoContainer>
+<preview path="./index.vue" title="useLocationInfo" description="返回当前页面链接相关信息"></preview>

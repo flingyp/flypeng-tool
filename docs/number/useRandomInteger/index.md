@@ -1,14 +1,6 @@
 # useRandomInteger
 
-## 基本介绍
-
-生成指定区间内随机整数
-
-<script lang="ts" setup>
-	import useRandomInteger from './index.vue'
-</script>
-
-## 基本使用
+## Basic Usage
 
 ```ts
 import { useRandomInteger } from '@flypeng/tool'
@@ -16,8 +8,6 @@ import { useRandomInteger } from '@flypeng/tool'
 const randomInteger = useRandomInteger(10, 100)
 ```
 
-## 在线演示
+## Online Demo
 
-<DemoContainer>
-	<useRandomInteger />
-</DemoContainer>
+<preview path="./index.vue" title="useRandomInteger" description="生成指定区间内随机整数"></preview>
