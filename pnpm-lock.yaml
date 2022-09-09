@@ -12,8 +12,8 @@ importers:
       '@types/node': ^18.0.3
       '@typescript-eslint/eslint-plugin': ^5.30.5
       '@typescript-eslint/parser': ^5.30.5
-      '@vitepress-demo-preview/component': ^1.1.0
-      '@vitepress-demo-preview/plugin': ^1.0.2
+      '@vitepress-demo-preview/component': ^1.1.1
+      '@vitepress-demo-preview/plugin': ^1.1.1
       '@vitest/ui': ^0.18.1
       chalk: ^5.0.1
       commitizen: ^4.2.4
@@ -48,8 +48,8 @@ importers:
       '@types/node': 18.0.3
       '@typescript-eslint/eslint-plugin': 5.30.6_pnchpeaxcl7qzqefdpjnotsbiu
       '@typescript-eslint/parser': 5.30.6_hxadhbs2xogijvk7vq4t2azzbu
-      '@vitepress-demo-preview/component': 1.1.0_jzs57lv5bo2ofnn2lx5g3u2teu
-      '@vitepress-demo-preview/plugin': 1.0.2_jzs57lv5bo2ofnn2lx5g3u2teu
+      '@vitepress-demo-preview/component': 1.1.1_jzs57lv5bo2ofnn2lx5g3u2teu
+      '@vitepress-demo-preview/plugin': 1.1.1_jzs57lv5bo2ofnn2lx5g3u2teu
       '@vitest/ui': 0.18.1
       chalk: 5.0.1
       commitizen: 4.2.4
@@ -844,8 +844,8 @@ packages:
       vue: 3.2.37
     dev: true
 
-  /@vitepress-demo-preview/component/1.1.0_jzs57lv5bo2ofnn2lx5g3u2teu:
-    resolution: {integrity: sha512-AUIHvGn5/zOtHau2ZUAJ/WcirbC9CN9aU5rTjNMwNKUmAGQtih3W+Tz+WJuTLfuE0f2irDjPuqMjFZAsjpsTtg==}
+  /@vitepress-demo-preview/component/1.1.1_jzs57lv5bo2ofnn2lx5g3u2teu:
+    resolution: {integrity: sha512-sn3ZgD5m70pyYqB/fj9zvdEi9+HJfXkYBhvwxJ+Q3O5EktdlQlxTr9rh9qgNNBV8Au/vWg0Dr97RUlllO0bIuQ==}
     peerDependencies:
       vitepress: ^1.0.0
       vue: ^3.2
@@ -854,8 +854,8 @@ packages:
       vue: 3.2.37
     dev: true
 
-  /@vitepress-demo-preview/plugin/1.0.2_jzs57lv5bo2ofnn2lx5g3u2teu:
-    resolution: {integrity: sha512-k2dyrUzO7oGs2yKQijTyhbKYoeHjnWez6vJY25fklpNcWcj9UPolfTfVfmgya15SXguVyHpmbDA5Lffc6PgMBw==}
+  /@vitepress-demo-preview/plugin/1.1.1_jzs57lv5bo2ofnn2lx5g3u2teu:
+    resolution: {integrity: sha512-5+6DPvrdg4uYH51eUFhSy+Bb9gPQLgP2iot+Qs2qKIjp5Dg+Foww8eA4jKPEQwwH8w1g91NHZGEJR5d+jqLiZQ==}
     peerDependencies:
       vitepress: ^1.0.0
       vue: ^3.2
