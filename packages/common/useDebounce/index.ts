@@ -5,8 +5,8 @@
  */
 export default function useDebounce(callback: Function, delay: number) {
   let timer: any = null
-  return function () {
+  return function (this: unknown, ...rest: unknown[]) {
     if (timer) clearTimeout(timer)
-    timer = setTimeout(callback, delay)
+    timer = setTimeout(callback.apply(this, rest), delay)
   }
 }
