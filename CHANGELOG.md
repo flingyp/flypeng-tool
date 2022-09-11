@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.2](https://github.com/flingyp/flypeng-tool/compare/v1.4.1...v1.4.2) (2022-09-11)
+
+
+### ✏️ Documentation | 文档
+
+* 修改在线演示，使用[@vitepress-demo-preview](https://github.com/vitepress-demo-preview)插件 ([154080b](https://github.com/flingyp/flypeng-tool/commit/154080bfdad5b541f62731c48410eb90bf2aa615))
+
+
+### ✨ Features | 新功能
+
+* improve useDebounce Function ([d845707](https://github.com/flingyp/flypeng-tool/commit/d845707d47e39961553897eec0ecaa6f0d622579))
+* improve useThrottle Function ([9d02fca](https://github.com/flingyp/flypeng-tool/commit/9d02fca5be1a1d70c091dfa0aedee146aab93c3b))
+* **useMobileDevice:** new Function ([49d7aa0](https://github.com/flingyp/flypeng-tool/commit/49d7aa0a786ba882b99e05faf772b1f15584c7e4))
+
 ### [1.4.1](https://github.com/flingyp/flypeng-tool/compare/v1.4.0...v1.4.1) (2022-08-19)
 
 
