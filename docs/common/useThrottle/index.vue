@@ -3,12 +3,12 @@
   import { ref, onMounted } from 'vue'
   const getScrollTop = () => window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop
   const scrollTop = ref<number | null>(getScrollTop())
+  const consoleScrollTop = () => {
+    scrollTop.value = getScrollTop()
+    console.log('节流函数执行了', scrollTop.value)
+  }
+  const scrollFunction = useThrottle(consoleScrollTop, 1000)
   onMounted(() => {
-    // 滚动条滚动结束后延迟500毫秒执行
-    const scrollFunction = useThrottle(() => {
-      scrollTop.value = getScrollTop()
-      console.log('节流函数执行了')
-    }, 1000)
     window.addEventListener('scroll', scrollFunction)
   })
 </script>
