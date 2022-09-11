@@ -1,4 +1,5 @@
 export { default as useIsMobile } from './useIsMobile'
+export { default as useMobileDevice } from './useMobileDevice'
 export { default as useLocationInfo } from './useLocationInfo'
 export { default as useGetUrlParam } from './useGetUrlParam'
 export { default as useIsBrowser } from './useIsBrowser'
