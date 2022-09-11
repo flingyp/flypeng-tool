@@ -9,14 +9,11 @@ import './styles/CodeStyle.css'
 // 重写相关样式
 import './styles/OverwriteStyle.css'
 
-import DemoContainer from '../components/DemoContainer.vue'
-
 import { App } from 'vue'
 
 export default {
   ...DefaultTheme,
   enhanceApp({ app }: { app: App }) {
-    app.component('DemoContainer', DemoContainer)
     app.use(DemoPreview)
   }
 }

@@ -20,7 +20,7 @@ export default defineConfig([
         format: 'esm'
       }
     ],
-    plugins: [typescript({ compilerOptions: { lib: ['esnext'] } }), isCompressLibrary],
+    plugins: [typescript({ compilerOptions: { lib: ['esnext', 'dom'] } }), isCompressLibrary],
     watch: {
       exclude: 'node_modules/**'
     }

@@ -22,6 +22,4 @@ Type Declaration
 
 ## Online Demo
 
-<DemoContainer>
-	<useTemplate />
-</DemoContainer>
+<preview path="./xxx/xx.vue" title="title" description="description">
