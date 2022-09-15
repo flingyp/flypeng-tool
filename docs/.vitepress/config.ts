@@ -30,7 +30,7 @@ export default defineConfig({
   markdown: {
     theme: {
       light: 'vitesse-light',
-      dark: 'vitesse-dark'
+      dark: 'github-dark'
     },
     config(md) {
       md.use(componentPreview)
