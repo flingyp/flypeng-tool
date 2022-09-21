@@ -1,1 +1,1 @@
-export default JSON.parse('[{"text":"Common","link":"/common/useIsMobile/"},{"text":"Number","link":"/number/useRandomInteger/"},{"text":"Regexp","link":"/regexp/useCheckPhoneNumber/"},{"text":"String","link":"/string/useDataSensitive/"}]')
+export default JSON.parse('[{"text":"Common","link":"/common/useIsMobile/"},{"text":"Dom","link":"/dom/useCopy/"},{"text":"Number","link":"/number/useRandomInteger/"},{"text":"Regexp","link":"/regexp/useCheckPhoneNumber/"},{"text":"String","link":"/string/useDataSensitive/"}]')

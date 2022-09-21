@@ -1,4 +1,5 @@
 export * from './common'
+export * from './dom'
 export * from './number'
 export * from './regexp'
 export * from './string'
