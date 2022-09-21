@@ -6,7 +6,7 @@
 <h2>@flypeng/tool</h2>
 <h6>Integrate a collection of common tools and methods</h6>
 
-<a href="https://www.npmjs.com/package/@flypeng/tool" target="__blank"><img src="https://img.shields.io/npm/v/@flypeng/tool" alt="NPM version"></a> <a href="https://www.npmjs.com/package/@flypeng/tool" target="__blank"><img src="https://img.shields.io/npm/l/@flypeng/tool?style=plastic" alt="NPM version"></a> <a href="https://yyblog.top/flypeng-tool"><img src="https://img.shields.io/badge/-Docs-green" /></a> <a href="https://www.npmjs.com/package/@flypeng/tool" target="__blank"><img src="https://img.shields.io/npm/dm/@flypeng/tool" alt="NPM version"></a>
+<a href="https://www.npmjs.com/package/@flypeng/tool" target="__blank"><img src="https://img.shields.io/npm/v/@flypeng/tool" alt="NPM version"></a> <a href="https://www.npmjs.com/package/@flypeng/tool" target="__blank"><img src="https://img.shields.io/npm/l/@flypeng/tool?style=plastic" alt="NPM version"></a> <a href="https://yyblog.top/flypeng-tool"><img src="https://img.shields.io/badge/-Dosc%20%26%20Demo-green" /></a> <a href="https://www.npmjs.com/package/@flypeng/tool" target="__blank"><img src="https://img.shields.io/npm/dm/@flypeng/tool" alt="NPM version"></a>
 
 </div>
 
