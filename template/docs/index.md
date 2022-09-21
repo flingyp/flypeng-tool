@@ -22,4 +22,4 @@ Type Declaration
 
 ## Online Demo
 
-<preview path="./xxx/xx.vue" title="title" description="description">
+<preview path="./xxx/xx.vue" title="title" description="description"></preview>
