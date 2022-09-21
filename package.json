@@ -1,87 +1,87 @@
 {
-	"name": "@flypeng/tool",
-	"version": "1.4.2",
-	"type": "commonjs",
-	"packageManager": "pnpm@7.9.5",
-	"description": "Integrate a collection of common tools and methods",
-	"main": "./dist/bundle.cjs",
-	"module": "./dist/bundle.mjs",
-	"types": "./dist/bundle.d.ts",
-	"scripts": {
-		"dev": "npm run build:entry && cross-env NODE_ENV=dev rollup --config rollup.config.ts --watch",
-		"build": "npm run build:entry && cross-env NODE_ENV=prod rollup --config rollup.config.ts",
-		"build:entry": "esno script/buildEntry.ts",
-		"docs:dev": "esno ./script/docs.ts && vitepress dev docs",
-		"docs:build": "esno ./script/docs.ts && vitepress build docs",
-		"docs:serve": "vitepress serve docs",
-		"test": "vitest",
-		"test:ui": "vitest --ui",
-		"release": "esno script/release.ts",
-		"commit": "git-cz"
-	},
-	"files": [
-		"dist"
-	],
-	"keywords": [
-		"Tool",
-		"YToolUse",
-		"TypeScript",
-		"Tool Library"
-	],
-	"homepage": "https://github.com/flingyp/flypeng-tool#readme",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/flingyp/flypeng-tool.git"
-	},
-	"bugs": "https://github.com/flingyp/flypeng-tool/issues",
-	"author": "FlingYP",
-	"license": "MIT",
-	"devDependencies": {
-		"@commitlint/cli": "^17.0.3",
-		"@commitlint/config-conventional": "^17.0.3",
-		"@flypeng/tool": "workspace:^1.2.0",
-		"@rollup/plugin-typescript": "^8.3.3",
-		"@types/inquirer": "^8.2.1",
-		"@types/node": "^18.0.3",
-		"@typescript-eslint/eslint-plugin": "^5.30.5",
-		"@typescript-eslint/parser": "^5.30.5",
-		"@vitepress-demo-preview/component": "^1.1.1",
-		"@vitepress-demo-preview/plugin": "^1.1.1",
-		"@vitest/ui": "^0.18.1",
-		"chalk": "^5.0.1",
-		"commitizen": "^4.2.4",
-		"cross-env": "^7.0.3",
-		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^7.32.0",
-		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"esno": "^0.16.3",
-		"husky": "^7.0.0",
-		"inquirer": "^9.0.2",
-		"lint-staged": "^13.0.3",
-		"prettier": "^2.7.1",
-		"rollup": "^2.77.0",
-		"rollup-plugin-dts": "^4.2.2",
-		"rollup-plugin-terser": "^7.0.2",
-		"standard-version": "^9.5.0",
-		"tslib": "^2.4.0",
-		"typescript": "^4.7.4",
-		"vite": "^3.0.3",
-		"vitepress": "^1.0.0-alpha.15",
-		"vitest": "^0.18.1",
-		"vue": "^3.2.37"
-	},
-	"lint-staged": {
-		"src/**/*.{js,ts}": [
-			"prettier --write",
-			"eslint"
-		]
-	},
-	"config": {
-		"commitizen": {
-			"path": "cz-conventional-changelog"
-		}
-	}
+  "name": "@flypeng/tool",
+  "version": "1.4.2",
+  "type": "commonjs",
+  "packageManager": "pnpm@7.9.5",
+  "description": "Integrate a collection of common tools and methods",
+  "main": "./dist/bundle.cjs",
+  "module": "./dist/bundle.mjs",
+  "types": "./dist/bundle.d.ts",
+  "scripts": {
+    "dev": "npm run build:entry && cross-env NODE_ENV=dev rollup --config rollup.config.ts --watch",
+    "build": "npm run build:entry && cross-env NODE_ENV=prod rollup --config rollup.config.ts",
+    "build:entry": "esno script/buildEntry.ts",
+    "docs:dev": "esno ./script/docs.ts && vitepress dev docs",
+    "docs:build": "esno ./script/docs.ts && vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "release": "esno script/release.ts",
+    "commit": "git-cz"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "Tool",
+    "YToolUse",
+    "TypeScript",
+    "Tool Library"
+  ],
+  "homepage": "https://github.com/flingyp/flypeng-tool#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flingyp/flypeng-tool.git"
+  },
+  "bugs": "https://github.com/flingyp/flypeng-tool/issues",
+  "author": "FlingYP",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@flypeng/tool": "workspace:^1.2.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/inquirer": "^8.2.1",
+    "@types/node": "^18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "@vitepress-demo-preview/component": "^1.1.1",
+    "@vitepress-demo-preview/plugin": "^1.1.1",
+    "@vitest/ui": "^0.18.1",
+    "chalk": "^5.0.1",
+    "commitizen": "^4.2.4",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "esno": "^0.16.3",
+    "husky": "^7.0.0",
+    "inquirer": "^9.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "rollup": "^2.77.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "standard-version": "^9.5.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.3",
+    "vitepress": "^1.0.0-alpha.15",
+    "vitest": "^0.18.1",
+    "vue": "^3.2.37"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "prettier --write",
+      "eslint"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
