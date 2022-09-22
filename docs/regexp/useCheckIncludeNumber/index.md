@@ -2,7 +2,7 @@
 
 ## Introduction
 
-检测字符串中是否包含中文
+检测字符串中是否包含数字
 
 ## Basic Usage
 
