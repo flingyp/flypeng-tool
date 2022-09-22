@@ -29,7 +29,7 @@ export default defineConfig({
 	description: 'Integrate a collection of common tools and methods',
 	markdown: {
 		theme: {
-			light: 'vitesse-light',
+			light: 'github-light',
 			dark: 'github-dark'
 		},
 		config(md) {
