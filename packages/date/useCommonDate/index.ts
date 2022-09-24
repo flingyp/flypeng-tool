@@ -10,6 +10,17 @@ function useLeapYear(value: number) {
   return false
 }
 
+/**
+ * 获取今天是星期几
+ * @returns
+ */
+function useTodayWeek() {
+  const currentDate = new Date()
+  const recordWeek = ['日', '一', '二', '三', '四', '五', '六']
+  return recordWeek[currentDate.getDay()]
+}
+
 export default {
-  useLeapYear
+  useLeapYear,
+  useTodayWeek
 }
