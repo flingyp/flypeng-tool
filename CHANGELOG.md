@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/flingyp/flypeng-tool/compare/v1.4.2...v2.0.0) (2022-09-24)
+
+
+### ✏️ Documentation | 文档
+
+* 修改文档主题 ([e96b34f](https://github.com/flingyp/flypeng-tool/commit/e96b34f0182b1499ddbccea86adce968c7f7cab3))
+* change light theme ([4578f60](https://github.com/flingyp/flypeng-tool/commit/4578f6088a17cc5b15340daff9844dc3d4863645))
+* change useCheckIncludeNumber error ([241fd84](https://github.com/flingyp/flypeng-tool/commit/241fd8459ff97a3769f885245dd0c678cba6af74))
+* useCommonType add Type Declaration ([77b9cf1](https://github.com/flingyp/flypeng-tool/commit/77b9cf1e87b06d1d1c588dd381d9c278a2d7e062))
+
+
+### ✨ Features | 新功能
+
+* **useCheckIncludeEmoji:** new Function ([227fa36](https://github.com/flingyp/flypeng-tool/commit/227fa3646051910806e6bf757509b897bbc315ae))
+* **useCommonDate:** useLeapYear to useCommonDate ([2ddcbe7](https://github.com/flingyp/flypeng-tool/commit/2ddcbe7e980f7518531ccf7afc6e32cd3fc53ace))
+* **useCopy:** new Function ([6c22ec0](https://github.com/flingyp/flypeng-tool/commit/6c22ec0ab2fd48c988c9e8dac710ed37c502731a))
+* **useDownloadFile:** new Function ([5508eb2](https://github.com/flingyp/flypeng-tool/commit/5508eb203f714bbc5cb69143df535e1ea37cbbb5))
+* **useDownloadFile:** use Blob to download file ([6ea740e](https://github.com/flingyp/flypeng-tool/commit/6ea740e288f251a724f62c3de27a1467ffddf0b8))
+* **useFormatDate:** new Function ([2c46a73](https://github.com/flingyp/flypeng-tool/commit/2c46a735a156fe5fcd4c603d148fd2d3801728d7))
+* **useLeapYear:** new Function ([57be3c9](https://github.com/flingyp/flypeng-tool/commit/57be3c91dd455c111f9b10d3260854aa4d969a22))
+* **useMonthNumber:** new Function ([a67056d](https://github.com/flingyp/flypeng-tool/commit/a67056dc9b3330834ce52c8095fce977b0627bd0))
+* **useNumberSeparate:** new Function ([188963f](https://github.com/flingyp/flypeng-tool/commit/188963fa042387ed29deaa32dd1a7ca13101f5be))
+* **useTodayWeek:** new Function ([7447d56](https://github.com/flingyp/flypeng-tool/commit/7447d56851c469dc0aaba9809c0001b832373be2))
+
 ### [1.4.2](https://github.com/flingyp/flypeng-tool/compare/v1.4.1...v1.4.2) (2022-09-11)
 
 
