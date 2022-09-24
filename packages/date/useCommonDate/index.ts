@@ -20,7 +20,22 @@ function useTodayWeek() {
   return recordWeek[currentDate.getDay()]
 }
 
+/**
+ * 获取某年某月的天数
+ * @param year
+ * @param month
+ * @returns
+ */
+function useMonthNumber(year: number, month: number) {
+  if (month < 0 || month > 12) return undefined
+  let recordNumber = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+  // 如果是闰年，二月份的天数为29
+  if (useLeapYear(year)) recordNumber[1] = 29
+  return recordNumber[month]
+}
+
 export default {
   useLeapYear,
-  useTodayWeek
+  useTodayWeek,
+  useMonthNumber
 }

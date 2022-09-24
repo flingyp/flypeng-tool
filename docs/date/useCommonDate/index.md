@@ -16,6 +16,7 @@ const isLeapYear = useCommonDate.useLeapYear(2020)
 
 - `useLeapYear`
 - `useTodayWeek`
+- `useMonthNumber`
 
 ## Type Declaration
 
@@ -30,8 +31,16 @@ declare function useLeapYear(value: number): boolean
  * @returns
  */
 declare function useTodayWeek(): string
+/**
+ * 获取某年某月的天数
+ * @param year
+ * @param month
+ * @returns
+ */
+declare function useMonthNumber(year: number, month: number): number | undefined
 declare const _default: {
   useLeapYear: typeof useLeapYear
   useTodayWeek: typeof useTodayWeek
+  useMonthNumber: typeof useMonthNumber
 }
 ```
