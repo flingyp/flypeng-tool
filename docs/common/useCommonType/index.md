@@ -25,3 +25,21 @@ const dataType = useCommonType.isString('@flypeng-tool')
 - `isMap`
 - `isSet`
 - `typeToString`
+
+## Type Declaration
+
+```ts
+declare const _default$1: {
+  isUndefined: (value: unknown) => boolean
+  isString: (value: unknown) => boolean
+  isNumber: (value: unknown) => boolean
+  isObject: (value: unknown) => boolean
+  isArray: (value: unknown) => boolean
+  isNull: (value: unknown) => boolean
+  isFunction: (value: unknown) => boolean
+  isDate: (value: unknown) => boolean
+  isMap: (value: unknown) => boolean
+  isSet: (value: unknown) => boolean
+  typeToString: (value: unknown) => string
+}
+```
