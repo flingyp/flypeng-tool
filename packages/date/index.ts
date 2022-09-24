@@ -1,2 +1,2 @@
 export { default as useFormatDate } from './useFormatDate'
-export { default as useLeapYear } from './useLeapYear'
+export { default as useCommonDate } from './useCommonDate'
