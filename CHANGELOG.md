@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/flingyp/flypeng-tool/compare/v2.0.0...v2.0.1) (2022-09-29)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **useFormateDate:** delete console ([7e2a132](https://github.com/flingyp/flypeng-tool/commit/7e2a1327b534125b9aeae1896a14b4078830a65e))
+
 ## [2.0.0](https://github.com/flingyp/flypeng-tool/compare/v1.4.2...v2.0.0) (2022-09-24)
 
 
