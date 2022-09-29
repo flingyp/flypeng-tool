@@ -26,7 +26,6 @@ export default function useFormatDate(format: DateFormatOption, date?: string) {
   } else {
     handleDate = new Date(date)
   }
-  console.log(handleDate)
 
   const defineChars = {
     'y+': handleDate.getFullYear(),
@@ -48,5 +47,3 @@ export default function useFormatDate(format: DateFormatOption, date?: string) {
   }
   return resultDate
 }
-
-useFormatDate('yyyy/MM/dd', '2021-01-17T13:32:06.381Z')
