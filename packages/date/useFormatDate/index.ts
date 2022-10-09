@@ -1,3 +1,5 @@
+import { useCommonType } from 'packages/common'
+
 /**
  * 格式类型
  */
@@ -18,13 +20,16 @@ export type DateFormatOption =
  * @param format
  * @param date
  */
-export default function useFormatDate(format: DateFormatOption, date?: string) {
+export default function useFormatDate(format: DateFormatOption, date?: string | Date) {
   let resultDate: string = format
-  let handleDate
-  if (!date) {
-    handleDate = new Date()
-  } else {
-    handleDate = new Date(date)
+  let handleDate: Date = new Date()
+
+  if (useCommonType.isString(date)) {
+    handleDate = new Date(date as string)
+  }
+
+  if (useCommonType.isDate(date)) {
+    handleDate = date as Date
   }
 
   const defineChars = {
