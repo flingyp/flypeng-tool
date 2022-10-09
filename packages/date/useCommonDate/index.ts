@@ -52,9 +52,30 @@ function useAddDateDay(
   return useFormatDate(dateFormat, resultDate)
 }
 
+/**
+ * 计算两个日期相差的天数
+ * @param dateOne
+ * @param dateTwo
+ * @returns
+ */
+function useDifDaysValue(dateOne: string | Date, dateTwo: string | Date = new Date()) {
+  if (useCommonType.isString(dateOne)) {
+    dateOne = new Date(dateOne)
+  }
+  if (useCommonType.isString(dateTwo)) {
+    dateTwo = new Date(dateTwo)
+  }
+  const newDateOne = dateOne as Date
+  const newDateTwo = dateTwo as Date
+  // 获取两个日期的毫秒数
+  const allMilliseconds = Math.abs(newDateOne.getTime() - newDateTwo.getTime())
+  return Math.round(allMilliseconds / 1000 / 60 / 60 / 24)
+}
+
 export default {
   useLeapYear,
   useTodayWeek,
   useMonthNumber,
-  useAddDateDay
+  useAddDateDay,
+  useDifDaysValue
 }

@@ -18,6 +18,7 @@ const isLeapYear = useCommonDate.useLeapYear(2020)
 - `useTodayWeek`
 - `useMonthNumber`
 - `useAddDateDay`
+- `useDifDaysValue`
 
 ## Type Declaration
 
@@ -54,4 +55,11 @@ declare function useAddDateDay(
   date?: string | Date,
   dateFormat?: AddDateDayFormatOption<DateFormatOption>
 ): string
+/**
+ * 计算两个日期相差的天数
+ * @param dateOne
+ * @param dateTwo
+ * @returns
+ */
+declare function useDifDaysValue(dateOne: string | Date, dateTwo?: string | Date): number
 ```
