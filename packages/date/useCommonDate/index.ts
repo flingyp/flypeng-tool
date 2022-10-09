@@ -1,4 +1,6 @@
+import { type } from 'os'
 import { useCommonType } from '../../common/index'
+import useFormatDate, { DateFormatOption } from '../useFormatDate'
 
 /**
  * 判断是否为闰年（能被4整除，但不能被100整除 或者 能被400整除）
@@ -34,8 +36,25 @@ function useMonthNumber(year: number, month: number) {
   return recordNumber[month]
 }
 
+/**
+ * 指定日期添加天数
+ * @param number
+ */
+export type AddDateDayFormatOption<T> = T extends 'yyyy-MM-dd hh:mm:ss' | 'yyyy-MM-dd' | 'yyyy/MM/dd' ? T : never
+function useAddDateDay(
+  value: number,
+  date?: string | Date,
+  dateFormat: AddDateDayFormatOption<DateFormatOption> = 'yyyy-MM-dd'
+) {
+  const currentDate = useFormatDate(dateFormat, date)
+  const resultDate = new Date(currentDate)
+  resultDate.setDate(resultDate.getDate() + value)
+  return useFormatDate(dateFormat, resultDate)
+}
+
 export default {
   useLeapYear,
   useTodayWeek,
-  useMonthNumber
+  useMonthNumber,
+  useAddDateDay
 }

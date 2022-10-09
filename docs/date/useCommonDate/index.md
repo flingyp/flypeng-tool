@@ -17,6 +17,7 @@ const isLeapYear = useCommonDate.useLeapYear(2020)
 - `useLeapYear`
 - `useTodayWeek`
 - `useMonthNumber`
+- `useAddDateDay`
 
 ## Type Declaration
 
@@ -43,4 +44,14 @@ declare const _default: {
   useTodayWeek: typeof useTodayWeek
   useMonthNumber: typeof useMonthNumber
 }
+/**
+ * 指定日期添加天数
+ * @param number
+ */
+declare type AddDateDayFormatOption<T> = T extends 'yyyy-MM-dd hh:mm:ss' | 'yyyy-MM-dd' | 'yyyy/MM/dd' ? T : never
+declare function useAddDateDay(
+  value: number,
+  date?: string | Date,
+  dateFormat?: AddDateDayFormatOption<DateFormatOption>
+): string
 ```
