@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/flingyp/flypeng-tool/compare/v2.0.1...v2.1.0) (2022-10-15)
+
+
+### ✨ Features | 新功能
+
+* **useAddDateDay:** new Function ([48bfa2d](https://github.com/flingyp/flypeng-tool/commit/48bfa2d731be370e726b766472e48654349e2687))
+* **useCommonDate:** useGetFirstDay、useGetLastDay ([0b4d919](https://github.com/flingyp/flypeng-tool/commit/0b4d9197209a1fde37d9da04e8a854aaaac935dc))
+* **useDifDaysValue:** new Function ([2c96a55](https://github.com/flingyp/flypeng-tool/commit/2c96a55607dd00b3a764d78a6c29880bc34a5359))
+* useFormatDate support deliver Date type ([8d726ae](https://github.com/flingyp/flypeng-tool/commit/8d726ae7207bd7b2fd3624c140b6e17daa564ed7))
+* **useTransformCase:** new Function ([b98dbd2](https://github.com/flingyp/flypeng-tool/commit/b98dbd2fda5a7cc8ec1b49707f3705c54f39eef6))
+
 ### [2.0.1](https://github.com/flingyp/flypeng-tool/compare/v2.0.0...v2.0.1) (2022-09-29)
 
 
