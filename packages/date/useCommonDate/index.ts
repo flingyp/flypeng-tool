@@ -1,4 +1,3 @@
-import { type } from 'os'
 import { useCommonType } from '../../common/index'
 import useFormatDate, { DateFormatOption } from '../useFormatDate'
 
@@ -72,10 +71,34 @@ function useDifDaysValue(dateOne: string | Date, dateTwo: string | Date = new Da
   return Math.round(allMilliseconds / 1000 / 60 / 60 / 24)
 }
 
+/**
+ * 获取当月的第一天的日期
+ */
+function useGetFirstDay() {
+  const currentDate = new Date()
+  const currentYear = currentDate.getFullYear()
+  const currentMonth = currentDate.getMonth()
+  const firstDayDate = new Date(currentYear, currentMonth, 1)
+  return useFormatDate('yyyy-MM-dd', firstDayDate)
+}
+
+/**
+ * 获取当月的最后一天的日期
+ */
+function useGetLastDay() {
+  const currentDate = new Date()
+  const currentYear = currentDate.getFullYear()
+  const currentMonth = currentDate.getMonth() + 1
+  const lastDayDate = new Date(currentYear, currentMonth, 0)
+  return useFormatDate('yyyy-MM-dd', lastDayDate)
+}
+
 export default {
   useLeapYear,
   useTodayWeek,
   useMonthNumber,
   useAddDateDay,
-  useDifDaysValue
+  useDifDaysValue,
+  useGetFirstDay,
+  useGetLastDay
 }

@@ -19,6 +19,8 @@ const isLeapYear = useCommonDate.useLeapYear(2020)
 - `useMonthNumber`
 - `useAddDateDay`
 - `useDifDaysValue`
+- `useGetFirstDay`
+- `useGetLastDay`
 
 ## Type Declaration
 
@@ -40,11 +42,6 @@ declare function useTodayWeek(): string
  * @returns
  */
 declare function useMonthNumber(year: number, month: number): number | undefined
-declare const _default: {
-  useLeapYear: typeof useLeapYear
-  useTodayWeek: typeof useTodayWeek
-  useMonthNumber: typeof useMonthNumber
-}
 /**
  * 指定日期添加天数
  * @param number
@@ -62,4 +59,12 @@ declare function useAddDateDay(
  * @returns
  */
 declare function useDifDaysValue(dateOne: string | Date, dateTwo?: string | Date): number
+/**
+ * 获取当月的第一天的日期
+ */
+declare function useGetFirstDay(): string
+/**
+ * 获取当月的最后一天的日期
+ */
+declare function useGetLastDay(): string
 ```
