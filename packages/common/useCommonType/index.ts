@@ -7,11 +7,14 @@ const isObject = (value: unknown) => value !== null && typeof value === 'object'
 
 const isArray = (value: unknown) => Array.isArray(value)
 
-const isNull = (value: unknown) => objectToString.call(value) === '[object Null]'
-const isFunction = (value: unknown) => objectToString.call(value) === '[object Function]'
-const isDate = (value: unknown) => objectToString.call(value) === '[object Date]'
-const isMap = (value: unknown) => objectToString.call(value) === '[object Map]'
-const isSet = (value: unknown) => objectToString.call(value) === '[object Set]'
+const getTypeStr = (str: string) => str.slice(8, -1).toLocaleLowerCase()
+
+const isNull = (value: unknown) => getTypeStr(objectToString.call(value)) === 'null'
+const isFunction = (value: unknown) => getTypeStr(objectToString.call(value)) === 'function'
+const isDate = (value: unknown) => getTypeStr(objectToString.call(value)) === 'date'
+const isMap = (value: unknown) => getTypeStr(objectToString.call(value)) === 'map'
+const isSet = (value: unknown) => getTypeStr(objectToString.call(value)) === 'set'
+const isRegExp = (value: unknown) => getTypeStr(objectToString.call(value)) === 'regexp'
 
 const typeToString = (value: unknown) => objectToString.call(value)
 
@@ -26,5 +29,6 @@ export default {
   isDate,
   isMap,
   isSet,
+  isRegExp,
   typeToString
 }
