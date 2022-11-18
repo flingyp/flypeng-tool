@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
-import DemoPreview from '@vitepress-demo-preview/component'
+import {AntDesignContainer} from '@vitepress-demo-preview/component'
 import '@vitepress-demo-preview/component/dist/style.css'
 
 // 站点主页，Logo图片样式修改
@@ -14,6 +14,6 @@ import { App } from 'vue'
 export default {
   ...DefaultTheme,
   enhanceApp({ app }: { app: App }) {
-    app.use(DemoPreview)
+    app.component('demo-preview', AntDesignContainer)
   }
 }
