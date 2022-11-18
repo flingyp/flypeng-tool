@@ -6,12 +6,12 @@
 
 <script lang="ts" setup>
   import { ref } from 'vue'
-  import { useCopy } from '@flypeng/tool'
+  import { useCopySelector } from '@flypeng/tool'
 
   const copyResult = ref(false)
 
   const copy = () => {
-    copyResult.value = useCopy('.copyDom')
+    copyResult.value = useCopySelector('.copyDom')
   }
 </script>
 

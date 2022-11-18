@@ -1,9 +1,9 @@
-# useCopy
+# useCopySelector
 
 ## Basic Usage
 
 ```ts
-import { useCopy } from '@flypeng/tool'
+import { useCopySelector } from '@flypeng/tool'
 ```
 
 ## Online Demo
@@ -22,5 +22,5 @@ demo-preview=./index.vue
  * @param selector DOM selector
  * @returns
  */
-declare function useCopy(selector: string): boolean
+declare function useCopySelector(selector: string): boolean
 ```

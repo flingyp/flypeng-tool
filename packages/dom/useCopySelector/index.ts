@@ -3,7 +3,7 @@
  * @param selector DOM selector
  * @returns
  */
-export default function useCopy(selector: string) {
+export default function useCopySelector(selector: string) {
   let needCopyDom = document.querySelector(selector)
   const copyContent = needCopyDom?.textContent || ''
   const createTextArea = document.createElement('textarea')
