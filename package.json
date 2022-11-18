@@ -1,6 +1,6 @@
 {
   "name": "@flypeng/tool",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "packageManager": "pnpm@7.12.1",
   "description": "Integrate a collection of common tools and methods",
   "main": "./dist/bundle.cjs",

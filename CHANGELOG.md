@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/flingyp/flypeng-tool/compare/v2.1.0...v2.2.0) (2022-11-18)
+
+
+### ✨ Features | 新功能
+
+* modify function name, useCopy to useCopySelector ([dfbdd8b](https://github.com/flingyp/flypeng-tool/commit/dfbdd8b4bf4cdce3ac599206d4995c037ea4652b))
+* **useCommonType:** add isRegExp function ([b5443a6](https://github.com/flingyp/flypeng-tool/commit/b5443a6ac3f40e42c9e80d050d57852f78f623fa))
+* **useDeepClone:** new Function ([1bf9f48](https://github.com/flingyp/flypeng-tool/commit/1bf9f483ec5aedaad0a6277303b31f5fb87516a7))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **useCopyContent:** new Function ([fca7181](https://github.com/flingyp/flypeng-tool/commit/fca7181c8137bc487256cf148e4e0d68941f97cb))
+
 ## [2.1.0](https://github.com/flingyp/flypeng-tool/compare/v2.0.1...v2.1.0) (2022-10-15)
 
 
