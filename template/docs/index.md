@@ -4,10 +4,6 @@
 
 useTemplate Introduction
 
-<script lang="ts" setup>
-	import useTemplate from './index.vue'
-</script>
-
 ## Basic Usage
 
 ```ts
