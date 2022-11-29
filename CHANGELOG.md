@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/flingyp/flypeng-tool/compare/v2.2.0...v2.3.0) (2022-11-29)
+
+
+### ✨ Features | 新功能
+
+* **useCustomContextMenu:** new Function ([388fc28](https://github.com/flingyp/flypeng-tool/commit/388fc28a98ad868d59a2d76d8e972c49f64c2717))
+* **useObjectIsEmpty:** new Function ([b8d7f69](https://github.com/flingyp/flypeng-tool/commit/b8d7f69121cbfa290783154d6437cd8b209b48b4))
+* **usePageTabSwitch:** new Function ([1720cb7](https://github.com/flingyp/flypeng-tool/commit/1720cb7c53b4e13c40548a7fb1c9f229c42ad7ee))
+* **usePreventSeeSourceCode:** new Function ([1372d88](https://github.com/flingyp/flypeng-tool/commit/1372d88a3adc329075b94f8efa2abffb2abe9646))
+
 ## [2.2.0](https://github.com/flingyp/flypeng-tool/compare/v2.1.0...v2.2.0) (2022-11-18)
 
 
