@@ -13,6 +13,7 @@ const clearCustomContextMenu = useCustomContextMenu(document, () => {
   console.log('click context menu')
 })
 
+// The callback needs to be canceled at some time
 clearCustomContextMenu()
 ```
 
