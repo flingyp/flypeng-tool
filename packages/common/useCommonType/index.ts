@@ -15,6 +15,7 @@ const isDate = (value: unknown) => getTypeStr(objectToString.call(value)) === 'd
 const isMap = (value: unknown) => getTypeStr(objectToString.call(value)) === 'map'
 const isSet = (value: unknown) => getTypeStr(objectToString.call(value)) === 'set'
 const isRegExp = (value: unknown) => getTypeStr(objectToString.call(value)) === 'regexp'
+const isWechatBrowser = () => (navigator?.userAgent.toLowerCase() as string).includes('micromessenger')
 
 const typeToString = (value: unknown) => objectToString.call(value)
 
@@ -30,5 +31,6 @@ export default {
   isMap,
   isSet,
   isRegExp,
+  isWechatBrowser,
   typeToString
 }
