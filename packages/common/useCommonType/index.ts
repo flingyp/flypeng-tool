@@ -16,6 +16,16 @@ const isMap = (value: unknown) => getTypeStr(objectToString.call(value)) === 'ma
 const isSet = (value: unknown) => getTypeStr(objectToString.call(value)) === 'set'
 const isRegExp = (value: unknown) => getTypeStr(objectToString.call(value)) === 'regexp'
 const isWechatBrowser = () => (navigator?.userAgent.toLowerCase() as string).includes('micromessenger')
+const isBrowser = () => ![typeof window, typeof document].includes('undefined')
+const isMobile = () => {
+  if (
+    navigator?.userAgent.match(
+      /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+    )
+  )
+    return true
+  return false
+}
 
 const typeToString = (value: unknown) => objectToString.call(value)
 
@@ -31,6 +41,8 @@ export default {
   isMap,
   isSet,
   isRegExp,
+  isBrowser,
   isWechatBrowser,
+  isMobile,
   typeToString
 }

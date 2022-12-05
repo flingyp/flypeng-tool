@@ -25,7 +25,9 @@ const dataType = useCommonType.isString('@flypeng-tool')
 - `isMap`
 - `isSet`
 - `isRegExp`
+- `isBrowser`
 - `isWechatBrowser`
+- `isMobile`
 - `typeToString`
 
 ## Type Declaration
@@ -43,7 +45,9 @@ declare const _default$1: {
   isMap: (value: unknown) => boolean
   isSet: (value: unknown) => boolean
   isRegExp: (value: unknown) => boolean
+  isBrowser: () => boolean
   isWechatBrowser: () => boolean
+  isMobile: () => boolean
   typeToString: (value: unknown) => string
 }
 ```
