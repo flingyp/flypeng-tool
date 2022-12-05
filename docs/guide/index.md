@@ -1,6 +1,12 @@
+<script setup lang="ts">
+	import version from '../version'
+</script>
+
 # Get Started
 
 **@flypeng/tool** 是一个集成各种实用功能的开发工具箱
+
+当前版本：<span>{{version}}</span>
 
 ## Installation
 
