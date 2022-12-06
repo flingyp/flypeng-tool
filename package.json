@@ -16,7 +16,7 @@
 		"gen-version": "esno ./script/gen-version.ts",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "release": "esno './script/release.ts'",
+    "release": "esno ./script/release.ts",
     "commit": "git-cz"
   },
   "files": [
