@@ -9,6 +9,7 @@ const isCompressLibrary = currentNodeEnv === 'prod' ? terser({ module: true, top
 export default defineConfig([
   {
     input: './packages/index.ts',
+    external: ['path', 'fs'],
     output: [
       {
         file: 'dist/bundle.cjs',

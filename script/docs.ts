@@ -39,7 +39,6 @@ directories.forEach(directory => {
     // if (importCode === "export { default as __template__ } from '../__template__'") return false
     return true
   })
-
   const functions =
     functionImportCode?.map(importCode => {
       const importRegExp = importCode.match(functionRegExp)
@@ -68,6 +67,7 @@ for (const key in functionsArrays) {
       link: `/${key}/${name}/`
     }
   })
+
   generateSideBar.push(generateItem)
 }
 // console.log('generateSideBar：', generateSideBar)

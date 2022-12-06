@@ -1,6 +1,7 @@
 export * from './common'
 export * from './date'
 export * from './dom'
+export * from './node'
 export * from './number'
 export * from './object'
 export * from './regexp'
