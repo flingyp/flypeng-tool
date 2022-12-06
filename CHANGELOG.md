@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/flingyp/flypeng-tool/compare/v2.3.0...v3.0.0) (2022-12-06)
+
+
+### ✏️ Documentation | 文档
+
+* add version description ([cfe4e84](https://github.com/flingyp/flypeng-tool/commit/cfe4e84d265449cff3f53babf4b9835e4efc59c5))
+* add version navbar ([b054327](https://github.com/flingyp/flypeng-tool/commit/b0543272b9e597a3b61ec2936ee203d7d960edf2))
+
+
+### ✨ Features | 新功能
+
+* add Node module and add three hooks functions of node ([fb90625](https://github.com/flingyp/flypeng-tool/commit/fb9062513272f588102c70fc4c780a0fa7fc250d))
+* **isWechatBrowser:** new Function ([faf59da](https://github.com/flingyp/flypeng-tool/commit/faf59dad3aaef69265a647bfc4ac718137cbd4a0))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* execute pnpm release command error ([d745b75](https://github.com/flingyp/flypeng-tool/commit/d745b7544ea572151860993c99533cc5d9b60efb))
+
 ## [2.3.0](https://github.com/flingyp/flypeng-tool/compare/v2.2.0...v2.3.0) (2022-11-29)
 
 

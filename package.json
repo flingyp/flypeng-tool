@@ -1,6 +1,6 @@
 {
   "name": "@flypeng/tool",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "packageManager": "pnpm@7.12.1",
   "description": "Integrate a collection of common tools and methods",
   "main": "./dist/bundle.cjs",
@@ -13,7 +13,7 @@
     "docs:dev": "esno ./script/docs.ts && vitepress dev docs",
     "docs:build": "esno ./script/docs.ts && vitepress build docs",
     "docs:serve": "vitepress serve docs",
-		"gen-version": "esno ./script/gen-version.ts",
+    "gen-version": "esno ./script/gen-version.ts",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "release": "esno ./script/release.ts",
