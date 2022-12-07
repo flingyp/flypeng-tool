@@ -2,10 +2,10 @@ import { resolve } from 'path'
 import { lstatSync } from 'fs'
 
 /**
- * 获取当前目录的绝对路径
+ * 获取执行该方法时所在的目录
  * @returns
  */
-const useGetCurrentDirectory = () => resolve(__dirname, './')
+const useGetCurrentDirectory = () => process.cwd()
 /**
  * 判断当前路径是否是文件
  * @param path

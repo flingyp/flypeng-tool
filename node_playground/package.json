@@ -1,0 +1,12 @@
+{
+  "name": "node_playground",
+  "version": "1.0.0",
+	"type": "module",
+  "scripts": {
+    "dev": "nodemon --exec esno ./index.ts ./*.ts"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
+  }
+}
