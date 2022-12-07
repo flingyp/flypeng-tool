@@ -1,11 +1,10 @@
-import { resolve } from 'path'
 import { lstatSync } from 'fs'
 
 /**
  * 获取执行该方法时所在的目录
  * @returns
  */
-const useGetCurrentDirectory = () => process.cwd()
+const useGetCurrentPath = () => process.cwd()
 /**
  * 判断当前路径是否是文件
  * @param path
@@ -25,7 +24,7 @@ const useIsDirectory = (path: string) => lstatSync(path).isDirectory()
  */
 export default function useNodeHook() {
   return {
-    useGetCurrentDirectory,
+    useGetCurrentPath,
     useIsDirectory,
     useIsFile
   }

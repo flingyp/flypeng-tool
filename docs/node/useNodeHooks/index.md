@@ -11,7 +11,7 @@ import { useNodeHooks } from '@flypeng/tool'
 
 const nodeHooks = useNodeHooks()
 // get current directory
-const curDirectory = nodeHooks.useGetCurrentDirectory()
+const curPath = nodeHooks.useGetCurrentPath()
 ```
 
 ## Type Declaration
@@ -22,7 +22,7 @@ const curDirectory = nodeHooks.useGetCurrentDirectory()
  * @returns
  */
 declare function useNodeHook(): {
-  useGetCurrentDirectory: () => string
+  useGetCurrentPath: () => string
   useIsDirectory: (path: string) => boolean
   useIsFile: (path: string) => boolean
 }
