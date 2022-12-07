@@ -14,7 +14,7 @@ importers:
       '@typescript-eslint/parser': ^5.45.1
       '@vitepress-demo-preview/component': ^2.1.0
       '@vitepress-demo-preview/plugin': ^1.1.6
-      '@vitest/ui': ^0.25.5
+      '@vitest/ui': ^0.25.3
       chalk: ^5.1.2
       commitizen: ^4.2.6
       cross-env: ^7.0.3
@@ -37,7 +37,7 @@ importers:
       typescript: ^4.9.3
       vite: ^3.2.5
       vitepress: 1.0.0-alpha.30
-      vitest: ^0.25.5
+      vitest: ^0.25.3
       vue: ^3.2.45
     devDependencies:
       '@commitlint/cli': 17.3.0
@@ -73,7 +73,7 @@ importers:
       typescript: 4.9.3
       vite: 3.2.5_@types+node@18.11.11
       vitepress: 1.0.0-alpha.30_@types+node@18.11.11
-      vitest: 0.25.5_@vitest+ui@0.25.5
+      vitest: 0.25.3_@vitest+ui@0.25.5
       vue: 3.2.45
 
   node_playground:
@@ -4578,8 +4578,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /strip-literal/1.0.0:
-    resolution: {integrity: sha512-5o4LsH1lzBzO9UFH63AJ2ad2/S2AVx6NtjOcaz+VTT2h1RiRvbipW72z8M/lxEhcPHDBQwpDrnTF7sXy/7OwCQ==}
+  /strip-literal/0.4.2:
+    resolution: {integrity: sha512-pv48ybn4iE1O9RLgCAN0iU4Xv7RlBTiit6DKmMiErbs9x1wH6vXBs45tWc0H5wUIF6TLTrKweqkmYF/iraQKNw==}
     dependencies:
       acorn: 8.8.1
     dev: true
@@ -4952,8 +4952,8 @@ packages:
       - terser
     dev: true
 
-  /vitest/0.25.5_@vitest+ui@0.25.5:
-    resolution: {integrity: sha512-lFKSTZV+AjuL44/yNC0aDPKTiasYSqOQ97Gg2G4P2LnjyzQ21ZUs4rQOscHK3lrSnVuir3+1QavHzbDgH4tWQA==}
+  /vitest/0.25.3_@vitest+ui@0.25.5:
+    resolution: {integrity: sha512-/UzHfXIKsELZhL7OaM2xFlRF8HRZgAHtPctacvNK8H4vOcbJJAMEgbWNGSAK7Y9b1NBe5SeM7VTuz2RsTHFJJA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -4984,7 +4984,7 @@ packages:
       debug: 4.3.4
       local-pkg: 0.4.2
       source-map: 0.6.1
-      strip-literal: 1.0.0
+      strip-literal: 0.4.2
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
