@@ -1,4 +1,4 @@
-import { useCommonType } from '../../common/index'
+import { useCommonType } from '../../Common'
 import useFormatDate, { DateFormatOption } from '../useFormatDate'
 
 /**
