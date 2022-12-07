@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/flingyp/flypeng-tool/compare/v3.0.0...v3.0.1) (2022-12-07)
+
+
+### ✏️ Documentation | 文档
+
+* solve docs build appear error of import node packages ([16c4f54](https://github.com/flingyp/flypeng-tool/commit/16c4f54dd41a680a2e7a512734fb5451697f0792))
+
+
+### ✨ Features | 新功能
+
+* **useGetCurrentDirectory:** rename useGetCurrentPath ([2ff9afd](https://github.com/flingyp/flypeng-tool/commit/2ff9afdc76dc25142b8d7487d0b6b6db8819565c))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* appear vitest v0.25.5 version process don't ending and reduced version to v0.25.3 ([0596fb3](https://github.com/flingyp/flypeng-tool/commit/0596fb37c2c99ec895acc4ac12a4c65418ee99df))
+
 ## [3.0.0](https://github.com/flingyp/flypeng-tool/compare/v2.3.0...v3.0.0) (2022-12-06)
 
 
