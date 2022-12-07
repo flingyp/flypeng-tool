@@ -25,7 +25,7 @@ jobs:
         run: pnpm install
       # Packages Build
       - name: Packages Build
-      	run: pnpm run build
+        run: pnpm run build
       # Docs 安装依赖
       - name: Docs install dependencies
         run: pnpm run docs:build
