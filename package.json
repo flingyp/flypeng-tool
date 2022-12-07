@@ -16,7 +16,7 @@
     "build:entry": "esno ./scripts/build-entry.ts",
     "build:docs": "esno ./scripts/build-docs.ts",
     "test": "vitest",
-    "test:node": "pnpm --filter node_playground dev",
+    "test:node": "pnpm run --filter=playground dev",
     "test:ui": "vitest --ui",
     "release": "esno ./scripts/release.ts",
     "commit": "git-cz"
