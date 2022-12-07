@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/flingyp/flypeng-tool/compare/v3.0.1...v4.0.0) (2022-12-07)
+
+
+### ✨ Features | 新功能
+
+* subpackage dev and divied into @flypeng/browser package and @flypeng/node package ([7792176](https://github.com/flingyp/flypeng-tool/commit/779217679f0af9c67e123e928729ea6e7123805a))
+
 ### [3.0.1](https://github.com/flingyp/flypeng-tool/compare/v3.0.0...v3.0.1) (2022-12-07)
 
 

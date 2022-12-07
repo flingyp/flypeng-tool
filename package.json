@@ -1,30 +1,30 @@
 {
   "name": "@flypeng/tool",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "packageManager": "pnpm@7.18.0",
   "description": "Integrate a collection of common tools and methods",
-	"main": "./dist/bundle.cjs",
-	"module": "./dist/bundle.mjs",
-	"types": "./dist/index.d.ts",
+  "main": "./dist/bundle.cjs",
+  "module": "./dist/bundle.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "pnpm run build:entry && pnpm run gen-version && cross-env NODE_ENV=dev rollup --config rollup.config.ts --configPlugin typescript --watch",
-		"build": "pnpm run build:entry && pnpm run gen-version && cross-env NODE_ENV=prod rollup --config rollup.config.ts --configPlugin typescript",
+    "build": "pnpm run build:entry && pnpm run gen-version && cross-env NODE_ENV=prod rollup --config rollup.config.ts --configPlugin typescript",
     "docs:dev": "pnpm run build:docs && pnpm run gen-version && pnpm run --filter docs dev",
     "docs:build": "pnpm run build:docs && pnpm run gen-version && pnpm run --filter docs build",
     "docs:preview": "pnpm run --filter docs serve",
-		"gen-version": "esno ./scripts/gen-version.ts",
-		"build:entry": "esno ./scripts/build-entry.ts",
-		"build:docs": "esno ./scripts/build-docs.ts",
+    "gen-version": "esno ./scripts/gen-version.ts",
+    "build:entry": "esno ./scripts/build-entry.ts",
+    "build:docs": "esno ./scripts/build-docs.ts",
     "test": "vitest",
     "test:node": "pnpm --filter node_playground dev",
-		"test:ui": "vitest --ui",
+    "test:ui": "vitest --ui",
     "release": "esno ./scripts/release.ts",
     "commit": "git-cz"
   },
   "files": [
     "dist",
-		"package.json",
-		"README.md"
+    "package.json",
+    "README.md"
   ],
   "keywords": [
     "Tool",
