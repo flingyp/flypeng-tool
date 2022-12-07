@@ -3,25 +3,28 @@
   "version": "3.0.1",
   "packageManager": "pnpm@7.18.0",
   "description": "Integrate a collection of common tools and methods",
-  "main": "./dist/bundle.cjs",
-  "module": "./dist/bundle.mjs",
-  "types": "./dist/bundle.d.ts",
+	"main": "./dist/bundle.cjs",
+	"module": "./dist/bundle.mjs",
+	"types": "./dist/index.d.ts",
   "scripts": {
     "dev": "pnpm run build:entry && pnpm run gen-version && cross-env NODE_ENV=dev rollup --config rollup.config.ts --configPlugin typescript --watch",
-    "build": "pnpm run build:entry && pnpm run gen-version && cross-env NODE_ENV=prod rollup --config rollup.config.ts --configPlugin typescript",
-    "build:entry": "esno script/buildEntry.ts",
-    "docs:dev": "esno ./script/docs.ts && pnpm run gen-version && vitepress dev docs",
-    "docs:build": "esno ./script/docs.ts && pnpm run gen-version && vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "gen-version": "esno ./script/gen-version.ts",
-    "node_dev": "pnpm --filter node_playground dev",
+		"build": "pnpm run build:entry && pnpm run gen-version && cross-env NODE_ENV=prod rollup --config rollup.config.ts --configPlugin typescript",
+    "docs:dev": "pnpm run build:docs && pnpm run gen-version && pnpm run --filter docs dev",
+    "docs:build": "pnpm run build:docs && pnpm run gen-version && pnpm run --filter docs build",
+    "docs:preview": "pnpm run --filter docs serve",
+		"gen-version": "esno ./scripts/gen-version.ts",
+		"build:entry": "esno ./scripts/build-entry.ts",
+		"build:docs": "esno ./scripts/build-docs.ts",
     "test": "vitest",
-    "test:ui": "vitest --ui",
+    "test:node": "pnpm --filter node_playground dev",
+		"test:ui": "vitest --ui",
     "release": "esno ./script/release.ts",
     "commit": "git-cz"
   },
   "files": [
-    "dist"
+    "dist",
+		"package.json",
+		"README.md"
   ],
   "keywords": [
     "Tool",
@@ -40,14 +43,11 @@
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
-    "@flypeng/tool": "workspace:^3.0.0",
     "@rollup/plugin-typescript": "^10.0.1",
     "@types/inquirer": "^9.0.3",
     "@types/node": "^18.11.11",
     "@typescript-eslint/eslint-plugin": "^5.45.1",
     "@typescript-eslint/parser": "^5.45.1",
-    "@vitepress-demo-preview/component": "^2.1.0",
-    "@vitepress-demo-preview/plugin": "^1.1.6",
     "@vitest/ui": "^0.25.3",
     "chalk": "^5.1.2",
     "commitizen": "^4.2.6",
@@ -70,9 +70,7 @@
     "tslib": "^2.4.1",
     "typescript": "^4.9.3",
     "vite": "^3.2.5",
-    "vitepress": "1.0.0-alpha.30",
-    "vitest": "^0.25.3",
-    "vue": "^3.2.45"
+    "vitest": "^0.25.3"
   },
   "lint-staged": {
     "src/**/*.{js,ts}": [

@@ -3,10 +3,12 @@ import { readdirSync, readFileSync, writeFileSync, unlinkSync, existsSync } from
 import { getAbsolutePath, isFile, isDirectory } from './utils'
 
 const buildEntryFile = async () => {
-  const packagesAbsolutePath = getAbsolutePath('../packages')
+  const packagesAbsolutePath = getAbsolutePath('../packages/Browser')
   const resultFiles = readdirSync(packagesAbsolutePath)
   // 过滤所有文件
   const directories = resultFiles.filter(filePath => {
+    if (filePath === 'node') return
+
     const _path = `${packagesAbsolutePath}/${filePath}`
     if (!isFile(_path) && isDirectory(_path)) {
       return filePath

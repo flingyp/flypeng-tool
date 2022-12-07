@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
   import { ref } from 'vue'
-  import { useCopySelector } from '@flypeng/tool'
+  import { useCopySelector } from '@flypeng/browser'
 
   const copyResult = ref(false)
 

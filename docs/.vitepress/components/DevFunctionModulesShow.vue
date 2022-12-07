@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   // @ts-ignore
-  import navBar from '../../navBar'
+  import navBar from '../../nav-bar'
 </script>
 
 <template>

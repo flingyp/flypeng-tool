@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { useDataSensitive } from '@flypeng/tool'
+  import { useDataSensitive } from '@flypeng/browser'
 
   const defaultSource = '123456789'
 </script>

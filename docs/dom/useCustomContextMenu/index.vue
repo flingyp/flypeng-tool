@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { useCustomContextMenu } from '@flypeng/tool'
+  import { useCustomContextMenu } from '@flypeng/browser'
   import { ref, onMounted, onUnmounted } from 'vue'
 
   const preventButton = ref<HTMLButtonElement | null>(null)

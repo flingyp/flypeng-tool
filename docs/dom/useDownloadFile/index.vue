@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { useDownloadFile } from '@flypeng/tool'
+  import { useDownloadFile } from '@flypeng/browser'
 
   const downloadFile = () => {
     useDownloadFile('https://yyblog.top/flypeng-tool/favicon.png', '@flypeng-tool.png')

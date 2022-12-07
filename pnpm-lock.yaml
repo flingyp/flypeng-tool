@@ -6,14 +6,11 @@ importers:
     specifiers:
       '@commitlint/cli': ^17.3.0
       '@commitlint/config-conventional': ^17.3.0
-      '@flypeng/tool': workspace:^3.0.0
       '@rollup/plugin-typescript': ^10.0.1
       '@types/inquirer': ^9.0.3
       '@types/node': ^18.11.11
       '@typescript-eslint/eslint-plugin': ^5.45.1
       '@typescript-eslint/parser': ^5.45.1
-      '@vitepress-demo-preview/component': ^2.1.0
-      '@vitepress-demo-preview/plugin': ^1.1.6
       '@vitest/ui': ^0.25.3
       chalk: ^5.1.2
       commitizen: ^4.2.6
@@ -36,20 +33,15 @@ importers:
       tslib: ^2.4.1
       typescript: ^4.9.3
       vite: ^3.2.5
-      vitepress: 1.0.0-alpha.30
       vitest: ^0.25.3
-      vue: ^3.2.45
     devDependencies:
       '@commitlint/cli': 17.3.0
       '@commitlint/config-conventional': 17.3.0
-      '@flypeng/tool': 'link:'
       '@rollup/plugin-typescript': 10.0.1_oppo65ix4bcss3dqbddwor3cly
       '@types/inquirer': 9.0.3
       '@types/node': 18.11.11
       '@typescript-eslint/eslint-plugin': 5.45.1_tdm6ms4ntwhlpozn7kjqrhum74
       '@typescript-eslint/parser': 5.45.1_s5ps7njkmjlaqajutnox5ntcla
-      '@vitepress-demo-preview/component': 2.1.0_rjeuipjvpupfowt3j5nieluhoi
-      '@vitepress-demo-preview/plugin': 1.1.6_rjeuipjvpupfowt3j5nieluhoi
       '@vitest/ui': 0.25.5
       chalk: 5.1.2
       commitizen: 4.2.6
@@ -72,14 +64,36 @@ importers:
       tslib: 2.4.1
       typescript: 4.9.3
       vite: 3.2.5_@types+node@18.11.11
-      vitepress: 1.0.0-alpha.30_@types+node@18.11.11
       vitest: 0.25.3_@vitest+ui@0.25.5
+
+  docs:
+    specifiers:
+      '@flypeng/browser': workspace:^1.0.0
+      '@vitepress-demo-preview/component': ^2.1.0
+      '@vitepress-demo-preview/plugin': ^1.1.6
+      vitepress: 1.0.0-alpha.30
+      vue: ^3.2.45
+    dependencies:
+      '@flypeng/browser': link:../packages/Browser
+    devDependencies:
+      '@vitepress-demo-preview/component': 2.1.0_rjeuipjvpupfowt3j5nieluhoi
+      '@vitepress-demo-preview/plugin': 1.1.6_rjeuipjvpupfowt3j5nieluhoi
+      vitepress: 1.0.0-alpha.30
       vue: 3.2.45
 
-  node_playground:
+  packages/Browser:
+    specifiers: {}
+
+  packages/Node:
+    specifiers: {}
+
+  playground:
     specifiers:
+      '@flypeng/node': workspace:^1.0.0
       nodemon: ^2.0.20
       ts-node: ^10.9.1
+    dependencies:
+      '@flypeng/node': link:../packages/Node
     devDependencies:
       nodemon: 2.0.20
       ts-node: 10.9.1
@@ -852,7 +866,7 @@ packages:
       vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 3.2.5_@types+node@18.11.11
+      vite: 3.2.5
       vue: 3.2.45
     dev: true
 
@@ -862,7 +876,7 @@ packages:
       vitepress: '*'
       vue: ^3.2.0
     dependencies:
-      vitepress: 1.0.0-alpha.30_@types+node@18.11.11
+      vitepress: 1.0.0-alpha.30
       vue: 3.2.45
     dev: true
 
@@ -874,7 +888,7 @@ packages:
     dependencies:
       markdown-it: 13.0.1
       markdown-it-container: 3.0.0
-      vitepress: 1.0.0-alpha.30_@types+node@18.11.11
+      vitepress: 1.0.0-alpha.30
       vue: 3.2.45
     dev: true
 
@@ -4891,6 +4905,39 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
+  /vite/3.2.5:
+    resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      esbuild: 0.15.18
+      postcss: 8.4.19
+      resolve: 1.22.1
+      rollup: 2.79.1
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
   /vite/3.2.5_@types+node@18.11.11:
     resolution: {integrity: sha512-4mVEpXpSOgrssFZAOmGIr85wPHKvaDAcXqxVxVRZhljkJOMZi1ibLibzjLHzJvcok8BMguLc7g1W6W/GqZbLdQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -4925,7 +4972,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/1.0.0-alpha.30_@types+node@18.11.11:
+  /vitepress/1.0.0-alpha.30:
     resolution: {integrity: sha512-CjIqKkGAuvoP2IWBFIbYWyiMSHSGYvjPy7eDkdftawguv5a8w4AjM95VV4Lhyacev4AFcgK23FViibRluBMePw==}
     hasBin: true
     dependencies:
@@ -4936,7 +4983,7 @@ packages:
       '@vueuse/core': 9.6.0_vue@3.2.45
       body-scroll-lock: 4.0.0-beta.0
       shiki: 0.11.1
-      vite: 3.2.5_@types+node@18.11.11
+      vite: 3.2.5
       vue: 3.2.45
     transitivePeerDependencies:
       - '@algolia/client-search'

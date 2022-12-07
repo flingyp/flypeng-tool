@@ -1,5 +1,4 @@
-import { useCommonType } from 'packages/common'
-
+import { useCommonType } from '../../Common'
 /**
  * 格式类型
  */

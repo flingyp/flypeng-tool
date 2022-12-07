@@ -3,9 +3,9 @@ import { componentPreview, containerPreview } from '@vitepress-demo-preview/plug
 import version from '../version'
 
 // @ts-ignore
-import sideBar from '../sideBar'
+import sideBar from '../side-bar'
 // @ts-ignore
-import navBar from '../navBar'
+import navBar from '../nav-bar'
 
 const defaultSideBar = [
   {

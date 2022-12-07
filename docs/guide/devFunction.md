@@ -4,7 +4,7 @@
 
 当你准备向 **@flypeng/tool** 新增新 Function 时，根据新 Function 的特性来决定放置在哪个模块。
 
-目前 **@flypeng/tool** 已经存在如下模板：
+目前 **@flypeng/tool** 已经存在如下模块：
 
 <script lang="ts" setup>
 	import DevFunctionModulesShow from '../.vitepress/components/DevFunctionModulesShow.vue'
@@ -14,7 +14,7 @@
 
 项目的根目录下存在 **template** 目录，里面有 **Docs Template**、**Function Template**
 
-添加新 Function 都必须在当前模块的入口文件中导入出去
+添加新 Function 时，请参考已存在的 Function 来进行添加
 
 ## Attention
 
@@ -28,4 +28,10 @@
 
 ```ts
 import { useAaBb } from '@flypeng/tool'
+```
+
+4. 文档中所出现的如下代码。均可在 `@flypeng/tool` 包中引入，这样做分包的目的是因为 **Vitepress** 中如果导入了 Node 模块在开发和构建当中都会出现一些奇怪的错误。而分包后，在开发阶段我们只在文档中引入 `@flypeng/browser`，而 `@flypeng/node` 模块则另外开了一个 **playground** 来测试相关钩子函数
+
+```ts
+import { xxx } from '@flypeng/browser'
 ```

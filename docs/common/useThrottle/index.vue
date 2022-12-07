@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { useThrottle } from '@flypeng/tool'
+  import { useThrottle } from '@flypeng/browser'
   import { ref, onMounted } from 'vue'
   const getScrollTop = () => window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop
   const scrollTop = ref<number | null>(getScrollTop())

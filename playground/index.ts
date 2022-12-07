@@ -1,6 +1,4 @@
-import { useNodeHooks } from '@flypeng/tool'
-
-const { useGetCurrentPath, useIsFile, useIsDirectory } = useNodeHooks()
+import { useGetCurrentPath, useIsDirectory, useIsFile } from '@flypeng/node'
 
 const currentPath = useGetCurrentPath()
 

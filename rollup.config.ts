@@ -9,7 +9,6 @@ const isCompressLibrary = currentNodeEnv === 'prod' ? terser({ module: true, top
 export default defineConfig([
   {
     input: './packages/index.ts',
-    external: ['path', 'fs'],
     output: [
       {
         file: 'dist/bundle.cjs',
@@ -21,14 +20,14 @@ export default defineConfig([
         format: 'esm'
       }
     ],
-    plugins: [typescript({ compilerOptions: { lib: ['esnext', 'dom'] } }), isCompressLibrary],
+    plugins: [typescript(), isCompressLibrary],
     watch: {
-      exclude: 'node_modules/**'
+      exclude: ['node_modules/**']
     }
   },
   {
-    input: './packages/index.ts',
-    output: [{ file: 'dist/bundle.d.ts', format: 'esm' }],
+    input: ['./packages/index.ts'],
+    output: [{ file: './dist/index.d.ts' }],
     plugins: [dts()]
   }
 ])

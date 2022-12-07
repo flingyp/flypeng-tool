@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   import { onUnmounted } from 'vue'
-  import { usePageTabSwitch } from '@flypeng/tool'
+  import { usePageTabSwitch } from '@flypeng/browser'
 
   const clear = usePageTabSwitch(() => {
     const isPageHidden = document.hidden

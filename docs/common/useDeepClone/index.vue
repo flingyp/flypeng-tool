@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { useDeepClone } from '@flypeng/tool'
+  import { useDeepClone } from '@flypeng/browser'
   let targetObj: {
     name: string
     address: any

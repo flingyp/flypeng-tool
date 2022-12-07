@@ -1,2 +1,4 @@
 packages:
-  - 'node_playground'
+  - 'packages/*'
+  - 'docs'
+  - 'playground'

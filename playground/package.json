@@ -1,12 +1,15 @@
 {
-  "name": "node_playground",
+  "name": "playground",
   "version": "1.0.0",
-	"type": "module",
+  "type": "module",
   "scripts": {
     "dev": "nodemon --exec esno ./index.ts ./*.ts"
   },
   "devDependencies": {
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@flypeng/node": "workspace:^1.0.0"
   }
 }

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
   import { ref } from 'vue'
-  import { useNumberSeparate } from '@flypeng/tool'
+  import { useNumberSeparate } from '@flypeng/browser'
   const separateNumber = ref(123456789)
 </script>
 

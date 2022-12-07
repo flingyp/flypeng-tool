@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { useFormatDate } from '@flypeng/tool'
+  import { useFormatDate } from '@flypeng/browser'
 </script>
 
 <template>
