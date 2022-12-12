@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.1](https://github.com/flingyp/flypeng-tool/compare/v4.0.0...v4.0.1) (2022-12-12)
+
+
+### ✨ Features | 新功能
+
+* **useListenNetwork:** useListenNetwork optimization ([98c1d05](https://github.com/flingyp/flypeng-tool/commit/98c1d054f8aa464ebd0eae02d7837e9716556d84))
+
 ## [4.0.0](https://github.com/flingyp/flypeng-tool/compare/v3.0.1...v4.0.0) (2022-12-07)
 
 
