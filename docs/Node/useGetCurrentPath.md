@@ -9,7 +9,6 @@ Get path where executing command
 ```ts
 import { useGetCurrentPath } from '@flypeng/tool'
 
-// get current directory
 const curPath = useGetCurrentPath()
 ```
 

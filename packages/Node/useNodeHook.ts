@@ -24,8 +24,25 @@ export const useIsDirectory = async (path: string) => {
   return lstatSync(path).isDirectory()
 }
 
+type FileName = string | { name: string; suffix: string }
+/**
+ * 如果路径Path的是一个文件则会返回文件名和后罪名，否则返回目录名
+ * @param path
+ */
+export const useGetFileName = async (path: string): Promise<FileName> => {
+  const { basename } = await import('path')
+  const lastFileNameStr = basename(path)
+  if (!(await useIsFile(path)) && (await useIsDirectory(path))) {
+    return lastFileNameStr
+  } else {
+    const [name, suffix] = lastFileNameStr.split('.')
+    return { name, suffix }
+  }
+}
+
 export default {
   useGetCurrentPath,
   useIsFile,
-  useIsDirectory
+  useIsDirectory,
+  useGetFileName
 }
