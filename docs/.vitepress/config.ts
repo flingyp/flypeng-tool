@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin'
-import version from '../version'
+import { version } from '../info'
 
 // @ts-ignore
 import sideBar from '../side-bar'

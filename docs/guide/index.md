@@ -1,12 +1,14 @@
 <script setup lang="ts">
-	import version from '../version'
+	import { version, HooksNum } from '../info' 
 </script>
 
 # Get Started
 
-**@flypeng/tool** 是一个集成各种实用功能的开发工具箱
+**<span style="color: var(--component-preview-primary-color); font-size: 16px;">@flypeng/tool</span>** 是一个集成各种实用功能的开发工具箱
 
-当前版本：<span>{{version}}</span>
+当前版本：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">v{{version}}</span>
+
+函数统计：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">{{HooksNum}} Functions</span>
 
 ## Installation
 
