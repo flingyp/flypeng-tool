@@ -20,16 +20,16 @@ const defaultSideBar = [
 
 const docsSideBar = [...defaultSideBar, ...sideBar]
 
-const defaultNav = [{ text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] }]
+const guideNav = [{ text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] }]
 
-const defaultVersionNav = [
+const versionNav = [
   {
     text: `${version}`,
-    items: [{ text: 'CHANGELOG.md', link: 'https://github.com/flingyp/flypeng-tool/blob/dev/CHANGELOG.md' }]
+    items: [{ text: 'CHANGELOG', link: '/guide/CHANGELOG' }]
   }
 ]
 
-const docsNav = [...defaultNav, ...navBar, ...defaultVersionNav]
+const docsNav = [...guideNav, ...navBar, ...versionNav]
 
 export default defineConfig({
   base: '/flypeng-tool',
