@@ -1,6 +1,7 @@
 import { lstatSync } from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import chalk from 'chalk'
 
 /**
  * 获取指定文件夹的绝对路径
@@ -29,4 +30,22 @@ export const isFile = (path: string) => {
  */
 export const isDirectory = (path: string) => {
   return lstatSync(path).isDirectory()
+}
+
+export const outChalkLog = {
+  info(text: string) {
+    console.log(text)
+  },
+  success(text: string) {
+    console.log(chalk.hex('#00c48f')(text))
+  },
+  warning(text: string) {
+    console.log(chalk.hex('#ff9800')(text))
+  },
+  error(text: string) {
+    console.log(chalk.hex('#f44336')(text))
+  },
+  title(text: string) {
+    console.log(chalk.cyan(text))
+  }
 }
