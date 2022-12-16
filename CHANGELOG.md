@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.1.1](https://github.com/flingyp/flypeng-tool/compare/v4.1.0...v4.1.1) (2022-12-16)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* docs publish fail of github action ([540cb91](https://github.com/flingyp/flypeng-tool/commit/540cb91f6bc4613d6dff800746f3afc9d16da091))
+
 ## [4.1.0](https://github.com/flingyp/flypeng-tool/compare/v4.0.1...v4.1.0) (2022-12-16)
 
 
