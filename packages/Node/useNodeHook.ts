@@ -40,9 +40,14 @@ export const useGetFileName = async (path: string): Promise<FileName> => {
   }
 }
 
-export default {
-  useGetCurrentPath,
-  useIsFile,
-  useIsDirectory,
-  useGetFileName
+/**
+ * 获取路径的后缀名
+ * @param path
+ * @returns
+ */
+export const useGetExtensionName = async (path: string): Promise<string> => {
+  const { extname } = await import('path')
+  const name = extname(path)
+  if (name === '') return ''
+  return name.split('.')[1] as string
 }
