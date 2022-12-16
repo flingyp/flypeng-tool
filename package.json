@@ -8,9 +8,9 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "pnpm run build:entry && pnpm run gen-info && cross-env NODE_ENV=dev rollup --config rollup.config.ts --configPlugin typescript --watch",
-    "build": "pnpm run build:entry && pnpm run gen-info && cross-env NODE_ENV=prod rollup --config rollup.config.ts --configPlugin typescript",
+    "build": "pnpm run build:entry && cross-env NODE_ENV=prod rollup --config rollup.config.ts --configPlugin typescript",
     "docs:dev": "pnpm run build:docs && pnpm run gen-info && pnpm run --filter=docs dev",
-    "docs:build": "pnpm run build:docs && pnpm run gen-info && pnpm run --filter=docs build",
+    "docs:build": "pnpm run build:docs && pnpm run --filter=docs build",
     "docs:preview": "pnpm run --filter docs serve",
     "gen-info": "esno ./scripts/gen-info.ts",
     "build:entry": "esno ./scripts/build-entry.ts",

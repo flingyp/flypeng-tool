@@ -19,6 +19,8 @@ async function initRelease() {
   const version = await inquireVersion()
   execSync(`standard-version --release-as ${version}`, { stdio: 'inherit' })
   console.log(chalk.blueBright('版本更新完成!'))
+  execSync('npm run build', { stdio: 'inherit' })
+  console.log(chalk.blueBright('@flypeng/tool包已打包完成!'))
   execSync('npm publish', { stdio: 'inherit' })
   console.log(chalk.blueBright('NPM发布完成!'))
   execSync('git push origin main', { stdio: 'inherit' })
