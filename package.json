@@ -18,7 +18,7 @@
     "test": "vitest",
     "test:node": "pnpm run --filter=playground dev",
     "test:ui": "vitest --ui",
-    "release": "esno ./scripts/release.ts",
+    "release": "pnpm run build:entry && pnpm run build:docs && pnpm run gen-info && esno ./scripts/release.ts",
     "commit": "git-cz"
   },
   "files": [
