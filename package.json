@@ -19,8 +19,7 @@
     "build:docs": "esno ./scripts/build-docs.ts",
     "gen-info": "esno ./scripts/gen-info.ts",
     "release": "gulp release",
-    "commit": "git-cz",
-    "test:f": "esno ./scripts/release.ts"
+    "commit": "git-cz"
   },
   "files": [
     "dist",
