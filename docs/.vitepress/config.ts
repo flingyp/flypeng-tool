@@ -48,6 +48,13 @@ export default defineConfig({
   themeConfig: {
     nav: docsNav,
     sidebar: docsSideBar,
-    socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/-flingyp-util' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/-flingyp-util' }],
+    algolia: {
+      appId: '6A1G108YH0',
+      apiKey: '4aa61b9b99dd99e9bf22e1fa06a15969',
+      indexName: '@flypeng tool', // 需要替换
+      placeholder: 'Search docs',
+      buttonText: 'Search'
+    }
   }
 })
