@@ -22,6 +22,7 @@ exports.docs_dev = async () => {
 
 exports.docs_build = async () => {
   await execSync('pnpm run build:docs', { stdio: 'inherit' })
+  await execSync('pnpm run gen-info', { stdio: 'inherit' })
   await execSync('pnpm run --filter=docs build', { stdio: 'inherit' })
 }
 
