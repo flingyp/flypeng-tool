@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/flingyp/flypeng-tool/compare/v4.1.1...v4.2.0) (2022-12-21)
+
+
+### ✨ Features | 新功能
+
+* **useCheckUrl:** new Function ([d629b23](https://github.com/flingyp/flypeng-tool/commit/d629b23e31c05b4d4c1b4be454b209dda9c37a4e))
+* **useGoToTop:** new Function ([9b8b326](https://github.com/flingyp/flypeng-tool/commit/9b8b326927ab95c5f83f4de83ecb8cb7be56761b))
+
+
+### ✏️ Documentation | 文档
+
+* **algolia:** add docs search function ([884ccaf](https://github.com/flingyp/flypeng-tool/commit/884ccaf536b93d989cbf6c41dc69e2c42b28831b))
+
 ### [4.1.1](https://github.com/flingyp/flypeng-tool/compare/v4.1.0...v4.1.1) (2022-12-16)
 
 
