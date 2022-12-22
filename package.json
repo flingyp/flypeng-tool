@@ -19,7 +19,8 @@
     "build:docs": "esno ./scripts/build-docs.ts",
     "gen-info": "esno ./scripts/gen-info.ts",
     "release": "gulp release",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "new": "esno ./scripts/create-hook.ts"
   },
   "files": [
     "dist",

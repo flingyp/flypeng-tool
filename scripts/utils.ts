@@ -1,4 +1,4 @@
-import { lstatSync } from 'fs'
+import { existsSync, lstatSync, mkdirSync } from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import chalk from 'chalk'
@@ -48,4 +48,11 @@ export const outChalkLog = {
   title(text: string) {
     console.log(chalk.cyan(text))
   }
+}
+
+export const mkdirs = (dirpath: string) => {
+  if (!existsSync(path.dirname(dirpath))) {
+    mkdirs(path.dirname(dirpath))
+  }
+  mkdirSync(dirpath)
 }
