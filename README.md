@@ -25,21 +25,17 @@
 `@Flypeng/tool` will be constantly updated. If you find that the tool functions in the document do not exist or have not been exported during use. The tool can be updated to the latest version in time.
 
 ```sh
-npm install @flypeng/tool
-
-yarn add @flypeng/tool
-
-pnpm install @flypeng/tool
+pnpm install @flypeng/tool@latest
 ```
 
 ## 🎉 Usage
 
-All tool function names are prefixed with **`use`**. The advantage of this method is that when importing all tool functions, you will first enter **`use`** to list all tool functions.Cooperate with function related comments to maximize editor prompts
+All hook function names are prefixed with **`use`**. The advantage of this method is that when importing all tool functions, you will first enter **`use`** to list all hook functions. Cooperate with function related comments to maximize editor prompts.
 
 ```ts
 import { useRandomInteger, useIsMobile, useGetUrlParam } from '@flypeng/tool'
-
-const randomInteger = useRandomInteger()
-const isMobile = useIsMobile()
-const urlParam = useGetUrlParam('query')
 ```
+
+## License
+
+[MIT](./LICENSE) License © 2022 [FlingYP](https://github.com/flingyp)
