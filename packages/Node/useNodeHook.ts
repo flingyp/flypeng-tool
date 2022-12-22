@@ -51,3 +51,17 @@ export const useGetExtensionName = async (path: string): Promise<string> => {
   if (name === '') return ''
   return name.split('.')[1] as string
 }
+
+interface ExecCommandOptions {
+  cwd: string
+}
+/**
+ * 执行命令
+ * @param command
+ * @param options
+ */
+export const useExecCommand = async (command: string, options: ExecCommandOptions = { cwd: useGetCurrentPath() }) => {
+  const { execSync } = await import('child_process')
+  const { cwd } = options
+  execSync(command, { stdio: 'inherit', cwd })
+}
