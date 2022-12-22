@@ -12,9 +12,7 @@
 
 <DevFunctionModulesShow />
 
-项目的根目录下存在 **template** 目录，里面有 **Docs Template**、**Function Template**
-
-添加新 Function 时，请参考已存在的 Function 来进行添加
+添加新 Hook Function 时，请运行 `pnpm run new` 来自动生成相关文件同时参考已存在的 Function 来进行开发
 
 ## Attention
 
