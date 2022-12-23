@@ -7,7 +7,7 @@ Custom right click to prevent default method and to execute callback
 ## Basic Usage
 
 ```ts
-import { useCustomContextMenu } from '@flypeng/tool'
+import { useCustomContextMenu } from '@flypeng/tool/browser'
 
 const clearCustomContextMenu = useCustomContextMenu(document, () => {
   console.log('click context menu')

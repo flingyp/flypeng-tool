@@ -3,21 +3,24 @@
   "version": "5.0.0-0",
   "packageManager": "pnpm@7.18.0",
   "description": "Integrate a collection of common tools and methods",
-  "main": "./dist/bundle.cjs",
-  "module": "./dist/bundle.mjs",
-  "types": "./dist/index.d.ts",
   "exports": {
-    ".": {
-      "import": "./dist/browser.mjs",
-      "node": "./dist/browser.cjs",
-      "default": "./dist/browser.mjs"
+    "./browser": {
+      "import": "./browser/index.mjs",
+      "node": "./browser/index.cjs",
+      "default": "./browser/index.mjs",
+			"types": "./browser/index.d.ts"
     },
     "./node": {
-      "import": "./dist/node.mjs",
-      "node": "./dist/browser.cjs",
-      "default": "./dist/browser.mjs"
+      "import": "./node/index.mjs",
+      "node": "./node/index.cjs",
+      "default": "./node/index.mjs",
+			"types": "./node/index.d.ts"
     }
   },
+	"files": [
+    "browser",
+		"node"
+  ],
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
@@ -34,16 +37,12 @@
     "commit": "git-cz",
     "new": "esno ./scripts/create-hook.ts"
   },
-  "files": [
-    "dist",
-    "package.json",
-    "README.md"
-  ],
   "keywords": [
-    "Tool",
-    "YToolUse",
-    "TypeScript",
-    "Tool Library"
+    "browser",
+		"node",
+		"library",
+		"tool",
+		"function"
   ],
   "homepage": "https://github.com/flingyp/flypeng-tool#readme",
   "repository": {

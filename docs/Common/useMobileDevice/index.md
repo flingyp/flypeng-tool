@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useMobileDevice } from '@flypeng/tool'
+import { useMobileDevice } from '@flypeng/tool/browser'
 
 const mobileDevice = useMobileDevice()
 ```

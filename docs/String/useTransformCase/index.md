@@ -7,7 +7,7 @@ Convert string case
 ## Basic Usage
 
 ```ts
-import { useTransformCase } from '@flypeng/tool'
+import { useTransformCase } from '@flypeng/tool/browser'
 
 const transformStr = useTransformCase('Hello World', 1)
 ```

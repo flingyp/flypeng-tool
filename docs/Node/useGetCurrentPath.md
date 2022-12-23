@@ -7,7 +7,7 @@ Get path where executing command
 ## Basic Usage
 
 ```ts
-import { useGetCurrentPath } from '@flypeng/tool'
+import { useGetCurrentPath } from '@flypeng/tool/node'
 
 const curPath = useGetCurrentPath()
 ```

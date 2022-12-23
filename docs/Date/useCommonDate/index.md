@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCommonDate } from '@flypeng/tool'
+import { useCommonDate } from '@flypeng/tool/browser'
 
 const isLeapYear = useCommonDate.useLeapYear(2020)
 ```

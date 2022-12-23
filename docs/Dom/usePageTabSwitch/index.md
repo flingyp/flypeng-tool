@@ -7,7 +7,7 @@ Execute callback when the browser page switches
 ## Basic Usage
 
 ```ts
-import { usePageTabSwitch } from '@flypeng/tool'
+import { usePageTabSwitch } from '@flypeng/tool/browser'
 
 const clear = usePageTabSwitch(() => {
   // todo things

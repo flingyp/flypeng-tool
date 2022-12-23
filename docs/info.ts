@@ -1,3 +1,2 @@
 
-export const version = '4.2.0'
-export const HooksNum = 38
+export const version = '5.0.0-0'

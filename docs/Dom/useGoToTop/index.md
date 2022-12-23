@@ -7,7 +7,7 @@ Scroll to top of page
 ## Basic Usage
 
 ```ts
-import { useGoToTop } from '@flypeng/tool'
+import { useGoToTop } from '@flypeng/tool/browser'
 
 useGoToTop()
 ```

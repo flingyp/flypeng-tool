@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useCopySelector } from '@flypeng/tool'
+import { useCopySelector } from '@flypeng/tool/browser'
 ```
 
 ## Online Demo

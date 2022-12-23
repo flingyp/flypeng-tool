@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useDataSensitive } from '@flypeng/tool'
+import { useDataSensitive } from '@flypeng/tool/browser'
 
 // 默认
 useDataSensitive({ sensitiveSource: '123456789' })

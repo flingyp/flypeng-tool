@@ -7,34 +7,16 @@ const currentNodeEnv = process.env.NODE_ENV
 const isCompressLibrary = currentNodeEnv === 'prod' ? terser({ module: true, toplevel: true }) : null
 
 export default defineConfig([
-  // {
-  //   input: './packages/index.ts',
-  //   output: [
-  //     {
-  //       file: 'dist/bundle.cjs',
-  //       format: 'umd',
-  //       name: 'ToolBundle'
-  //     },
-  //     {
-  //       file: 'dist/bundle.mjs',
-  //       format: 'esm'
-  //     }
-  //   ],
-  //   plugins: [typescript(), isCompressLibrary],
-  //   watch: {
-  //     exclude: ['node_modules/**']
-  //   }
-  // },
   {
     input: './packages/Browser/index.ts',
     output: [
       {
-        file: 'dist/browser.cjs',
+        file: 'browser/index.cjs',
         format: 'umd',
         name: 'Browser'
       },
       {
-        file: 'dist/browser.mjs',
+        file: 'browser/index.mjs',
         format: 'esm'
       }
     ],
@@ -47,12 +29,12 @@ export default defineConfig([
     input: './packages/Node/index.ts',
     output: [
       {
-        file: 'dist/node.cjs',
+        file: 'node/index.cjs',
         format: 'umd',
         name: 'Node'
       },
       {
-        file: 'dist/node.mjs',
+        file: 'node/index.mjs',
         format: 'esm'
       }
     ],
@@ -62,8 +44,13 @@ export default defineConfig([
     }
   },
   {
-    input: ['./packages/index.ts'],
-    output: [{ file: './dist/index.d.ts' }],
+    input: ['./packages/Browser/index.ts'],
+    output: [{ file: './browser/index.d.ts' }],
+    plugins: [dts()]
+  },
+  {
+    input: ['./packages/Node/index.ts'],
+    output: [{ file: './node/index.d.ts' }],
     plugins: [dts()]
   }
 ])

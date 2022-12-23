@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useRandomInteger } from '@flypeng/tool'
+import { useRandomInteger } from '@flypeng/tool/browser'
 
 const randomInteger = useRandomInteger(10, 100)
 ```

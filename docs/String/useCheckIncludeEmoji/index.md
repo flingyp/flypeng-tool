@@ -7,7 +7,7 @@ Check whether string contains Emoji emoticons
 ## Basic Usage
 
 ```ts
-import { useCheckIncludeEmoji } from '@flypeng/tool'
+import { useCheckIncludeEmoji } from '@flypeng/tool/browser'
 ```
 
 ## Type Declaration

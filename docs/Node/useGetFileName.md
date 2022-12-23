@@ -7,7 +7,7 @@ Get file name from path
 ## Basic Usage
 
 ```ts
-import { useGetFileName, useGetCurrentPath } from '@flypeng/tool'
+import { useGetFileName, useGetCurrentPath } from '@flypeng/tool/node'
 
 const nameInfo = await useGetFileName(useGetCurrentPath())
 ```

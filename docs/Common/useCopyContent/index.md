@@ -7,7 +7,7 @@ Copy content to clipboard
 ## Basic Usage
 
 ```ts
-import { useCopyContent } from '@flypeng/tool'
+import { useCopyContent } from '@flypeng/tool/browser'
 ```
 
 ## Type Declaration

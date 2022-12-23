@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useGetUrlParam } from '@flypeng/tool'
+import { useGetUrlParam } from '@flypeng/tool/browser'
 
 // 获取本地的参数
 const param1 = useGetUrlParam('name')

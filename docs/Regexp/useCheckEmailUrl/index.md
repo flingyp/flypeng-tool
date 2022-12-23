@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCheckEmailUrl } from '@flypeng/tool'
+import { useCheckEmailUrl } from '@flypeng/tool/browser'
 
 const isCheck = useCheckEmailUrl('flypeng@gmail.com')
 ```

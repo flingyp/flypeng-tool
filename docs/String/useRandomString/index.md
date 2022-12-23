@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useRandomString } from '@flypeng/tool'
+import { useRandomString } from '@flypeng/tool/browser'
 
 const randomStr1 = useRandomString()
 const randomStr2 = useRandomString(20)

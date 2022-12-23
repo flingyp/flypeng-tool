@@ -33,7 +33,7 @@ pnpm install @flypeng/tool@latest
 All hook function names are prefixed with **`use`**. The advantage of this method is that when importing all tool functions, you will first enter **`use`** to list all hook functions. Cooperate with function related comments to maximize editor prompts.
 
 ```ts
-import { useRandomInteger, useIsMobile, useGetUrlParam } from '@flypeng/tool'
+import { useRandomInteger, useIsMobile, useGetUrlParam } from '@flypeng/tool/browser'
 ```
 
 ## License

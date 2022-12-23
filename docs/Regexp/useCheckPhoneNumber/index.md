@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCheckPhoneNumber } from '@flypeng/tool'
+import { useCheckPhoneNumber } from '@flypeng/tool/browser'
 
 const isChecked = useCheckPhoneNumber('13148367212')
 ```

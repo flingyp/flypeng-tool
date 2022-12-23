@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useDeepClone } from '@flypeng/tool'
+import { useDeepClone } from '@flypeng/tool/browser'
 
 const targetObj = { name: '@flypeng-tool', address: { x: 100 }, origin: targetObj }
 const resultObj = useDeepClone(targetObj)

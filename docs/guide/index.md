@@ -1,5 +1,6 @@
 <script setup lang="ts">
-	import { version, HooksNum } from '../info' 
+	// import { version, HooksNum } from '../info' 
+	import { version  } from '../info' 
 </script>
 
 # Get Started
@@ -8,7 +9,7 @@
 
 当前版本：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">v{{version}}</span>
 
-函数统计：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">{{HooksNum}} Functions</span>
+函数统计：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">0 Functions</span>
 
 ## Installation
 
@@ -23,7 +24,7 @@ pnpm install @flypeng/tool
 ## Usage Example
 
 ```ts
-import { useRandomInteger, useIsMobile } from '@flypeng/tool'
+import { useRandomInteger, useIsMobile } from '@flypeng/tool/browser'
 
 const isMobile = useIsMobile() // isMobile is Boolean
 const randomInteger = useRandomInteger(10, 100) // Integer in [10, 100]

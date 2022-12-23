@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useThrottle } from '@flypeng/tool'
+import { useThrottle } from '@flypeng/tool/browser'
 const throttleFunction = useThrottle(() => {}, 1000)
 ```
 

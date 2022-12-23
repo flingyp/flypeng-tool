@@ -7,7 +7,7 @@ The tool function can be to prevent user that to see page source code and to can
 ## Basic Usage
 
 ```ts
-import { usePreventSeeSourceCode } from '@flypeng/tool'
+import { usePreventSeeSourceCode } from '@flypeng/tool/browser'
 
 const clear = usePreventSeeSourceCode(() => {
   // To todo notice message give user

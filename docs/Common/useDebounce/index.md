@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useDebounce } from '@flypeng/tool'
+import { useDebounce } from '@flypeng/tool/browser'
 const deBounceFunction = useDebounce(() => {}, 1000)
 ```
 

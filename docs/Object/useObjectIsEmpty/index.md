@@ -7,7 +7,7 @@ Judge whether the target object is empty
 ## Basic Usage
 
 ```ts
-import { useObjectIsEmpty } from '@flypeng/tool'
+import { useObjectIsEmpty } from '@flypeng/tool/browser'
 
 const isEmpty = useObjectIsEmpty({})
 ```

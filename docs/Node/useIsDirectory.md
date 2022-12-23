@@ -7,7 +7,7 @@ Judge whether the path is directory
 ## Basic Usage
 
 ```ts
-import { useIsDirectory } from '@flypeng/tool'
+import { useIsDirectory } from '@flypeng/tool/node'
 ```
 
 ## Type Declaration

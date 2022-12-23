@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCheckIdCard } from '@flypeng/tool'
+import { useCheckIdCard } from '@flypeng/tool/browser'
 
 const isChecked = useCheckIdCard('110101199006075838')
 ```

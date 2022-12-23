@@ -7,7 +7,7 @@ Execute command
 ## Basic Usage
 
 ```ts
-import { useExecCommand } from '@flypeng/tool'
+import { useExecCommand } from '@flypeng/tool/node'
 
 await useExecCommand('')
 ```

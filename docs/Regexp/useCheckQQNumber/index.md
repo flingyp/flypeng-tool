@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCheckQQNumber } from '@flypeng/tool'
+import { useCheckQQNumber } from '@flypeng/tool/browser'
 
 const isCheckedOne = useCheckQQNumber('1915801633') // true
 const isCheckedTwo = useCheckQQNumber('121580163387') // false

@@ -22,15 +22,16 @@ writeFileSync(docsInfoPath, `${readFileSync(docsInfoPath) || ''}\nexport const v
   encoding: 'utf-8'
 })
 
-const distStateFilePath = getAbsolutePath('../dist/index.d.ts')
-const distStateFileContent = readFileSync(distStateFilePath, { encoding: 'utf-8' })
+// TODO: 钩子函数数量统计
+// const distStateFilePath = getAbsolutePath('../dist/index.d.ts')
+// const distStateFileContent = readFileSync(distStateFilePath, { encoding: 'utf-8' })
 
-// 钩子函数数量统计
-const hooksNum = distStateFileContent.match(/export\s\{\s(.*)\s\};/)![1].split(',').length
+// // 钩子函数数量统计
+// const hooksNum = distStateFileContent.match(/export\s\{\s(.*)\s\};/)![1].split(',').length
 
-writeFileSync(docsInfoPath, `${readFileSync(docsInfoPath) || ''}\nexport const HooksNum = ${hooksNum}`, {
-  encoding: 'utf-8'
-})
+// writeFileSync(docsInfoPath, `${readFileSync(docsInfoPath) || ''}\nexport const HooksNum = ${hooksNum}`, {
+//   encoding: 'utf-8'
+// })
 
 // CHANGELOG文件的拷贝
 const changelogContent = readFileSync(changelogPath, { encoding: 'utf-8' })

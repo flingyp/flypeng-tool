@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useFormatDate } from '@flypeng/tool'
+import { useFormatDate } from '@flypeng/tool/browser'
 ```
 
 ## Type Declaration

@@ -7,7 +7,7 @@ Judge whether the path is file
 ## Basic Usage
 
 ```ts
-import { useIsFile } from '@flypeng/tool'
+import { useIsFile } from '@flypeng/tool/node'
 ```
 
 ## Type Declaration

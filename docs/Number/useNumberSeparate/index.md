@@ -7,7 +7,7 @@ The number is divided according to the specified quantity
 ## Basic Usage
 
 ```ts
-import { useNumberSeparate } from '@flypeng/tool'
+import { useNumberSeparate } from '@flypeng/tool/browser'
 ```
 
 ## Type Declaration

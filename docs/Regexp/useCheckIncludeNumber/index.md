@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCheckIncludeNumber } from '@flypeng/tool'
+import { useCheckIncludeNumber } from '@flypeng/tool/browser'
 
 const isCheckedOne = useCheckIncludeNumber('@flypeng/tool') // false
 const isCheckedTwo = useCheckIncludeNumber('2022年8月10号') //  true

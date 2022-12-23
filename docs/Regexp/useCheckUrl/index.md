@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCheckUrl } from '@flypeng/tool'
+import { useCheckUrl } from '@flypeng/tool/browser'
 ```
 
 ## Type Declaration

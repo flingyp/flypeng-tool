@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useDownloadFile } from '@flypeng/tool'
+import { useDownloadFile } from '@flypeng/tool/browser'
 ```
 
 ## Online Demo

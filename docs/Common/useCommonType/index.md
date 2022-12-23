@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCommonType } from '@flypeng/tool'
+import { useCommonType } from '@flypeng/tool/browser'
 
 const dataType = useCommonType.isString('@flypeng-tool')
 ```

@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCheckIncludeChinese } from '@flypeng/tool'
+import { useCheckIncludeChinese } from '@flypeng/tool/browser'
 
 const isCheckedOne = useCheckPhoneNumber('Hello-World') // false
 const isCheckedTwo = useCheckPhoneNumber('早上好') //  true

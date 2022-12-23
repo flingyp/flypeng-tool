@@ -7,7 +7,7 @@ Get extend name of path
 ## Basic Usage
 
 ```ts
-import { useGetExtensionName } from '@flypeng/tool'
+import { useGetExtensionName } from '@flypeng/tool/node'
 
 const extensionName = useGetExtensionName('')
 ```
