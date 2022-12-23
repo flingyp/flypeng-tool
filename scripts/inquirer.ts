@@ -18,7 +18,7 @@ export const inquireVersion = async () => {
     name: 'version',
     message: 'Please select the release version from list',
     default: 'patch',
-    choices: ['major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch']
+    choices: ['major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', 'prerelease']
   })
   return version
 }
