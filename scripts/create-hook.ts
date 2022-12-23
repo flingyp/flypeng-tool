@@ -138,10 +138,26 @@ const createHook = async () => {
     execSync(`npx prettier --write ${docsPreviewPath}`, { stdio: 'inherit' })
   } else {
     hookPath = resolve(nodePath, './useNodeHook.ts')
+    const docsEntryPath = resolve(docsPath, './Node', `${hookName}.md`)
     const oldContent = readFileSync(hookPath, { encoding: 'utf-8' })
     writeFileSync(hookPath, `${oldContent}\nexport const ${hookName} = () => {}`)
 
+    writeFileSync(
+      docsEntryPath,
+      `
+# ${hookName}
+
+## Introduction
+
+## Basic Usage
+
+## Type Declaration
+		`,
+      { encoding: 'utf-8' }
+    )
+
     execSync(`npx prettier --write ${hookPath}`, { stdio: 'inherit' })
+    execSync(`npx prettier --write ${docsEntryPath}`, { stdio: 'inherit' })
   }
 }
 
