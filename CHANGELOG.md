@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0-0](https://github.com/flingyp/flypeng-tool/compare/v4.2.0...v5.0.0-0) (2022-12-23)
+
+
+### ✏️ Documentation | 文档
+
+* modify devFunction Introduce content ([76881dc](https://github.com/flingyp/flypeng-tool/commit/76881dc6aad631d660830be62bebfd73078c12c8))
+
+
+### ✨ Features | 新功能
+
+* modify package to use form ([26c0b24](https://github.com/flingyp/flypeng-tool/commit/26c0b2408eee5d029cd845aa3ac8b5067d33cca1))
+* **useExecCommand:** new Function ([dd8ab49](https://github.com/flingyp/flypeng-tool/commit/dd8ab4907a8cc8923010d7d37ee9dda43414343f))
+
 ## [4.2.0](https://github.com/flingyp/flypeng-tool/compare/v4.1.1...v4.2.0) (2022-12-21)
 
 
