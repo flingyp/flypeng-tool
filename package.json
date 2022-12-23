@@ -6,6 +6,18 @@
   "main": "./dist/bundle.cjs",
   "module": "./dist/bundle.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/browser.mjs",
+      "node": "./dist/browser.cjs",
+      "default": "./dist/browser.mjs"
+    },
+    "./node": {
+      "import": "./dist/node.mjs",
+      "node": "./dist/browser.cjs",
+      "default": "./dist/browser.mjs"
+    }
+  },
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",

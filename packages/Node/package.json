@@ -2,6 +2,6 @@
   "name": "@flypeng/node",
   "version": "1.0.0",
   "type": "module",
-	"main": "./index.ts",
-	"module": "./index.ts"
+  "main": "./index.ts",
+  "module": "./index.ts"
 }

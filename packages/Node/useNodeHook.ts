@@ -1,3 +1,7 @@
+import { existsSync, lstatSync, readdirSync, rmdirSync, statSync, unlinkSync } from 'fs'
+import { execSync } from 'child_process'
+import { extname, basename } from 'path'
+
 /**
  * 获取执行该方法时所在的目录
  * @returns
@@ -11,7 +15,6 @@ export const useGetCurrentPath = () => {
  * @returns
  */
 export const useIsFile = async (path: string) => {
-  const { lstatSync } = await import('fs')
   return lstatSync(path).isFile()
 }
 /**
@@ -20,7 +23,6 @@ export const useIsFile = async (path: string) => {
  * @returns
  */
 export const useIsDirectory = async (path: string) => {
-  const { lstatSync } = await import('fs')
   return lstatSync(path).isDirectory()
 }
 
@@ -30,7 +32,6 @@ type FileName = string | { name: string; suffix: string }
  * @param path
  */
 export const useGetFileName = async (path: string): Promise<FileName> => {
-  const { basename } = await import('path')
   const lastFileNameStr = basename(path)
   if (!(await useIsFile(path)) && (await useIsDirectory(path))) {
     return lastFileNameStr
@@ -46,7 +47,6 @@ export const useGetFileName = async (path: string): Promise<FileName> => {
  * @returns
  */
 export const useGetExtensionName = async (path: string): Promise<string> => {
-  const { extname } = await import('path')
   const name = extname(path)
   if (name === '') return ''
   return name.split('.')[1] as string
@@ -61,7 +61,28 @@ interface ExecCommandOptions {
  * @param options
  */
 export const useExecCommand = async (command: string, options: ExecCommandOptions = { cwd: useGetCurrentPath() }) => {
-  const { execSync } = await import('child_process')
   const { cwd } = options
   execSync(command, { stdio: 'inherit', cwd })
+}
+
+/**
+ * 删除文件或递归删除目录
+ * @param path
+ */
+export const useRecursionDelete = async (path: string) => {
+  var files = []
+  if (existsSync(path)) {
+    files = readdirSync(path)
+    files.forEach(function (file, index) {
+      var curPath = path + '/' + file
+      if (statSync(curPath).isDirectory()) {
+        // recurse
+        useRecursionDelete(curPath)
+      } else {
+        // delete file
+        unlinkSync(curPath)
+      }
+    })
+    rmdirSync(path)
+  }
 }
