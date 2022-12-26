@@ -20,5 +20,5 @@ await useExecCommand('')
  * @param command
  * @param options
  */
-declare const useExecCommand: (command: string, options?: ExecCommandOptions) => Promise<void>
+declare const useExecCommand: (command: string, options?: ExecCommandOptions) => void
 ```

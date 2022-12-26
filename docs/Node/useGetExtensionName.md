@@ -20,5 +20,5 @@ const extensionName = useGetExtensionName('')
  * @param path
  * @returns
  */
-declare const useGetExtensionName: (path: string) => Promise<string>
+declare const useGetExtensionName: (path: string) => string
 ```

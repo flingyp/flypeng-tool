@@ -14,7 +14,7 @@ export const useGetCurrentPath = () => {
  * @param path
  * @returns
  */
-export const useIsFile = async (path: string) => {
+export const useIsFile = (path: string) => {
   return lstatSync(path).isFile()
 }
 /**
@@ -22,7 +22,7 @@ export const useIsFile = async (path: string) => {
  * @param path
  * @returns
  */
-export const useIsDirectory = async (path: string) => {
+export const useIsDirectory = (path: string) => {
   return lstatSync(path).isDirectory()
 }
 
@@ -31,9 +31,9 @@ type FileName = string | { name: string; suffix: string }
  * 如果路径Path的是一个文件则会返回文件名和后罪名，否则返回目录名
  * @param path
  */
-export const useGetFileName = async (path: string): Promise<FileName> => {
+export const useGetFileName = (path: string) => {
   const lastFileNameStr = basename(path)
-  if (!(await useIsFile(path)) && (await useIsDirectory(path))) {
+  if (!useIsFile(path) && useIsDirectory(path)) {
     return lastFileNameStr
   } else {
     const [name, suffix] = lastFileNameStr.split('.')
@@ -46,7 +46,7 @@ export const useGetFileName = async (path: string): Promise<FileName> => {
  * @param path
  * @returns
  */
-export const useGetExtensionName = async (path: string): Promise<string> => {
+export const useGetExtensionName = (path: string) => {
   const name = extname(path)
   if (name === '') return ''
   return name.split('.')[1] as string
@@ -60,7 +60,7 @@ interface ExecCommandOptions {
  * @param command
  * @param options
  */
-export const useExecCommand = async (command: string, options: ExecCommandOptions = { cwd: useGetCurrentPath() }) => {
+export const useExecCommand = (command: string, options: ExecCommandOptions = { cwd: useGetCurrentPath() }) => {
   const { cwd } = options
   execSync(command, { stdio: 'inherit', cwd })
 }
