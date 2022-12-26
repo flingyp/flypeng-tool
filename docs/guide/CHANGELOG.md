@@ -1,4 +1,11 @@
 
+## [5.0.0-1](https://github.com/flingyp/flypeng-tool/compare/v5.0.0-0...v5.0.0-1) (2022-12-23)
+
+
+### ✨ Features | 新功能
+
+* modify build package way and import form ([a7d75d9](https://github.com/flingyp/flypeng-tool/commit/a7d75d93e9812e2790cb89d4aa056757470e795a))
+
 ## [5.0.0-0](https://github.com/flingyp/flypeng-tool/compare/v4.2.0...v5.0.0-0) (2022-12-23)
 
 

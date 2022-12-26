@@ -1,4 +1,4 @@
-import { existsSync, lstatSync, readdirSync, rmdirSync, statSync, unlinkSync } from 'fs'
+import { existsSync, lstatSync, PathLike, readdirSync, rmdirSync, statSync, unlinkSync } from 'fs'
 import { execSync } from 'child_process'
 import { extname, basename } from 'path'
 
@@ -66,23 +66,20 @@ export const useExecCommand = async (command: string, options: ExecCommandOption
 }
 
 /**
- * 删除文件或递归删除目录
+ * 递归删除目录
  * @param path
  */
-export const useRecursionDelete = async (path: string) => {
-  var files = []
-  if (existsSync(path)) {
-    files = readdirSync(path)
-    files.forEach(function (file, index) {
-      var curPath = path + '/' + file
-      if (statSync(curPath).isDirectory()) {
-        // recurse
-        useRecursionDelete(curPath)
-      } else {
-        // delete file
-        unlinkSync(curPath)
-      }
-    })
-    rmdirSync(path)
+export const useRecursionDelete = (path: string) => {
+  let files = readdirSync(path)
+  for (let file of files) {
+    let newpath = `${path}/${file}`
+    let stats = statSync(newpath)
+    if (stats.isFile()) {
+      unlinkSync(newpath)
+    } else {
+      useRecursionDelete(newpath)
+    }
   }
+  // 文件夹里面的都删除之后，删除本文件件
+  rmdirSync(path)
 }
