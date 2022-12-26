@@ -13,20 +13,18 @@
 ## Installation
 
 ```sh
-npm install @flypeng/tool
-
-yarn add @flypeng/tool
-
-pnpm install @flypeng/tool
+pnpm install @flypeng/tool@latest
 ```
 
 ## Usage Example
 
 ```ts
 import { useRandomInteger, useIsMobile } from '@flypeng/tool/browser'
+import { useGetCurrentPath, useIsFile } from '@flypeng/tool/node'
 
 const isMobile = useIsMobile() // isMobile is Boolean
 const randomInteger = useRandomInteger(10, 100) // Integer in [10, 100]
+const isFile = useIsFile(useGetCurrentPath()) // isFile is Boolean
 ```
 
 ## Project introduction
