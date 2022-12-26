@@ -1,6 +1,5 @@
 <script setup lang="ts">
-	// import { version, HooksNum } from '../info' 
-	import { version  } from '../info' 
+	import { version, HooksNum } from '../info' 
 </script>
 
 # Get Started
@@ -9,7 +8,7 @@
 
 当前版本：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">v{{version}}</span>
 
-函数统计：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">0 Functions</span>
+函数统计：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">{{HooksNum}} Functions</span>
 
 ## Installation
 

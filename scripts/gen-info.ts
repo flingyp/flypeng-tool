@@ -1,5 +1,6 @@
+import { useIsDirectory } from './../packages/Node/useNodeHook'
 import { getAbsolutePath } from './utils'
-import { readFileSync, writeFileSync, unlinkSync, existsSync } from 'fs'
+import { readFileSync, writeFileSync, unlinkSync, existsSync, readdirSync } from 'fs'
 import { resolve } from 'path'
 import packageJson from '../package.json'
 
@@ -22,16 +23,29 @@ writeFileSync(docsInfoPath, `${readFileSync(docsInfoPath) || ''}\nexport const v
   encoding: 'utf-8'
 })
 
-// TODO: 钩子函数数量统计
-// const distStateFilePath = getAbsolutePath('../dist/index.d.ts')
-// const distStateFileContent = readFileSync(distStateFilePath, { encoding: 'utf-8' })
+// 钩子函数数量统计 读取每个模块下的入口文件
+let hooksNum = 0
+const browserPath = getAbsolutePath('../packages/Browser')
+const nodePath = getAbsolutePath('../packages/Node')
+let browserModules = readdirSync(browserPath)
+browserModules = browserModules.filter(file => {
+  if (useIsDirectory(`${browserPath}/${file}`)) return file
+})
+browserModules.forEach(module => {
+  const moduleEntryPath = `${browserPath}/${module}/index.ts`
+  const entryContent = readFileSync(moduleEntryPath, { encoding: 'utf-8' })
+  const curModuleNum = entryContent.match(/export\s\{.*\}\sfrom\s'.*'/g)?.length || 0
+  hooksNum += curModuleNum
+})
 
-// // 钩子函数数量统计
-// const hooksNum = distStateFileContent.match(/export\s\{\s(.*)\s\};/)![1].split(',').length
+const nodeModuleEntryPath = `${nodePath}/index.ts`
+const nodeModuleContent = readFileSync(nodeModuleEntryPath, { encoding: 'utf-8' })
+const nodeModuleNum = nodeModuleContent.match(/export\s\{.*\}\sfrom\s'.*'/g)?.length || 0
+hooksNum += nodeModuleNum
 
-// writeFileSync(docsInfoPath, `${readFileSync(docsInfoPath) || ''}\nexport const HooksNum = ${hooksNum}`, {
-//   encoding: 'utf-8'
-// })
+writeFileSync(docsInfoPath, `${readFileSync(docsInfoPath) || ''}\nexport const HooksNum = ${hooksNum}`, {
+  encoding: 'utf-8'
+})
 
 // CHANGELOG文件的拷贝
 const changelogContent = readFileSync(changelogPath, { encoding: 'utf-8' })
