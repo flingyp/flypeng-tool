@@ -48,13 +48,22 @@ export default defineConfig({
   themeConfig: {
     nav: docsNav,
     sidebar: docsSideBar,
-    socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/-flingyp-util' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/flypeng-tool' }],
     algolia: {
       appId: '6A1G108YH0',
       apiKey: '4aa61b9b99dd99e9bf22e1fa06a15969',
-      indexName: '@flypeng tool', // 需要替换
+      indexName: '@flypeng tool',
       placeholder: 'Search docs',
       buttonText: 'Search'
+    },
+    editLink: {
+      pattern: 'https://github.com/flingyp/flypeng-tool/blob/dev/docs/:path',
+      text: 'Edit this p,age on GitHub'
+    },
+    lastUpdatedText: 'Last updated',
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2022-present FlingYP'
     }
   }
 })
