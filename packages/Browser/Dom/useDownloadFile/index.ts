@@ -20,5 +20,6 @@ export default async function useDownloadFile(url: string, fileName?: string) {
     downloadALabel.setAttribute('href', fileUrl)
     downloadALabel.setAttribute('download', fileName || '')
     downloadALabel.click()
+    downloadALabel.remove()
   }
 }
