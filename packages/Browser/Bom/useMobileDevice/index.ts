@@ -1,4 +1,4 @@
-import { useCommonType } from '../index'
+import { useCommonType } from '../../Common/index'
 
 /**
  * 如果不是移动设备则返回false，如果是移动设备则会判断是Apple还是Android
