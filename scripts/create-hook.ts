@@ -125,6 +125,8 @@ const createHook = async () => {
 			`,
         { encoding: 'utf-8' }
       )
+
+      execSync(`npx prettier --write ${docsPreviewPath}`, { stdio: 'inherit' })
     }
 
     // 给入口文件添加导出代码
@@ -135,7 +137,6 @@ const createHook = async () => {
     execSync(`npx prettier --write ${hookPath}`, { stdio: 'inherit' })
     execSync(`npx prettier --write ${hookTestPath}`, { stdio: 'inherit' })
     execSync(`npx prettier --write ${docsEntryPath}`, { stdio: 'inherit' })
-    execSync(`npx prettier --write ${docsPreviewPath}`, { stdio: 'inherit' })
   } else {
     hookPath = resolve(nodePath, './useNodeHook.ts')
     const docsEntryPath = resolve(docsPath, './Node', `${hookName}.md`)
