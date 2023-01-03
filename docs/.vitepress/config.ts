@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, DefaultTheme } from 'vitepress'
 import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin'
 import { version } from '../info'
 
@@ -29,7 +29,14 @@ const versionNav = [
   }
 ]
 
-const docsNav = [...guideNav, ...navBar, ...versionNav]
+const navBarModules = navBar.map((module: DefaultTheme.NavItemWithLink) => {
+  return {
+    text: `${module.text} Functions`,
+    link: module.link
+  }
+})
+
+const docsNav = [...guideNav, { text: 'Modules', items: navBarModules }, ...versionNav]
 
 export default defineConfig({
   base: '/flypeng-tool',
