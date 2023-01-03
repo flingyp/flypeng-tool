@@ -1,3 +1,5 @@
 export { default as useLocationInfo } from './useLocationInfo'
 export { default as useMobileDevice } from './useMobileDevice'
 export { default as useCopySelector } from './useCopySelector'
+export { default as useCopyContent } from './useCopyContent'
+export { default as useGetUrlParam } from './useGetUrlParam'
