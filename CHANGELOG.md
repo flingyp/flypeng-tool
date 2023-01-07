@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/flingyp/flypeng-tool/compare/v5.0.0-1...v5.0.0) (2023-01-07)
+
+
+### ✨ Features | 新功能
+
+* **useDelEmptyValue:** new Function ([87ccdd2](https://github.com/flingyp/flypeng-tool/commit/87ccdd2575775ab73c26895d0ad857731b9ae24b))
+* **useDownloadFile:** remove a node after downloading file ([1e62892](https://github.com/flingyp/flypeng-tool/commit/1e62892017e910f95c93df4c1d21f4c36ae38262))
+* **useRecursionDelete:** new Function ([42d0ed9](https://github.com/flingyp/flypeng-tool/commit/42d0ed9e22d5edc2e7d4c12e4187f2f8762d6e3e))
+
+
+### ✏️ Documentation | 文档
+
+* add a Modules nav bar and put Function Modules ([d531974](https://github.com/flingyp/flypeng-tool/commit/d531974c9a9aaa0699ed47b12ceda183600016ae))
+* modify Get Started docs content ([93208a3](https://github.com/flingyp/flypeng-tool/commit/93208a3ad302b3cc30b5f473c03d5f7678aa627b))
+* modify way of statistics hooks number ([88d2597](https://github.com/flingyp/flypeng-tool/commit/88d2597185e10fcb624a9886cceb432cef06de49))
+* prefect vitepress docs config ([3c1f353](https://github.com/flingyp/flypeng-tool/commit/3c1f353f8722f98f6227572db3e6da74c207f1ae))
+
 ## [5.0.0-1](https://github.com/flingyp/flypeng-tool/compare/v5.0.0-0...v5.0.0-1) (2022-12-23)
 
 
