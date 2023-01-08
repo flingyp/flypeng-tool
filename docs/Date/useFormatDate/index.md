@@ -12,7 +12,7 @@ import { useFormatDate } from '@flypeng/tool/browser'
 /**
  * 格式类型
  */
-declare type DateFormatOption =
+type DateFormatOption =
   | 'yyyy-MM-dd hh:mm:ss'
   | 'yyyy-MM-dd'
   | 'yyyy/MM/dd'
@@ -28,7 +28,7 @@ declare type DateFormatOption =
  * @param format
  * @param date
  */
-declare function useFormatDate(format: DateFormatOption, date?: string): void
+declare function useFormatDate(format: DateFormatOption, date?: string | number | Date): string
 ```
 
 ## Online Demo

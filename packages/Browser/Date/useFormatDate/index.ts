@@ -19,12 +19,16 @@ export type DateFormatOption =
  * @param format
  * @param date
  */
-export default function useFormatDate(format: DateFormatOption, date?: string | Date) {
+export default function useFormatDate(format: DateFormatOption, date?: string | number | Date) {
   let resultDate: string = format
   let handleDate: Date = new Date()
 
   if (useCommonType.isString(date)) {
     handleDate = new Date(date as string)
+  }
+
+  if (useCommonType.isNumber(date)) {
+    handleDate = new Date(date as number)
   }
 
   if (useCommonType.isDate(date)) {
