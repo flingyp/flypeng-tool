@@ -11,13 +11,17 @@ export default defineConfig([
     input: './packages/Browser/index.ts',
     output: [
       {
-        file: 'browser/index.cjs',
+        file: 'browser/index-browser.js',
         format: 'umd',
-        name: 'Browser'
+        name: 'fy'
       },
       {
         file: 'browser/index.mjs',
         format: 'esm'
+      },
+      {
+        file: 'browser/index.cjs',
+        format: 'cjs'
       }
     ],
     plugins: [typescript(), isCompressLibrary],
@@ -30,8 +34,7 @@ export default defineConfig([
     output: [
       {
         file: 'node/index.cjs',
-        format: 'umd',
-        name: 'Node'
+        format: 'cjs'
       },
       {
         file: 'node/index.mjs',
