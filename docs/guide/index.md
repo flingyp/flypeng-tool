@@ -16,7 +16,7 @@
 pnpm install @flypeng/tool@latest
 ```
 
-## Usage Example
+## Usage
 
 ```ts
 import { useRandomInteger, useIsMobile } from '@flypeng/tool/browser'
@@ -26,6 +26,18 @@ const isMobile = useIsMobile() // isMobile is Boolean
 const randomInteger = useRandomInteger(10, 100) // Integer in [10, 100]
 const isFile = useIsFile(useGetCurrentPath()) // isFile is Boolean
 ```
+
+## 通过 CDN 引入
+
+```js
+<script src="https://unpkg.com/@flypeng/tool@${version}/browser/index-browser.js"></script>
+```
+
+:::tip
+这里使用了 [unpkg](https://unpkg.com/) ，但也可以使用其他提供包服务的 CDN，例如 [jsdelivr](https://www.jsdelivr.com/) 或 [cdnjs](https://cdnjs.com/)。
+
+也可以下载此文件并自行提供服务。
+:::
 
 ## Project introduction
 
