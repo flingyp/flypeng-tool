@@ -1,4 +1,23 @@
 
+### [5.0.1](https://github.com/flingyp/flypeng-tool/compare/v5.0.0...v5.0.1) (2023-01-16)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* create-hook cli error ([2e24d93](https://github.com/flingyp/flypeng-tool/commit/2e24d939f27877355437063d57a24ee228858883))
+
+
+### ✨ Features | 新功能
+
+* **useDynamicLoadScript:** new Function ([8585506](https://github.com/flingyp/flypeng-tool/commit/858550656f06d9938950d49fe454490ffbc598c7))
+* **useFormatDate:** support number time stamp ([860f3c4](https://github.com/flingyp/flypeng-tool/commit/860f3c4728d013edd2f6657d12842692e6ac5fa6))
+* **useScrollToElement:** new Function ([f683641](https://github.com/flingyp/flypeng-tool/commit/f68364178274ebccc4bb7e37acbd3b0b4b57fd2d))
+
+
+### ✏️ Documentation | 文档
+
+* add introduction of CND form to import package ([7613c2a](https://github.com/flingyp/flypeng-tool/commit/7613c2ad71058eac6a8c9ffdeb92230cee0ebb67))
+
 ## [5.0.0](https://github.com/flingyp/flypeng-tool/compare/v5.0.0-1...v5.0.0) (2023-01-07)
 
 
