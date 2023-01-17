@@ -134,7 +134,7 @@ const createHook = async () => {
     // 给入口文件添加导出代码
     const moduleEntryPath = resolve(browserPath, `./${moduleName}`, './index.ts')
     const oldContent = readFileSync(moduleEntryPath, { encoding: 'utf-8' })
-    writeFileSync(moduleEntryPath, `${oldContent}export { default as ${hookName} } from './${hookName}'`)
+    writeFileSync(moduleEntryPath, `${oldContent}\nexport { default as ${hookName} } from './${hookName}'`)
 
     execSync(`npx prettier --write ${hookPath}`, { stdio: 'inherit' })
     execSync(`npx prettier --write ${docsEntryPath}`, { stdio: 'inherit' })
