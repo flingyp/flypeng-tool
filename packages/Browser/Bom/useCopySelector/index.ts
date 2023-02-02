@@ -4,7 +4,7 @@
  * @returns
  */
 export default function useCopySelector(selector: string) {
-  let needCopyDom = document.querySelector(selector)
+  const needCopyDom = document.querySelector(selector)
   const copyContent = needCopyDom?.textContent || ''
   const createTextArea = document.createElement('textarea')
   createTextArea.setAttribute('readonly', 'readonly')

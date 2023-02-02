@@ -36,14 +36,14 @@ const chars = [
   'W',
   'X',
   'Y',
-  'Z'
+  'Z',
 ]
 
-export default function useRandomString(length: number = 10) {
+export default function useRandomString(length = 10) {
   let res = ''
-  for (var i = 0; i < length; i++) {
+  for (let i = 0; i < length; i++) {
     const id = useRandomInteger(0, chars.length - 1)
-    res = res + chars[id]
+    res += chars[id]
   }
   return res
 }

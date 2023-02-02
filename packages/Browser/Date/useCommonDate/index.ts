@@ -29,7 +29,7 @@ function useTodayWeek() {
  */
 function useMonthNumber(year: number, month: number) {
   if (month < 0 || month > 12) return undefined
-  let recordNumber = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+  const recordNumber = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
   // 如果是闰年，二月份的天数为29
   if (useLeapYear(year)) recordNumber[1] = 29
   return recordNumber[month]
@@ -43,7 +43,7 @@ export type AddDateDayFormatOption<T> = T extends 'yyyy-MM-dd hh:mm:ss' | 'yyyy-
 function useAddDateDay(
   value: number,
   date?: string | Date,
-  dateFormat: AddDateDayFormatOption<DateFormatOption> = 'yyyy-MM-dd'
+  dateFormat: AddDateDayFormatOption<DateFormatOption> = 'yyyy-MM-dd',
 ) {
   const currentDate = useFormatDate(dateFormat, date)
   const resultDate = new Date(currentDate)
@@ -100,5 +100,5 @@ export default {
   useAddDateDay,
   useDifDaysValue,
   useGetFirstDay,
-  useGetLastDay
+  useGetLastDay,
 }

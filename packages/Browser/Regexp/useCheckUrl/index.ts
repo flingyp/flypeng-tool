@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /**
  * 验证URL是否是有效的
  * @param value

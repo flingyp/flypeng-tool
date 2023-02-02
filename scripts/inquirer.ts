@@ -6,7 +6,7 @@ export const inquireIsNeed = async (message: string, defaultValue: boolean) => {
     type: 'confirm',
     name: 'value',
     message,
-    default: defaultValue
+    default: defaultValue,
   })
   return value
 }
@@ -18,7 +18,7 @@ export const inquireVersion = async () => {
     name: 'version',
     message: 'Please select the release version from list',
     default: 'patch',
-    choices: ['major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', 'prerelease']
+    choices: ['major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', 'prerelease'],
   })
   return version
 }
@@ -29,7 +29,7 @@ export const inquirePackageChoice = async (): Promise<'@flypeng/browser' | '@fly
     type: 'list',
     name: 'name',
     message: 'Please select package of hook function',
-    choices: ['@flypeng/browser', '@flypeng/node']
+    choices: ['@flypeng/browser', '@flypeng/node'],
   })
   return name
 }
@@ -39,7 +39,7 @@ export const inquireHookName = async () => {
   const { name } = await inquirer.prompt({
     type: 'input',
     name: 'name',
-    message: 'Please input name of hook function'
+    message: 'Please input name of hook function',
   })
   return name
 }
@@ -50,7 +50,7 @@ export const inquireModuleChoice = async (modulesList: string[]) => {
     type: 'list',
     name: 'module',
     message: 'Please input module name of hook function',
-    choices: modulesList
+    choices: modulesList,
   })
   return module
 }

@@ -14,8 +14,8 @@ describe('useCommonDate', () => {
     expect(useCommonDate.useAddDateDay(2)).toBe(
       useFormatDate(
         'yyyy-MM-dd',
-        new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 2)
-      )
+        new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 2),
+      ),
     )
     expect(useCommonDate.useAddDateDay(5, '2022/10/09', 'yyyy-MM-dd')).toBe('2022-10-14')
   })
@@ -26,13 +26,13 @@ describe('useCommonDate', () => {
 
   it('get first day of month', () => {
     expect(useCommonDate.useGetFirstDay()).toBe(
-      useFormatDate('yyyy-MM-dd', new Date(currentDate.getFullYear(), currentDate.getMonth(), 1))
+      useFormatDate('yyyy-MM-dd', new Date(currentDate.getFullYear(), currentDate.getMonth(), 1)),
     )
   })
 
   it('get last day of month', () => {
     expect(useCommonDate.useGetLastDay()).toBe(
-      useFormatDate('yyyy-MM-dd', new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0))
+      useFormatDate('yyyy-MM-dd', new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0)),
     )
   })
 })

@@ -1,2 +1,2 @@
-export * from './Browser'
-export * from './Node'
+export * from '@flypeng/browser'
+export * from '@flypeng/node'

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const objectToString = Object.prototype.toString
 
 const isUndefined = (value: unknown) => typeof value === 'undefined'
@@ -20,10 +21,9 @@ const isBrowser = () => ![typeof window, typeof document].includes('undefined')
 const isMobile = () => {
   if (
     navigator?.userAgent.match(
-      /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+      /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i,
     )
-  )
-    return true
+  ) return true
   return false
 }
 
@@ -44,5 +44,5 @@ export default {
   isBrowser,
   isWechatBrowser,
   isMobile,
-  typeToString
+  typeToString,
 }

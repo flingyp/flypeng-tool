@@ -1,8 +1,10 @@
-import { inquireHookName, inquireIsNeed, inquireModuleChoice, inquirePackageChoice } from './inquirer'
 import { readdirSync, writeFileSync, readFileSync } from 'fs'
-import { getAbsolutePath, isDirectory, mkdirs } from './utils'
 import { resolve } from 'path'
 import { execSync } from 'child_process'
+import { getAbsolutePath, isDirectory, mkdirs } from './utils'
+import {
+  inquireHookName, inquireIsNeed, inquireModuleChoice, inquirePackageChoice,
+} from './inquirer'
 // 每次创建一个新钩子函数时，运行此脚本文件帮助我们创建
 
 // Browser模块
@@ -40,8 +42,8 @@ const createHook = async () => {
   let modulesList = []
   if (packageName === '@flypeng/browser') {
     // 获取Browser所有模块名称并且添加上Node
-    modulesList = readdirSync(browserPath).filter(file => {
-      if (isDirectory(browserPath + `/${file}`)) return file
+    modulesList = readdirSync(browserPath).filter((file) => {
+      if (isDirectory(`${browserPath}/${file}`)) return file
     })
   } else {
     modulesList.push('Node')
@@ -76,7 +78,7 @@ const createHook = async () => {
 			export default function ${hookName}() {
 				console.log('function template')
 			}
-		`
+		`,
     )
 
     if (isNeedTestFile) {
@@ -92,7 +94,7 @@ const createHook = async () => {
 						expect(${hookName}).toBeDefined()
 					})
 				})
-			`
+			`,
       )
 
       execSync(`npx prettier --write ${hookTestPath}`, { stdio: 'inherit' })
@@ -111,7 +113,7 @@ const createHook = async () => {
 
 ## Online Demo
 		`,
-      { encoding: 'utf-8' }
+      { encoding: 'utf-8' },
     )
 
     if (isNeedPreviewFile) {
@@ -125,7 +127,7 @@ const createHook = async () => {
 				<style scoped></style>
 
 			`,
-        { encoding: 'utf-8' }
+        { encoding: 'utf-8' },
       )
 
       execSync(`npx prettier --write ${docsPreviewPath}`, { stdio: 'inherit' })
@@ -155,7 +157,7 @@ const createHook = async () => {
 
 ## Type Declaration
 		`,
-      { encoding: 'utf-8' }
+      { encoding: 'utf-8' },
     )
 
     execSync(`npx prettier --write ${hookPath}`, { stdio: 'inherit' })
@@ -163,4 +165,4 @@ const createHook = async () => {
   }
 }
 
-void createHook()
+createHook()

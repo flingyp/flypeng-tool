@@ -5,7 +5,7 @@ import {
   useGetFileName,
   useGetExtensionName,
   useExecCommand,
-  useRecursionDelete
+  useRecursionDelete,
 } from '@flypeng/node'
 
 const currentPath = useGetCurrentPath()

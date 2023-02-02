@@ -4,5 +4,5 @@
  * @returns
  */
 export default function useObjectIsEmpty(target: Object) {
-  return Object.keys(target).length === 0 ? true : false
+  return Object.keys(target).length === 0
 }

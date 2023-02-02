@@ -19,18 +19,14 @@ export const getAbsolutePath = (relativePath: string) => {
  * @param path
  * @returns
  */
-export const isFile = (path: string) => {
-  return lstatSync(path).isFile()
-}
+export const isFile = (path: string) => lstatSync(path).isFile()
 
 /**
  * 判断是否是文件目录
  * @param path
  * @returns
  */
-export const isDirectory = (path: string) => {
-  return lstatSync(path).isDirectory()
-}
+export const isDirectory = (path: string) => lstatSync(path).isDirectory()
 
 export const outChalkLog = {
   info(text: string) {
@@ -47,7 +43,7 @@ export const outChalkLog = {
   },
   title(text: string) {
     console.log(chalk.cyan(text))
-  }
+  },
 }
 
 export const mkdirs = (dirpath: string) => {

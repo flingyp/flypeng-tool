@@ -1,0 +1,19 @@
+{
+	"extends": "@flypeng",
+	"rules": {
+		"no-underscore-dangle": "off",
+		"no-tabs": "off",
+		"array-callback-return": "off",
+		"consistent-return": "off",
+		"no-shadow": "off",
+		"guard-for-in": "off",
+		"no-restricted-syntax": "off",
+		"import/no-extraneous-dependencies": "off",
+		"eqeqeq": "off",
+		"no-useless-escape": "off",
+		"@typescript-eslint/ban-ts-comment": "off",
+		"@typescript-eslint/ban-types": "off",
+		"func-names": "off",
+		"@typescript-eslint/no-this-alias": "off"
+	}
+}

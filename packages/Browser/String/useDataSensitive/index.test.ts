@@ -10,8 +10,8 @@ describe('useDataSensitive', () => {
   it('data default sensitive', () => {
     expect(
       useDataSensitive({
-        sensitiveSource: '123456789'
-      })
+        sensitiveSource: '123456789',
+      }),
     ).toBe('******789')
   })
 
@@ -21,8 +21,8 @@ describe('useDataSensitive', () => {
         sensitiveSource: '123456789',
         startIndex: 2,
         endIndex: 5,
-        replaceSource: '#'
-      })
+        replaceSource: '#',
+      }),
     ).toBe('12####789')
   })
 })

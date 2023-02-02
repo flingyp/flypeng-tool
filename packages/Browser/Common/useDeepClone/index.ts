@@ -16,7 +16,7 @@ export default function useDeepClone(targetObj: any, hashMap = new WeakMap()) {
   const resultObj = targetObj.constructor()
   // 将 targetObj 和 resultObj 对应起来，防止重复引用的情况
   hashMap.set(targetObj, resultObj)
-  for (let key in targetObj) {
+  for (const key in targetObj) {
     resultObj[key] = useDeepClone(targetObj[key], hashMap)
   }
   return resultObj

@@ -11,7 +11,7 @@ describe('useDelEmptyValue', () => {
     const handleObj = { name: '@flypeng/tool', date: '2023/01/03', test: null }
     expect(useDelEmptyValue(handleObj)).toEqual({
       name: '@flypeng/tool',
-      date: '2023/01/03'
+      date: '2023/01/03',
     })
   })
 })

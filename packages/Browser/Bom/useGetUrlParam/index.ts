@@ -5,7 +5,7 @@
  * @returns
  */
 export default function useGetUrlParam(param: string, origin?: string) {
-  const reg = new RegExp('(^|&)' + param + '=([^&]*)(&|$)')
+  const reg = new RegExp(`(^|&)${param}=([^&]*)(&|$)`)
   let _param = null
   if (typeof window !== 'undefined') {
     if (origin == null) {

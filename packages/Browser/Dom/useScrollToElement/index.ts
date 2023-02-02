@@ -7,6 +7,6 @@ export default function useScrollToElement(element: HTMLElement) {
   const distanceDocuemntTop = element.offsetTop
   window.scrollTo({
     top: distanceDocuemntTop,
-    behavior: 'smooth'
+    behavior: 'smooth',
   })
 }

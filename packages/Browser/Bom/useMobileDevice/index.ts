@@ -7,8 +7,7 @@ import { useCommonType } from '../../Common/index'
 export default function useMobileDevice() {
   if (!useCommonType.isMobile()) {
     return false
-  } else {
-    if (navigator?.userAgent.match(/iphone|ipod|ipad|Macintosh/i)) return 'Apple'
-    return 'Android'
   }
+  if (navigator?.userAgent.match(/iphone|ipod|ipad|Macintosh/i)) return 'Apple'
+  return 'Android'
 }

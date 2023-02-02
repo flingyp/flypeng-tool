@@ -6,7 +6,7 @@ import { useCustomContextMenu } from '../index'
  * @returns
  */
 export default function usePreventSeeSourceCode(callback?: () => void) {
-  const customCallback = callback ? callback : () => {}
+  const customCallback = callback || (() => false)
   const keyDownCallback = (e: KeyboardEvent) => {
     const keyCode = e.keyCode || e.which || e.charCode
     const ctrlKey = e.ctrlKey || e.metaKey

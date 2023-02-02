@@ -41,15 +41,17 @@ export default function useFormatDate(format: DateFormatOption, date?: string | 
     'd+': handleDate.getDate(),
     'h+': handleDate.getHours(),
     'm+': handleDate.getMinutes(),
-    's+': handleDate.getSeconds()
+    's+': handleDate.getSeconds(),
   }
-  for (let key in defineChars) {
+  for (const key in defineChars) {
     const checkReg = new RegExp(`(${key})`)
     if (checkReg.test(resultDate)) {
       // @ts-ignore
       let currentValue = defineChars[key].toString()
       // 补零操作
-      currentValue.length === 1 ? (currentValue = `0${currentValue}`) : currentValue
+      if (currentValue.length === 1) {
+        currentValue = `0${currentValue}`
+      }
       resultDate = resultDate.replace(checkReg, currentValue)
     }
   }

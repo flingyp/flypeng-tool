@@ -1,12 +1,17 @@
 {
-  "cSpell.words": [
-    "",
-    "esno",
-    "flypeng",
-    "Pnpm",
-    "vitepress",
-    "vitesse",
-    "ytooluse"
-  ],
-  "typescript.tsdk": "node_modules\\typescript\\lib"
+	"cSpell.words": [
+		"",
+		"esno",
+		"flypeng",
+		"Pnpm",
+		"vitepress",
+		"vitesse",
+		"ytooluse"
+	],
+	"typescript.tsdk": "node_modules\\typescript\\lib",
+	"prettier.enable": false,
+	"editor.formatOnSave": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }

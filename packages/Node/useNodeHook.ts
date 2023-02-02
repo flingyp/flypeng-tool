@@ -1,4 +1,6 @@
-import { existsSync, lstatSync, PathLike, readdirSync, rmdirSync, statSync, unlinkSync } from 'fs'
+import {
+  lstatSync, readdirSync, rmdirSync, statSync, unlinkSync,
+} from 'fs'
 import { execSync } from 'child_process'
 import { extname, basename } from 'path'
 
@@ -6,25 +8,19 @@ import { extname, basename } from 'path'
  * 获取执行该方法时所在的目录
  * @returns
  */
-export const useGetCurrentPath = () => {
-  return process.cwd()
-}
+export const useGetCurrentPath = () => process.cwd()
 /**
  * 判断当前路径是否是文件
  * @param path
  * @returns
  */
-export const useIsFile = (path: string) => {
-  return lstatSync(path).isFile()
-}
+export const useIsFile = (path: string) => lstatSync(path).isFile()
 /**
  * 判断当前路径是否是目录
  * @param path
  * @returns
  */
-export const useIsDirectory = (path: string) => {
-  return lstatSync(path).isDirectory()
-}
+export const useIsDirectory = (path: string) => lstatSync(path).isDirectory()
 
 type FileName = string | { name: string; suffix: string }
 /**
@@ -35,10 +31,9 @@ export const useGetFileName = (path: string) => {
   const lastFileNameStr = basename(path)
   if (!useIsFile(path) && useIsDirectory(path)) {
     return lastFileNameStr
-  } else {
-    const [name, suffix] = lastFileNameStr.split('.')
-    return { name, suffix }
   }
+  const [name, suffix] = lastFileNameStr.split('.')
+  return { name, suffix }
 }
 
 /**
@@ -70,10 +65,10 @@ export const useExecCommand = (command: string, options: ExecCommandOptions = { 
  * @param path
  */
 export const useRecursionDelete = (path: string) => {
-  let files = readdirSync(path)
-  for (let file of files) {
-    let newpath = `${path}/${file}`
-    let stats = statSync(newpath)
+  const files = readdirSync(path)
+  for (const file of files) {
+    const newpath = `${path}/${file}`
+    const stats = statSync(newpath)
     if (stats.isFile()) {
       unlinkSync(newpath)
     } else {

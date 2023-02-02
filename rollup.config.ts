@@ -13,47 +13,47 @@ export default defineConfig([
       {
         file: 'browser/index-browser.js',
         format: 'umd',
-        name: 'fy'
+        name: 'fy',
       },
       {
         file: 'browser/index.mjs',
-        format: 'esm'
+        format: 'esm',
       },
       {
         file: 'browser/index.cjs',
-        format: 'cjs'
-      }
+        format: 'cjs',
+      },
     ],
     plugins: [typescript(), isCompressLibrary],
     watch: {
-      exclude: ['node_modules/**']
-    }
+      exclude: ['node_modules/**'],
+    },
   },
   {
     input: './packages/Node/index.ts',
     output: [
       {
         file: 'node/index.cjs',
-        format: 'cjs'
+        format: 'cjs',
       },
       {
         file: 'node/index.mjs',
-        format: 'esm'
-      }
+        format: 'esm',
+      },
     ],
     plugins: [typescript(), isCompressLibrary],
     watch: {
-      exclude: ['node_modules/**']
-    }
+      exclude: ['node_modules/**'],
+    },
   },
   {
     input: ['./packages/Browser/index.ts'],
     output: [{ file: './browser/index.d.ts' }],
-    plugins: [dts()]
+    plugins: [dts()],
   },
   {
     input: ['./packages/Node/index.ts'],
     output: [{ file: './node/index.d.ts' }],
-    plugins: [dts()]
-  }
+    plugins: [dts()],
+  },
 ])

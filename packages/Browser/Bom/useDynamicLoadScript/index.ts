@@ -5,11 +5,11 @@ import { useCheckUrl } from '../../index'
  * @param url
  * @param callback
  */
-export default async function useDynamicLoadScript(url: string, callback = (...args: unknown[]) => {}) {
+export default async function useDynamicLoadScript(url: string, callback = (...args: unknown[]) => false) {
   if (!useCheckUrl(url)) {
     throw new Error('invalid url')
   }
-  let headTag = document.querySelector('head')
+  const headTag = document.querySelector('head')
   if (!headTag) {
     throw new Error('head tag is null')
   }
@@ -17,5 +17,5 @@ export default async function useDynamicLoadScript(url: string, callback = (...a
   scriptTag.type = 'text/javascript'
   scriptTag.src = url
   headTag.appendChild(scriptTag)
-  scriptTag.onload = event => callback(event)
+  scriptTag.onload = (event) => callback(event)
 }

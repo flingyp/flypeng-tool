@@ -19,7 +19,7 @@ export default function useLocationInfo(): Readonly<Partial<LocationInfo>> | nul
       port: Number(window.location.port),
       pathname: window.location.pathname,
       params: decodeURIComponent(window.location.search),
-      hash: decodeURIComponent(window.location.hash)
+      hash: decodeURIComponent(window.location.hash),
     }
     return locationInfo
   }
