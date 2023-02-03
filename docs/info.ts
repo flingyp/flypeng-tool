@@ -1,3 +1,3 @@
 
 export const version = '5.0.1'
-export const HooksNum = 42
+export const HooksNum = 43

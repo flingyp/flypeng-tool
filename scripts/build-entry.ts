@@ -29,7 +29,7 @@ const buildBrowserEntryFile = async () => {
       flag: 'a',
     })
   })
-  execSync(`npx prettier --write ${packagesAbsolutePath}/index.ts`, { stdio: 'inherit' })
+  // execSync(`npx prettier --write ${packagesAbsolutePath}/index.ts`, { stdio: 'inherit' })
 }
 
 const buildNodeEntryFile = async () => {
@@ -57,7 +57,7 @@ const buildNodeEntryFile = async () => {
   	`,
     { encoding: 'utf-8' },
   )
-  execSync(`npx prettier --write ${entryPath}`, { stdio: 'inherit' })
+  // execSync(`npx prettier --write ${entryPath}`, { stdio: 'inherit' })
 }
 
 buildBrowserEntryFile()
