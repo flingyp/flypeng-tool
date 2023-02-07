@@ -1,20 +1,20 @@
 {
 	"extends": "@flypeng",
 	"rules": {
-		"no-underscore-dangle": "off",
+		"no-shadow": "off",
 		"no-tabs": "off",
+		"no-useless-escape": "off",
+		"no-underscore-dangle": "off",
+		"no-restricted-syntax": "off",
+		"no-unused-expressions": "off",
 		"array-callback-return": "off",
 		"consistent-return": "off",
-		"no-shadow": "off",
 		"guard-for-in": "off",
-		"no-restricted-syntax": "off",
 		"import/no-extraneous-dependencies": "off",
 		"eqeqeq": "off",
-		"no-useless-escape": "off",
 		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/ban-types": "off",
 		"func-names": "off",
 		"@typescript-eslint/no-this-alias": "off",
-		"no-unused-expressions": "off"
 	}
 }

@@ -92,8 +92,6 @@ describe('${hookName}', () => {
 })
 			`,
       )
-
-      // execSync(`npx prettier --write ${hookTestPath}`, { stdio: 'inherit' })
     }
 
     writeFileSync(
@@ -122,17 +120,12 @@ describe('${hookName}', () => {
 `,
         { encoding: 'utf-8' },
       )
-
-      // execSync(`npx prettier --write ${docsPreviewPath}`, { stdio: 'inherit' })
     }
 
     // 给入口文件添加导出代码
     const moduleEntryPath = resolve(browserPath, `./${moduleName}`, './index.ts')
     const oldContent = readFileSync(moduleEntryPath, { encoding: 'utf-8' })
     writeFileSync(moduleEntryPath, `${oldContent}\nexport { default as ${hookName} } from './${hookName}'`)
-
-    // execSync(`npx prettier --write ${hookPath}`, { stdio: 'inherit' })
-    // execSync(`npx prettier --write ${docsEntryPath}`, { stdio: 'inherit' })
   } else {
     hookPath = resolve(nodePath, './useNodeHook.ts')
     const docsEntryPath = resolve(docsPath, './Node', `${hookName}.md`)
@@ -151,12 +144,7 @@ describe('${hookName}', () => {
 		`,
       { encoding: 'utf-8' },
     )
-
-    // execSync(`npx prettier --write ${hookPath}`, { stdio: 'inherit' })
-    // execSync(`npx prettier --write ${docsEntryPath}`, { stdio: 'inherit' })
   }
-
-  execSync('pnpm run lint:fix', { stdio: 'inherit' })
 }
 
 createHook()
