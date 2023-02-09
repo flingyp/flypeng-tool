@@ -31,6 +31,12 @@ const isFile = useIsFile(useGetCurrentPath()) // isFile is Boolean
 
 ```js
 <script src="https://unpkg.com/@flypeng/tool@${version}/browser/index-browser.js"></script>
+<script type="text/javascript">
+	// All methods are injected into fy global variable
+	const isMobile = useIsMobile() // isMobile is Boolean
+	const randomInteger = useRandomInteger(10, 100) // Integer in [10, 100]
+	const isFile = useIsFile(useGetCurrentPath()) // isFile is Boolean
+</script>
 ```
 
 :::tip
