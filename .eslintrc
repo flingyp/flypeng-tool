@@ -1,5 +1,8 @@
 {
 	"extends": "@flypeng",
+	"globals": {
+		"NodeJS": true
+	},
 	"rules": {
 		"no-shadow": "off",
 		"no-tabs": "off",
