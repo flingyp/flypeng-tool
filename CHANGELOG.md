@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/flingyp/flypeng-tool/compare/v5.0.1...v5.1.0) (2023-02-13)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* useDebounce execute immediately issue ([1e087af](https://github.com/flingyp/flypeng-tool/commit/1e087af7dd4accb9aec0596f03152e66559baad6))
+
+
+### ✏️ Documentation | 文档
+
+* supplement content about CDN to use form ([2622fd4](https://github.com/flingyp/flypeng-tool/commit/2622fd44215828bf1e96727501f5160240083a0d))
+
+
+### ✨ Features | 新功能
+
+* **useCalendarSwitch:** new Function ([b115b44](https://github.com/flingyp/flypeng-tool/commit/b115b44027e56a1827b0fd6b06e050ae788ffdf4))
+* **useCheckPasswordStrength:** new Function ([470590c](https://github.com/flingyp/flypeng-tool/commit/470590c41346f06c1abc00771cb429c10a8dcb5f))
+* **useScrollToBottom:** new Function ([5e33dc2](https://github.com/flingyp/flypeng-tool/commit/5e33dc2787abbf4f1d56176cf2366c8ed31890fb))
+* **useToggleFullScreen:** new Function ([d0180c9](https://github.com/flingyp/flypeng-tool/commit/d0180c901a5ca4ce82ae7f0375fc7b99acd0ded4))
+
 ### [5.0.1](https://github.com/flingyp/flypeng-tool/compare/v5.0.0...v5.0.1) (2023-01-16)
 
 
