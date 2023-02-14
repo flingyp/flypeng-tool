@@ -15,6 +15,6 @@
       "tslib": ["node_modules/tslib/tslib.d.ts"]
     }
   },
-	"include": ["./**/**/*.ts", "./docs/.vitepress/**/*.ts", "./docs/**/**/*.vue", "./types/*.ts", "playground/*.ts"],
+  "include": ["./**/**/*.ts", "./docs/.vitepress/**/*.ts", "./docs/**/**/*.vue", "./types/*.ts", "playground/*.ts"],
   "exclude": ["**/node_modules", "**/dist"]
 }

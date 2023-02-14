@@ -3,18 +3,33 @@
   "version": "5.1.0",
   "packageManager": "pnpm@7.18.0",
   "description": "Integrate a collection of common tools and methods",
+  "author": "FlingYP",
+  "license": "MIT",
+  "homepage": "https://github.com/flingyp/flypeng-tool#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flingyp/flypeng-tool.git"
+  },
+  "bugs": "https://github.com/flingyp/flypeng-tool/issues",
+  "keywords": [
+    "browser",
+    "node",
+    "library",
+    "tool",
+    "function"
+  ],
   "exports": {
     "./browser": {
+      "types": "./browser/index.d.ts",
       "import": "./browser/index.mjs",
       "node": "./browser/index.cjs",
-      "default": "./browser/index.mjs",
-      "types": "./browser/index.d.ts"
+      "default": "./browser/index.mjs"
     },
     "./node": {
+      "types": "./node/index.d.ts",
       "import": "./node/index.mjs",
       "node": "./node/index.cjs",
-      "default": "./node/index.mjs",
-      "types": "./node/index.d.ts"
+      "default": "./node/index.mjs"
     }
   },
   "files": [
@@ -39,21 +54,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "keywords": [
-    "browser",
-    "node",
-    "library",
-    "tool",
-    "function"
-  ],
-  "homepage": "https://github.com/flingyp/flypeng-tool#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/flingyp/flypeng-tool.git"
-  },
-  "bugs": "https://github.com/flingyp/flypeng-tool/issues",
-  "author": "FlingYP",
-  "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^17.4.3",
     "@commitlint/config-conventional": "^17.4.3",

@@ -3,19 +3,19 @@ const { execSync } = require('child_process')
 exports.dev = async () => {
   await execSync('pnpm run build:entry', { stdio: 'inherit' })
   await execSync('cross-env NODE_ENV=dev rollup --config rollup.config.ts --configPlugin typescript --watch', {
-    stdio: 'inherit'
+    stdio: 'inherit',
   })
 }
 
 exports.build = async () => {
   await execSync('pnpm run build:entry', { stdio: 'inherit' })
   await execSync('cross-env NODE_ENV=prod rollup --config rollup.config.ts --configPlugin typescript', {
-    stdio: 'inherit'
+    stdio: 'inherit',
   })
 }
 
 exports.docs_dev = async () => {
-	await execSync('pnpm run build:entry', { stdio: 'inherit' })
+  await execSync('pnpm run build:entry', { stdio: 'inherit' })
   await execSync('pnpm run build:docs', { stdio: 'inherit' })
   await execSync('pnpm run gen-info', { stdio: 'inherit' })
   await execSync('pnpm run --filter=docs dev', { stdio: 'inherit' })

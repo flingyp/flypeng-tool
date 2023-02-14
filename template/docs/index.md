@@ -14,7 +14,7 @@ import { useTemplate } from '2@flypeng/tool/browser'
 ## Type Declaration
 
 ```ts
-Type Declaration
+// Type Declaration
 ```
 
 ## Online Demo
