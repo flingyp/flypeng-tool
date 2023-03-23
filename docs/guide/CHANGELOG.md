@@ -1,4 +1,17 @@
 
+## [5.2.0](https://github.com/flingyp/flypeng-tool/compare/v5.1.0...v5.2.0) (2023-02-22)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* github-actions execute error ([4411a00](https://github.com/flingyp/flypeng-tool/commit/4411a0009bc8964c639229385d8367688dc88e39))
+
+
+### ✨ Features | 新功能
+
+* **useGetLocalKey,useSetLocalKey,useClearLocal,useRemoveLocalKey:** new Function ([5bbebaa](https://github.com/flingyp/flypeng-tool/commit/5bbebaaf376cf5269c35cda1f025da7c59a73ce3))
+* **useOnce:** new Function ([d51265e](https://github.com/flingyp/flypeng-tool/commit/d51265e9afc5953caf789fa796c49bfcb72efcfe))
+
 ## [5.1.0](https://github.com/flingyp/flypeng-tool/compare/v5.0.1...v5.1.0) (2023-02-13)
 
 

@@ -93,6 +93,24 @@ function useGetLastDay() {
   return useFormatDate('yyyy-MM-dd', lastDayDate)
 }
 
+/**
+ * 判断日期是否是一个正确有效的日期
+ * @param value yyyy-MM-dd
+ * @returns
+ */
+function useIsValidDate(value: string) {
+	const regEx = /^\d{4}-\d{2}-\d{2}$/;
+	// value format error
+  if(!value.match(regEx)) return false;
+
+  const dateInstance = new Date(value);
+  var timeStampValue = dateInstance.getTime();
+	// void date
+  if(!timeStampValue && timeStampValue !== 0) return false;
+
+  return dateInstance.toISOString().slice(0,10) === value;
+}
+
 export default {
   useLeapYear,
   useTodayWeek,
@@ -101,4 +119,5 @@ export default {
   useDifDaysValue,
   useGetFirstDay,
   useGetLastDay,
+	useIsValidDate
 }

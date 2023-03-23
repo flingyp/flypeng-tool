@@ -67,4 +67,10 @@ declare function useGetFirstDay(): string
  * 获取当月的最后一天的日期
  */
 declare function useGetLastDay(): string
+/**
+ * 判断日期是否是一个正确有效的日期
+ * @param value yyyy-MM-dd
+ * @returns
+ */
+declare function useIsValidDate(value: string): boolean;
 ```
