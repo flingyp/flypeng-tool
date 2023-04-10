@@ -1,4 +1,19 @@
 
+## [5.3.0](https://github.com/flingyp/flypeng-tool/compare/v5.2.0...v5.3.0) (2023-03-30)
+
+
+### ✏️ Documentation | 文档
+
+* add lastUpdated config ([841df0e](https://github.com/flingyp/flypeng-tool/commit/841df0ea253e2843ee1f92ba06155ba9c82cf88a))
+
+
+### ✨ Features | 新功能
+
+* **useGetBrowserInfo:** new Function ([2b32092](https://github.com/flingyp/flypeng-tool/commit/2b3209214e2446128cf3c1326dcd391bf0687370))
+* **useIsValidDate:** new Function ([c0df1ff](https://github.com/flingyp/flypeng-tool/commit/c0df1ff48c5b695f039f5bbd4be53bea50a5310f))
+* **useRandomHexColor:** new Function ([c53b70b](https://github.com/flingyp/flypeng-tool/commit/c53b70b37313b318f30a1151ec0460173263ab5f))
+* **useRandomString:** whether string supports guaranteed numbers ([01dcdde](https://github.com/flingyp/flypeng-tool/commit/01dcdde3e74db128534d40accb85658d4225a3ea))
+
 ## [5.2.0](https://github.com/flingyp/flypeng-tool/compare/v5.1.0...v5.2.0) (2023-02-22)
 
 
