@@ -6,9 +6,9 @@
  */
 export default function useRandomInteger(min: number, max: number) {
   if (min > max) {
-    const swap = min
-    min = max
-    max = swap
+		min = min ^ max
+		max = min ^ max
+		min = min ^ max
   }
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
