@@ -1,4 +1,16 @@
 
+### [5.3.1](https://github.com/flingyp/flypeng-tool/compare/v5.3.0...v5.3.1) (2023-05-24)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* handle actions error ([7902a25](https://github.com/flingyp/flypeng-tool/commit/7902a251d94c456d1e439ea49e5e371033e73476))
+
+
+### ✨ Features | 新功能
+
+* **useLocalStorage:** new Function ([6940f8a](https://github.com/flingyp/flypeng-tool/commit/6940f8ac07add7e056cbc619f5d6b779ee1a032e))
+
 ## [5.3.0](https://github.com/flingyp/flypeng-tool/compare/v5.2.0...v5.3.0) (2023-03-30)
 
 

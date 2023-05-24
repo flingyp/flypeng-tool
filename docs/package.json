@@ -8,7 +8,7 @@
     "serve": "vitepress serve"
   },
   "devDependencies": {
-    "@vitepress-demo-preview/component": "^2.2.0",
+    "@vitepress-demo-preview/component": "^2.3.0",
     "@vitepress-demo-preview/plugin": "^1.1.9",
     "vitepress": "1.0.0-alpha.35",
     "vue": "^3.2.47"
