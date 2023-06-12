@@ -57,7 +57,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
-    "@flypeng/eslint-config": "^0.0.9",
+    "@flypeng/eslint-config": "^0.0.12",
     "@rollup/plugin-terser": "^0.4.1",
     "@rollup/plugin-typescript": "^11.1.0",
     "@types/inquirer": "^9.0.3",

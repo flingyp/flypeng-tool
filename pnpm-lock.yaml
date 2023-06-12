@@ -11,8 +11,8 @@ importers:
         specifier: ^17.4.4
         version: 17.4.4
       '@flypeng/eslint-config':
-        specifier: ^0.0.9
-        version: 0.0.9(@typescript-eslint/parser@5.57.1)(eslint@8.38.0)(typescript@4.9.5)
+        specifier: ^0.0.12
+        version: 0.0.12(@typescript-eslint/parser@5.57.1)(eslint@8.38.0)(typescript@4.9.5)
       '@rollup/plugin-terser':
         specifier: ^0.4.1
         version: 0.4.1(rollup@3.20.2)
@@ -90,8 +90,8 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0(vitepress@1.0.0-alpha.35)(vue@3.2.47)
       '@vitepress-demo-preview/plugin':
-        specifier: ^1.1.9
-        version: 1.1.9(markdown-it-container@3.0.0)(vitepress@1.0.0-alpha.35)(vue@3.2.47)
+        specifier: ^1.1.11
+        version: 1.1.11(markdown-it-container@3.0.0)(vitepress@1.0.0-alpha.35)(vue@3.2.47)
       vitepress:
         specifier: 1.0.0-alpha.35
         version: 1.0.0-alpha.35(@algolia/client-search@4.14.3)(@types/node@18.15.11)
@@ -1001,8 +1001,8 @@ packages:
       - supports-color
     dev: true
 
-  /@flypeng/eslint-config@0.0.9(@typescript-eslint/parser@5.57.1)(eslint@8.38.0)(typescript@4.9.5):
-    resolution: {integrity: sha512-Kz0YEY4i8YVGRoPsGr+ao7rmNHi3S71n66yykMckkwXYpxLMAeTgO9KoovA6ct+aEgBqa/LLTO2ESMUFuGhbxQ==}
+  /@flypeng/eslint-config@0.0.12(@typescript-eslint/parser@5.57.1)(eslint@8.38.0)(typescript@4.9.5):
+    resolution: {integrity: sha512-/JiTf7BNhI6LSV78aIjp5lpc05x9Xh1iPs/J0x9/NcN1KDa1r8ueLdmU/Ol3rSghqVrH57oqnPfP8K29waobgA==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
@@ -1409,8 +1409,8 @@ packages:
       vue: 3.2.47
     dev: true
 
-  /@vitepress-demo-preview/plugin@1.1.9(markdown-it-container@3.0.0)(vitepress@1.0.0-alpha.35)(vue@3.2.47):
-    resolution: {integrity: sha512-fsShFK9C0sNhXyxDWDpolxq9B9coUnN/7U03C0c3m0FD/+rKrRSyW7+RwtEqWVMVjiIPUMgPoF8XlQaw1tODZQ==}
+  /@vitepress-demo-preview/plugin@1.1.11(markdown-it-container@3.0.0)(vitepress@1.0.0-alpha.35)(vue@3.2.47):
+    resolution: {integrity: sha512-vhn9MOPljItk5cUiFdXRVwTTaXqjbkjZM0HmtLBz+ASe1s1YxhI0fPx2S8I4OAJNXwWhdqUYPPk2OP+ncI8Crg==}
     peerDependencies:
       markdown-it-container: ^3.0.0
       vitepress: '*'
