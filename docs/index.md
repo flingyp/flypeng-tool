@@ -37,3 +37,31 @@ features:
     details: 工具方法文档介绍，附带Demo演示
     icon: 🎪
 ---
+
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/57666140?v=4',
+    name: 'flingyp',
+    title: 'Creator',
+    links: [
+      { icon: 'github', link: 'https://github.com/flingyp' },
+    ]
+  },
+	{
+		avatar: 'https://avatars.githubusercontent.com/u/87807886?v=4',
+    name: 'briver0825',
+    title: 'Contributor',
+    links: [
+      { icon: 'github', link: 'https://github.com/briver0825' },
+    ]
+	}
+]
+</script>
+
+<div style="margin-top: 120px">
+	<VPTeamMembers size="small" :members="members" />
+</div>
