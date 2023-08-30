@@ -1,4 +1,13 @@
 
+### [5.3.2](https://github.com/flingyp/flypeng-tool/compare/v5.3.1...v5.3.2) (2023-08-25)
+
+
+### ✏️ Documentation | 文档
+
+* add VPTeamMembers component ([b369bc6](https://github.com/flingyp/flypeng-tool/commit/b369bc6a194a78eaf29900c31b102788fb60bc1e))
+* optimize dark mode scrollbar style ([cbbab1a](https://github.com/flingyp/flypeng-tool/commit/cbbab1ac7c3def46deba6c43d108e268b752ffdc))
+* overwrite scrollbar style ([c47dc98](https://github.com/flingyp/flypeng-tool/commit/c47dc988ec356e9be33fb3e9d249359abfab1f14))
+
 ### [5.3.1](https://github.com/flingyp/flypeng-tool/compare/v5.3.0...v5.3.1) (2023-05-24)
 
 
