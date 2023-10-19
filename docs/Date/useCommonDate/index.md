@@ -21,6 +21,8 @@ const isLeapYear = useCommonDate.useLeapYear(2020)
 - `useDifDaysValue`
 - `useGetFirstDay`
 - `useGetLastDay`
+- `useIsValidDate`
+- `useIsSameMonth`
 
 ## Type Declaration
 
@@ -73,4 +75,11 @@ declare function useGetLastDay(): string
  * @returns
  */
 declare function useIsValidDate(value: string): boolean;
+/**
+ * 判断当前日期是否是当前月份
+ * @param dateOne
+ * @param dateTwo
+ * @returns
+ */
+declare function useIsSameMonth(dateOne: Date, dateTwo?: Date): boolean;
 ```
