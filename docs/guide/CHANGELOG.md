@@ -1,3 +1,9 @@
+## [5.4.0](https://github.com/flingyp/flypeng-tool/compare/v5.3.2...v5.4.0) (2023-10-19)
+
+### ✨ Features | 新功能
+
+- **useIsSameMonth:** new Function ([c0e3d0e](https://github.com/flingyp/flypeng-tool/commit/c0e3d0e3bdd4c714659916b5757eaecc99c927e0))
+
 ### [5.3.2](https://github.com/flingyp/flypeng-tool/compare/v5.3.1...v5.3.2) (2023-08-25)
 
 ### ✏️ Documentation | 文档

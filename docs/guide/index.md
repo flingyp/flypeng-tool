@@ -51,7 +51,7 @@ const isFile = useIsFile(useGetCurrentPath()); // isFile is Boolean
 
 **@flypeng/tool**：
 
-1. 使用 TypeScript 语言 配置 Rollup 打包工具进行实用函数的编写和打包
+1. 使用 TypeScript 语言 配置 tsup 打包工具进行实用函数的编写和打包
 
 2. 使用 vitest 进行功能测试，每个实用函数应配备 `index.test.ts` 测试文件
 
