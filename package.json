@@ -52,7 +52,8 @@
     "commit": "git-cz",
     "new": "esno ./scripts/create-hook.ts",
     "lint": "prettier . --write && eslint .",
-    "lint:fix": "prettier . --write && eslint . --fix"
+    "lint:fix": "prettier . --write && eslint . --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.8.1",
@@ -84,9 +85,8 @@
     "vitest": "^0.34.6"
   },
   "lint-staged": {
-    "src/**/*.{js,ts}": [
-      "prettier --write",
-      "eslint"
+    "*": [
+      "eslint ."
     ]
   },
   "config": {
