@@ -12,29 +12,29 @@
   },
   "bugs": "https://github.com/flingyp/flypeng-tool/issues",
   "keywords": [
-    "browser",
-    "node",
-    "library",
-    "tool",
-    "function"
+    "javascript",
+    "typescript",
+    "modules",
+    "utilities",
+    "tsup",
+    "vitePress"
   ],
   "exports": {
     "./browser": {
-      "types": "./browser/index.d.ts",
-      "import": "./browser/index.mjs",
-      "node": "./browser/index.cjs",
-      "default": "./browser/index.mjs"
+      "import": "./dist/browser/index.js",
+      "node": "./dist/browser/index.mjs",
+      "types": "./dist/browser/index.d.ts",
+      "default": "./dist/browser/index.d.ts"
     },
     "./node": {
-      "types": "./node/index.d.ts",
-      "import": "./node/index.mjs",
-      "node": "./node/index.cjs",
-      "default": "./node/index.mjs"
+      "import": "./dist/node/index.js",
+      "node": "./dist/node/index.mjs",
+      "types": "./dist/node/index.d.ts",
+      "default": "./dist/node/index.d.ts"
     }
   },
   "files": [
-    "browser",
-    "node"
+    "dist"
   ],
   "scripts": {
     "dev": "gulp dev",
@@ -78,6 +78,7 @@
     "rollup-plugin-dts": "^6.1.0",
     "standard-version": "^9.5.0",
     "tslib": "^2.6.2",
+    "tsup": "^7.3.0",
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
     "vitest": "^0.34.6"
