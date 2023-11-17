@@ -4,12 +4,11 @@
  * @returns
  */
 export default function useOnce(callback: () => void) {
-	let run = false
-	return function() {
-		if(run) return
-		// @ts-ignore
-		callback.apply(this, arguments)
-		run = true
-	}
+  let run = false;
+  return function () {
+    if (run) return;
+    // @ts-ignore
+    callback.apply(this, arguments);
+    run = true;
+  };
 }
-

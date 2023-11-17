@@ -19,12 +19,12 @@ pnpm install @flypeng/tool@latest
 ## Usage
 
 ```ts
-import { useRandomInteger, useIsMobile } from '@flypeng/tool/browser'
-import { useGetCurrentPath, useIsFile } from '@flypeng/tool/node'
+import { useRandomInteger, useIsMobile } from '@flypeng/tool/browser';
+import { useGetCurrentPath, useIsFile } from '@flypeng/tool/node';
 
-const isMobile = useIsMobile() // isMobile is Boolean
-const randomInteger = useRandomInteger(10, 100) // Integer in [10, 100]
-const isFile = useIsFile(useGetCurrentPath()) // isFile is Boolean
+const isMobile = useIsMobile(); // isMobile is Boolean
+const randomInteger = useRandomInteger(10, 100); // Integer in [10, 100]
+const isFile = useIsFile(useGetCurrentPath()); // isFile is Boolean
 ```
 
 ## 通过 CDN 引入

@@ -7,9 +7,9 @@ Get file name from path
 ## Basic Usage
 
 ```ts
-import { useGetFileName, useGetCurrentPath } from '@flypeng/tool/node'
+import { useGetFileName, useGetCurrentPath } from '@flypeng/tool/node';
 
-const nameInfo = await useGetFileName(useGetCurrentPath())
+const nameInfo = await useGetFileName(useGetCurrentPath());
 ```
 
 ## Type Declaration
@@ -19,5 +19,5 @@ const nameInfo = await useGetFileName(useGetCurrentPath())
  * 如果路径Path的是一个文件则会返回文件名和后罪名，否则返回目录名
  * @param path
  */
-declare const useGetFileName: (path: string) => FileName
+declare const useGetFileName: (path: string) => FileName;
 ```

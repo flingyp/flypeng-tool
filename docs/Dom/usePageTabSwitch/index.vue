@@ -1,20 +1,20 @@
 <script lang="ts" setup>
-  import { onUnmounted } from 'vue'
-  import { usePageTabSwitch } from '@flypeng/browser'
+import { onUnmounted } from 'vue';
+import { usePageTabSwitch } from '@flypeng/browser';
 
-  const clear = usePageTabSwitch(() => {
-    const isPageHidden = document.hidden
-    if (isPageHidden) {
-      document.title = 'usePageTabSwitch | Hidden'
-    } else {
-      document.title = 'usePageTabSwitch | Show'
-      setTimeout(() => (document.title = 'usePageTabSwitch | @flypeng/tool'), 1000)
-    }
-  })
+const clear = usePageTabSwitch(() => {
+  const isPageHidden = document.hidden;
+  if (isPageHidden) {
+    document.title = 'usePageTabSwitch | Hidden';
+  } else {
+    document.title = 'usePageTabSwitch | Show';
+    setTimeout(() => (document.title = 'usePageTabSwitch | @flypeng/tool'), 1000);
+  }
+});
 
-  onUnmounted(() => {
-    clear()
-  })
+onUnmounted(() => {
+  clear();
+});
 </script>
 
 <template>

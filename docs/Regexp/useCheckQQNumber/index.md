@@ -7,10 +7,10 @@
 ## Basic Usage
 
 ```ts
-import { useCheckQQNumber } from '@flypeng/tool/browser'
+import { useCheckQQNumber } from '@flypeng/tool/browser';
 
-const isCheckedOne = useCheckQQNumber('1915801633') // true
-const isCheckedTwo = useCheckQQNumber('121580163387') // false
+const isCheckedOne = useCheckQQNumber('1915801633'); // true
+const isCheckedTwo = useCheckQQNumber('121580163387'); // false
 ```
 
 ## Type Declaration
@@ -21,5 +21,5 @@ const isCheckedTwo = useCheckQQNumber('121580163387') // false
  * @param value
  * @returns
  */
-declare function useCheckQQNumber(value: string): boolean
+declare function useCheckQQNumber(value: string): boolean;
 ```

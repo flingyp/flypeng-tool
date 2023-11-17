@@ -7,14 +7,14 @@ Execute callback when the browser page switches
 ## Basic Usage
 
 ```ts
-import { usePageTabSwitch } from '@flypeng/tool/browser'
+import { usePageTabSwitch } from '@flypeng/tool/browser';
 
 const clear = usePageTabSwitch(() => {
   // todo things
-})
+});
 
 // The callback needs to be canceled at some time
-clear()
+clear();
 ```
 
 ## Type Declaration
@@ -24,7 +24,7 @@ clear()
  * 当浏览器页面切换时执行的回调函数
  * @param callback
  */
-declare function usePageTabSwitch(callback: () => void): () => void
+declare function usePageTabSwitch(callback: () => void): () => void;
 ```
 
 ## Online Demo

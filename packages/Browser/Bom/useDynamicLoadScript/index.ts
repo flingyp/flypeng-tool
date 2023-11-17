@@ -1,4 +1,4 @@
-import { useCheckUrl } from '../../index'
+import { useCheckUrl } from '../../index';
 
 /**
  * 动态加载脚本文件
@@ -7,15 +7,15 @@ import { useCheckUrl } from '../../index'
  */
 export default async function useDynamicLoadScript(url: string, callback = (...args: unknown[]) => false) {
   if (!useCheckUrl(url)) {
-    throw new Error('invalid url')
+    throw new Error('invalid url');
   }
-  const headTag = document.querySelector('head')
+  const headTag = document.querySelector('head');
   if (!headTag) {
-    throw new Error('head tag is null')
+    throw new Error('head tag is null');
   }
-  const scriptTag = document.createElement('script')
-  scriptTag.type = 'text/javascript'
-  scriptTag.src = url
-  headTag.appendChild(scriptTag)
-  scriptTag.onload = (event) => callback(event)
+  const scriptTag = document.createElement('script');
+  scriptTag.type = 'text/javascript';
+  scriptTag.src = url;
+  headTag.appendChild(scriptTag);
+  scriptTag.onload = (event) => callback(event);
 }

@@ -7,9 +7,9 @@ Recursion delete directory
 ## Basic Usage
 
 ```ts
-import { useRecursionDelete } from '@flypeng/tool/node'
+import { useRecursionDelete } from '@flypeng/tool/node';
 
-useGetExtensionName('/xxx/xx')
+useGetExtensionName('/xxx/xx');
 ```
 
 ## Type Declaration
@@ -19,5 +19,5 @@ useGetExtensionName('/xxx/xx')
  * 递归删除目录
  * @param path
  */
-declare const useRecursionDelete: (path: string) => void
+declare const useRecursionDelete: (path: string) => void;
 ```

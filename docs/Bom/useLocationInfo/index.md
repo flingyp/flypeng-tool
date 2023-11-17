@@ -8,18 +8,18 @@
 
 ```ts
 interface LocationInfo {
-  href: string
-  hostname: string
-  port: number
-  pathname: string
-  params: string
-  hash: string
+  href: string;
+  hostname: string;
+  port: number;
+  pathname: string;
+  params: string;
+  hash: string;
 }
 /**
  * 返回当前页面链接相关信息
  * @returns
  */
-declare function useLocationInfo(): Readonly<Partial<LocationInfo>> | null
+declare function useLocationInfo(): Readonly<Partial<LocationInfo>> | null;
 ```
 
 ## Online Demo

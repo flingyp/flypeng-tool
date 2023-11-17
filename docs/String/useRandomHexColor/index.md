@@ -7,7 +7,7 @@ Generate random HEX color value
 ## Basic Usage
 
 ```ts
-import { useRandomHexColor } from '@flypeng/tool/browser'
+import { useRandomHexColor } from '@flypeng/tool/browser';
 ```
 
 ## Type Declaration
@@ -19,5 +19,3 @@ import { useRandomHexColor } from '@flypeng/tool/browser'
  */
 declare function useRandomHexColor(): string;
 ```
-
-		

@@ -1,52 +1,52 @@
 export class TouchBottomClass {
-  private isEnable = true
+  private isEnable = true;
 
-  private isEnd = false
+  private isEnd = false;
 
-  private scrollCallback: (this: Element, ev: Event) => void
+  private scrollCallback: (this: Element, ev: Event) => void;
 
-  private callback: Function
+  private callback: Function;
 
-  private selector: Element
+  private selector: Element;
 
   constructor(callback: Function, selector: Element) {
-    this.callback = callback
-    this.selector = selector
-    this.scrollCallback = () => false
+    this.callback = callback;
+    this.selector = selector;
+    this.scrollCallback = () => false;
 
-    this.start()
+    this.start();
   }
 
   private start() {
-    let timer: null | NodeJS.Timeout = null
-    const targetElement = this.selector
+    let timer: null | NodeJS.Timeout = null;
+    const targetElement = this.selector;
     this.scrollCallback = (e: Event) => {
       if (this.isEnable) {
-        if (timer) clearTimeout(timer)
+        if (timer) clearTimeout(timer);
         timer = setTimeout(() => {
           // 元素向上滚动的高度
-          const { scrollTop } = targetElement
+          const { scrollTop } = targetElement;
           // 元素的可视高度,就是肉眼可见的那部分全屏高度
-          const { clientHeight } = targetElement
+          const { clientHeight } = targetElement;
           // 元素的真实高度
-          const { scrollHeight } = targetElement
+          const { scrollHeight } = targetElement;
           if (!this.isEnd && scrollHeight <= scrollTop + clientHeight) {
-            this.callback(e)
+            this.callback(e);
           }
-        }, 300)
+        }, 300);
       }
-    }
-    targetElement.addEventListener('scroll', this.scrollCallback, false)
+    };
+    targetElement.addEventListener('scroll', this.scrollCallback, false);
   }
 
   private end() {
-    this.isEnd = true
+    this.isEnd = true;
   }
 
   public stop() {
-    this.isEnable = false
-    const targetElement = this.selector
-    targetElement.removeEventListener('scroll', this.scrollCallback, false)
+    this.isEnable = false;
+    const targetElement = this.selector;
+    targetElement.removeEventListener('scroll', this.scrollCallback, false);
   }
 }
 
@@ -57,6 +57,6 @@ export class TouchBottomClass {
  * @returns
  */
 export default function useScrollToBottom(selector: Element, callback: Function) {
-  const touchBottomInstance = new TouchBottomClass(callback, selector)
-  return touchBottomInstance
+  const touchBottomInstance = new TouchBottomClass(callback, selector);
+  return touchBottomInstance;
 }

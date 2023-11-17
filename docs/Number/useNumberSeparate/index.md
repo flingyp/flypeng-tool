@@ -7,7 +7,7 @@ The number is divided according to the specified quantity
 ## Basic Usage
 
 ```ts
-import { useNumberSeparate } from '@flypeng/tool/browser'
+import { useNumberSeparate } from '@flypeng/tool/browser';
 ```
 
 ## Type Declaration
@@ -19,7 +19,7 @@ import { useNumberSeparate } from '@flypeng/tool/browser'
  * @param separateNumber
  * @returns
  */
-declare function useNumberSeparate(value: number, separateNumber?: number = 3): string
+declare function useNumberSeparate(value: number, separateNumber?: number = 3): string;
 ```
 
 ## Online Demo

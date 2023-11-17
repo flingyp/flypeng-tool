@@ -3,8 +3,8 @@
 ## Basic Usage
 
 ```ts
-import { useDebounce } from '@flypeng/tool/browser'
-const deBounceFunction = useDebounce(() => {}, 1000)
+import { useDebounce } from '@flypeng/tool/browser';
+const deBounceFunction = useDebounce(() => {}, 1000);
 ```
 
 ## Online Demo
@@ -19,5 +19,5 @@ const deBounceFunction = useDebounce(() => {}, 1000)
  * @param callback
  * @param delay （单位：毫秒）
  */
-declare function useDebounce(callback: Function, delay: number): () => void
+declare function useDebounce(callback: Function, delay: number): () => void;
 ```

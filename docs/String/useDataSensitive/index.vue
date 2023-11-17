@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-  import { useDataSensitive } from '@flypeng/browser'
+import { useDataSensitive } from '@flypeng/browser';
 
-  const defaultSource = '123456789'
+const defaultSource = '123456789';
 </script>
 
 <template>
@@ -16,7 +16,7 @@
         sensitiveSource: defaultSource,
         startIndex: 2,
         endIndex: 5,
-        replaceSource: '#'
+        replaceSource: '#',
       })
     }}</span>
   </div>

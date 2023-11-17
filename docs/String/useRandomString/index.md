@@ -7,11 +7,11 @@ Generate random string value
 ## Basic Usage
 
 ```ts
-import { useRandomString } from '@flypeng/tool/browser'
+import { useRandomString } from '@flypeng/tool/browser';
 
-const randomStr1 = useRandomString()
-const randomStr2 = useRandomString(20)
-const randomStr3 = useRandomString(20, true)
+const randomStr1 = useRandomString();
+const randomStr2 = useRandomString(20);
+const randomStr3 = useRandomString(20, true);
 ```
 
 ## Online Demo
@@ -29,4 +29,3 @@ const randomStr3 = useRandomString(20, true)
  */
 declare function useRandomString(length?: number, supportNumber?: boolean): string;
 ```
-

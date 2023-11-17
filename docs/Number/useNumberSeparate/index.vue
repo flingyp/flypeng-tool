@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-  import { ref } from 'vue'
-  import { useNumberSeparate } from '@flypeng/browser'
-  const separateNumber = ref(123456789)
+import { ref } from 'vue';
+import { useNumberSeparate } from '@flypeng/browser';
+const separateNumber = ref(123456789);
 </script>
 
 <template>
@@ -16,7 +16,7 @@
 </template>
 
 <style scoped>
-  div {
-    margin: 8px 0;
-  }
+div {
+  margin: 8px 0;
+}
 </style>

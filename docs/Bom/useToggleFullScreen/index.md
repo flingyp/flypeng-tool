@@ -7,8 +7,8 @@ Trigger page full screen
 ## Basic Usage
 
 ```ts
-import { useToggleFullScreen } from '@flypeng/tool/browser'
-useToggleFullScreen()
+import { useToggleFullScreen } from '@flypeng/tool/browser';
+useToggleFullScreen();
 ```
 
 ## Type Declaration
@@ -18,7 +18,7 @@ useToggleFullScreen()
  * 触发页面全屏
  * @returns
  */
-declare function useToggleFullScreen(): Promise<void>
+declare function useToggleFullScreen(): Promise<void>;
 ```
 
 ## Online Demo

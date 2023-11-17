@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-  import { useDownloadFile } from '@flypeng/browser'
+import { useDownloadFile } from '@flypeng/browser';
 
-  const downloadFile = () => {
-    useDownloadFile('https://yyblog.top/flypeng-tool/favicon.png', '@flypeng-tool.png')
-  }
+const downloadFile = () => {
+  useDownloadFile('https://yyblog.top/flypeng-tool/favicon.png', '@flypeng-tool.png');
+};
 </script>
 
 <template>
@@ -11,10 +11,10 @@
 </template>
 
 <style scoped>
-  button {
-    width: 80px;
-    border-radius: 4px;
-    color: #ffffff;
-    background-color: var(--vp-c-brand);
-  }
+button {
+  width: 80px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--vp-c-brand);
+}
 </style>

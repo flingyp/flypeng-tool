@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useDownloadFile } from '@flypeng/tool/browser'
+import { useDownloadFile } from '@flypeng/tool/browser';
 ```
 
 ## Online Demo
@@ -18,5 +18,5 @@ import { useDownloadFile } from '@flypeng/tool/browser'
  * @param url
  * @param fileName
  */
-declare function useDownloadFile(url: string, fileName: string): void
+declare function useDownloadFile(url: string, fileName: string): void;
 ```

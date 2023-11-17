@@ -7,9 +7,9 @@ Execute command
 ## Basic Usage
 
 ```ts
-import { useExecCommand } from '@flypeng/tool/node'
+import { useExecCommand } from '@flypeng/tool/node';
 
-await useExecCommand('')
+await useExecCommand('');
 ```
 
 ## Type Declaration
@@ -20,5 +20,5 @@ await useExecCommand('')
  * @param command
  * @param options
  */
-declare const useExecCommand: (command: string, options?: ExecCommandOptions) => void
+declare const useExecCommand: (command: string, options?: ExecCommandOptions) => void;
 ```

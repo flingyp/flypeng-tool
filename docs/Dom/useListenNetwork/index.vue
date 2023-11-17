@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-  import { useListenNetwork } from '@flypeng/browser'
-  import { ref } from 'vue'
+import { useListenNetwork } from '@flypeng/browser';
+import { ref } from 'vue';
 
-  const isOnLine = ref(true)
-  useListenNetwork(
-    () => {
-      isOnLine.value = true
-    },
-    () => {
-      isOnLine.value = false
-    }
-  )
+const isOnLine = ref(true);
+useListenNetwork(
+  () => {
+    isOnLine.value = true;
+  },
+  () => {
+    isOnLine.value = false;
+  },
+);
 </script>
 
 <template>

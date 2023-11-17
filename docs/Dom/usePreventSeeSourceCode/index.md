@@ -7,14 +7,14 @@ The tool function can be to prevent user that to see page source code and to can
 ## Basic Usage
 
 ```ts
-import { usePreventSeeSourceCode } from '@flypeng/tool/browser'
+import { usePreventSeeSourceCode } from '@flypeng/tool/browser';
 
 const clear = usePreventSeeSourceCode(() => {
   // To todo notice message give user
-})
+});
 
 // The callback needs to be canceled at some time
-clear()
+clear();
 ```
 
 ## Type Declaration
@@ -25,7 +25,7 @@ clear()
  * @param callback
  * @returns
  */
-declare function usePreventSeeSourceCode(callback: () => void): () => void
+declare function usePreventSeeSourceCode(callback: () => void): () => void;
 ```
 
 ## Online Demo

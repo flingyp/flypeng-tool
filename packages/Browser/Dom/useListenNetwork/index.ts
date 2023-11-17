@@ -7,11 +7,11 @@
 export default function useListenNetwork(online: (...args: any[]) => void, offline: (...args: any[]) => void) {
   // listen page online to execute callback
   window.addEventListener('online', () => {
-    online()
-  })
+    online();
+  });
 
   // listen page offline to execute callback
   window.addEventListener('offline', () => {
-    offline()
-  })
+    offline();
+  });
 }

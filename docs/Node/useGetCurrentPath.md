@@ -7,9 +7,9 @@ Get path where executing command
 ## Basic Usage
 
 ```ts
-import { useGetCurrentPath } from '@flypeng/tool/node'
+import { useGetCurrentPath } from '@flypeng/tool/node';
 
-const curPath = useGetCurrentPath()
+const curPath = useGetCurrentPath();
 ```
 
 ## Type Declaration
@@ -19,5 +19,5 @@ const curPath = useGetCurrentPath()
  * 获取执行该方法时所在的目录
  * @returns
  */
-declare const useGetCurrentPath: () => string
+declare const useGetCurrentPath: () => string;
 ```

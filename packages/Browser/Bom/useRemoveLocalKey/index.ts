@@ -3,5 +3,5 @@
  * @param key
  */
 export default function useRemoveLocalKey(key: string) {
-	localStorage.removeItem(key)
+  localStorage.removeItem(key);
 }

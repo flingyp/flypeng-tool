@@ -7,10 +7,10 @@
 ## Basic Usage
 
 ```ts
-import { useCheckIncludeChinese } from '@flypeng/tool/browser'
+import { useCheckIncludeChinese } from '@flypeng/tool/browser';
 
-const isCheckedOne = useCheckPhoneNumber('Hello-World') // false
-const isCheckedTwo = useCheckPhoneNumber('早上好') //  true
+const isCheckedOne = useCheckPhoneNumber('Hello-World'); // false
+const isCheckedTwo = useCheckPhoneNumber('早上好'); //  true
 ```
 
 ## Type Declaration
@@ -21,5 +21,5 @@ const isCheckedTwo = useCheckPhoneNumber('早上好') //  true
  * @param value
  * @returns
  */
-declare function useCheckIncludeChinese(value: string): boolean
+declare function useCheckIncludeChinese(value: string): boolean;
 ```

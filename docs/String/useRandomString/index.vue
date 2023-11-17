@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { useRandomString } from '@flypeng/browser'
+import { useRandomString } from '@flypeng/browser';
 </script>
 
 <template>
@@ -12,10 +12,10 @@
       <span>自定义长度：</span>
       <span>{{ useRandomString(20) }}</span>
     </div>
-		<div>
-			<span>参杂数字：</span>
-			<span>{{ useRandomString(20, true) }}</span>
-		</div>
+    <div>
+      <span>参杂数字：</span>
+      <span>{{ useRandomString(20, true) }}</span>
+    </div>
   </div>
 </template>
 

@@ -1,10 +1,8 @@
-import { readdirSync, writeFileSync, readFileSync } from 'fs'
-import { resolve } from 'path'
-import { execSync } from 'child_process'
-import { getAbsolutePath, isDirectory, mkdirs } from './utils'
-import {
-  inquireHookName, inquireIsNeed, inquireModuleChoice, inquirePackageChoice,
-} from './inquirer'
+import { readdirSync, writeFileSync, readFileSync } from 'fs';
+import { resolve } from 'path';
+import { execSync } from 'child_process';
+import { getAbsolutePath, isDirectory, mkdirs } from './utils';
+import { inquireHookName, inquireIsNeed, inquireModuleChoice, inquirePackageChoice } from './inquirer';
 // 每次创建一个新钩子函数时，运行此脚本文件帮助我们创建
 
 // Browser模块
@@ -35,41 +33,41 @@ import {
  */
 
 const createHook = async () => {
-  const browserPath = getAbsolutePath('../packages/Browser')
-  const nodePath = getAbsolutePath('../packages/Node')
-  const docsPath = getAbsolutePath('../docs')
-  const packageName = await inquirePackageChoice()
-  let modulesList = []
+  const browserPath = getAbsolutePath('../packages/Browser');
+  const nodePath = getAbsolutePath('../packages/Node');
+  const docsPath = getAbsolutePath('../docs');
+  const packageName = await inquirePackageChoice();
+  let modulesList = [];
   if (packageName === '@flypeng/browser') {
     // 获取Browser所有模块名称并且添加上Node
     modulesList = readdirSync(browserPath).filter((file) => {
-      if (isDirectory(`${browserPath}/${file}`)) return file
-    })
+      if (isDirectory(`${browserPath}/${file}`)) return file;
+    });
   } else {
-    modulesList.push('Node')
+    modulesList.push('Node');
   }
-  const moduleName = await inquireModuleChoice(modulesList)
-  const hookName = await inquireHookName()
-  let isNeedTestFile = false
-  let isNeedPreviewFile = false
+  const moduleName = await inquireModuleChoice(modulesList);
+  const hookName = await inquireHookName();
+  let isNeedTestFile = false;
+  let isNeedPreviewFile = false;
   if (packageName === '@flypeng/browser') {
-    isNeedTestFile = (await inquireIsNeed('Whether test file are required', isNeedTestFile)) as boolean
-    isNeedPreviewFile = (await inquireIsNeed('Whether preview file are required', isNeedPreviewFile)) as boolean
+    isNeedTestFile = (await inquireIsNeed('Whether test file are required', isNeedTestFile)) as boolean;
+    isNeedPreviewFile = (await inquireIsNeed('Whether preview file are required', isNeedPreviewFile)) as boolean;
   }
 
-  let hookPath = ''
+  let hookPath = '';
   if (packageName === '@flypeng/browser') {
-    const hookDirPath = resolve(browserPath, `./${moduleName}`, `./${hookName}`)
-    hookPath = `${hookDirPath}/index.ts`
-    const hookTestPath = `${hookDirPath}/index.test.ts`
+    const hookDirPath = resolve(browserPath, `./${moduleName}`, `./${hookName}`);
+    hookPath = `${hookDirPath}/index.ts`;
+    const hookTestPath = `${hookDirPath}/index.test.ts`;
 
-    const docsDirPath = resolve(docsPath, `./${moduleName}`, `./${hookName}`)
-    const docsEntryPath = `${docsDirPath}/index.md`
-    const docsPreviewPath = `${docsDirPath}/index.vue`
+    const docsDirPath = resolve(docsPath, `./${moduleName}`, `./${hookName}`);
+    const docsEntryPath = `${docsDirPath}/index.md`;
+    const docsPreviewPath = `${docsDirPath}/index.vue`;
 
     // 创建文件夹
-    mkdirs(hookDirPath)
-    mkdirs(docsDirPath)
+    mkdirs(hookDirPath);
+    mkdirs(docsDirPath);
 
     // 创建文件
     writeFileSync(
@@ -78,7 +76,7 @@ const createHook = async () => {
 	console.log('function template')
 }
 		`,
-    )
+    );
 
     if (isNeedTestFile) {
       writeFileSync(
@@ -91,7 +89,7 @@ describe('${hookName}', () => {
 	})
 })
 			`,
-      )
+      );
     }
 
     writeFileSync(
@@ -107,7 +105,7 @@ describe('${hookName}', () => {
 ## Online Demo
 		`,
       { encoding: 'utf-8' },
-    )
+    );
 
     if (isNeedPreviewFile) {
       writeFileSync(
@@ -119,18 +117,18 @@ describe('${hookName}', () => {
 <style scoped></style>
 `,
         { encoding: 'utf-8' },
-      )
+      );
     }
 
     // 给入口文件添加导出代码
-    const moduleEntryPath = resolve(browserPath, `./${moduleName}`, './index.ts')
-    const oldContent = readFileSync(moduleEntryPath, { encoding: 'utf-8' })
-    writeFileSync(moduleEntryPath, `${oldContent}\nexport { default as ${hookName} } from './${hookName}'`)
+    const moduleEntryPath = resolve(browserPath, `./${moduleName}`, './index.ts');
+    const oldContent = readFileSync(moduleEntryPath, { encoding: 'utf-8' });
+    writeFileSync(moduleEntryPath, `${oldContent}\nexport { default as ${hookName} } from './${hookName}'`);
   } else {
-    hookPath = resolve(nodePath, './useNodeHook.ts')
-    const docsEntryPath = resolve(docsPath, './Node', `${hookName}.md`)
-    const oldContent = readFileSync(hookPath, { encoding: 'utf-8' })
-    writeFileSync(hookPath, `${oldContent}\nexport const ${hookName} = () => {}`)
+    hookPath = resolve(nodePath, './useNodeHook.ts');
+    const docsEntryPath = resolve(docsPath, './Node', `${hookName}.md`);
+    const oldContent = readFileSync(hookPath, { encoding: 'utf-8' });
+    writeFileSync(hookPath, `${oldContent}\nexport const ${hookName} = () => {}`);
 
     writeFileSync(
       docsEntryPath,
@@ -143,8 +141,8 @@ describe('${hookName}', () => {
 ## Type Declaration
 		`,
       { encoding: 'utf-8' },
-    )
+    );
   }
-}
+};
 
-createHook()
+createHook();

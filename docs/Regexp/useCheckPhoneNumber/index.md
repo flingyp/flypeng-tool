@@ -7,9 +7,9 @@
 ## Basic Usage
 
 ```ts
-import { useCheckPhoneNumber } from '@flypeng/tool/browser'
+import { useCheckPhoneNumber } from '@flypeng/tool/browser';
 
-const isChecked = useCheckPhoneNumber('13148367212')
+const isChecked = useCheckPhoneNumber('13148367212');
 ```
 
 ## Type Declaration
@@ -20,5 +20,5 @@ const isChecked = useCheckPhoneNumber('13148367212')
  * @param value
  * @returns
  */
-declare function useCheckPhoneNumber(value: string): boolean
+declare function useCheckPhoneNumber(value: string): boolean;
 ```

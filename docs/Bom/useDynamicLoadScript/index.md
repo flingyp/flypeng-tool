@@ -7,9 +7,9 @@ dynamic loading script file
 ## Basic Usage
 
 ```ts
-import { useDynamicLoadScript } from '@flypeng/tool/browser'
+import { useDynamicLoadScript } from '@flypeng/tool/browser';
 
-await useDynamicLoadScript(validUrl)
+await useDynamicLoadScript(validUrl);
 ```
 
 ## Type Declaration
@@ -20,7 +20,7 @@ await useDynamicLoadScript(validUrl)
  * @param url
  * @param callback
  */
-declare function useDynamicLoadScript(url: string, callback?: (...args: unknown[]) => void): Promise<void>
+declare function useDynamicLoadScript(url: string, callback?: (...args: unknown[]) => void): Promise<void>;
 ```
 
 ## Online Demo

@@ -7,10 +7,10 @@
 ## Basic Usage
 
 ```ts
-import { useCheckIncludeNumber } from '@flypeng/tool/browser'
+import { useCheckIncludeNumber } from '@flypeng/tool/browser';
 
-const isCheckedOne = useCheckIncludeNumber('@flypeng/tool') // false
-const isCheckedTwo = useCheckIncludeNumber('2022年8月10号') //  true
+const isCheckedOne = useCheckIncludeNumber('@flypeng/tool'); // false
+const isCheckedTwo = useCheckIncludeNumber('2022年8月10号'); //  true
 ```
 
 ## Type Declaration
@@ -21,5 +21,5 @@ const isCheckedTwo = useCheckIncludeNumber('2022年8月10号') //  true
  * @param value
  * @returns
  */
-declare function useCheckIncludeNumber(value: string): boolean
+declare function useCheckIncludeNumber(value: string): boolean;
 ```

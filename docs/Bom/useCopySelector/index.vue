@@ -5,22 +5,22 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from 'vue'
-  import { useCopySelector } from '@flypeng/browser'
+import { ref } from 'vue';
+import { useCopySelector } from '@flypeng/browser';
 
-  const copyResult = ref(false)
+const copyResult = ref(false);
 
-  const copy = () => {
-    copyResult.value = useCopySelector('.copyDom')
-  }
+const copy = () => {
+  copyResult.value = useCopySelector('.copyDom');
+};
 </script>
 
 <style scoped>
-  button {
-    width: 80px;
-    border-radius: 4px;
-    color: #ffffff;
-    background-color: var(--vp-c-brand);
-    margin: 10px 0;
-  }
+button {
+  width: 80px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--vp-c-brand);
+  margin: 10px 0;
+}
 </style>

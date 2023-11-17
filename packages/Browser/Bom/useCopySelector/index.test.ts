@@ -1,9 +1,9 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest';
 
-import useCopySelector from '.'
+import useCopySelector from '.';
 
 describe('useCopySelector', () => {
   it('should be defined', () => {
-    expect(useCopySelector).toBeDefined()
-  })
-})
+    expect(useCopySelector).toBeDefined();
+  });
+});

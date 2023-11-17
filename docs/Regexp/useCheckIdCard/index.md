@@ -7,9 +7,9 @@
 ## Basic Usage
 
 ```ts
-import { useCheckIdCard } from '@flypeng/tool/browser'
+import { useCheckIdCard } from '@flypeng/tool/browser';
 
-const isChecked = useCheckIdCard('110101199006075838')
+const isChecked = useCheckIdCard('110101199006075838');
 ```
 
 ## Type Declaration
@@ -20,5 +20,5 @@ const isChecked = useCheckIdCard('110101199006075838')
  * @param value
  * @returns
  */
-declare function useCheckIdCard(value: string): boolean
+declare function useCheckIdCard(value: string): boolean;
 ```

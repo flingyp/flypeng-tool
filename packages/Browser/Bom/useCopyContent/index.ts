@@ -4,5 +4,5 @@
  * @returns
  */
 export default function useCopyContent(content: string) {
-  navigator.clipboard.writeText(content)
+  navigator.clipboard.writeText(content);
 }

@@ -1,10 +1,10 @@
-import { defineConfig } from 'rollup'
-import terser from '@rollup/plugin-terser'
-import typescript from '@rollup/plugin-typescript'
-import dts from 'rollup-plugin-dts'
+import { defineConfig } from 'rollup';
+import terser from '@rollup/plugin-terser';
+import typescript from '@rollup/plugin-typescript';
+import dts from 'rollup-plugin-dts';
 
-const currentNodeEnv = process.env.NODE_ENV
-const isCompressLibrary = currentNodeEnv === 'prod' ? terser({ module: true, toplevel: true }) : null
+const currentNodeEnv = process.env.NODE_ENV;
+const isCompressLibrary = currentNodeEnv === 'prod' ? terser({ module: true, toplevel: true }) : null;
 
 export default defineConfig([
   {
@@ -56,4 +56,4 @@ export default defineConfig([
     output: [{ file: './node/index.d.ts' }],
     plugins: [dts()],
   },
-])
+]);

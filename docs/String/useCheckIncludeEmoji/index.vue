@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-  import { useCheckIncludeEmoji } from '@flypeng/browser'
+import { useCheckIncludeEmoji } from '@flypeng/browser';
 
-  const checkStringOne = '@flypeng/tool'
-  const checkStringTwo = '🚀@flypeng/tool✨'
+const checkStringOne = '@flypeng/tool';
+const checkStringTwo = '🚀@flypeng/tool✨';
 </script>
 
 <template>

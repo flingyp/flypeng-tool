@@ -5,12 +5,12 @@
  */
 export default function useCustomContextMenu(node: HTMLElement, callback: () => void) {
   const customCallback = (e: MouseEvent) => {
-    e.preventDefault()
-    callback()
-  }
-  node.addEventListener('contextmenu', customCallback)
+    e.preventDefault();
+    callback();
+  };
+  node.addEventListener('contextmenu', customCallback);
 
   return () => {
-    node.removeEventListener('contextmenu', customCallback)
-  }
+    node.removeEventListener('contextmenu', customCallback);
+  };
 }

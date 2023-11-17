@@ -7,7 +7,7 @@ Judge whether the path is file
 ## Basic Usage
 
 ```ts
-import { useIsFile } from '@flypeng/tool/node'
+import { useIsFile } from '@flypeng/tool/node';
 ```
 
 ## Type Declaration
@@ -18,5 +18,5 @@ import { useIsFile } from '@flypeng/tool/node'
  * @param path
  * @returns
  */
-declare const useIsFile: (path: string) => boolean
+declare const useIsFile: (path: string) => boolean;
 ```

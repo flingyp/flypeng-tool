@@ -38,7 +38,6 @@ features:
     icon: 🎪
 ---
 
-
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 

@@ -3,6 +3,6 @@
  * @returns
  */
 export default function useToggleFullScreen() {
-  const handleElement = document.documentElement
-  return handleElement.requestFullscreen({ navigationUI: 'auto' })
+  const handleElement = document.documentElement;
+  return handleElement.requestFullscreen({ navigationUI: 'auto' });
 }

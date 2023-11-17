@@ -7,9 +7,9 @@ Scroll to top of page
 ## Basic Usage
 
 ```ts
-import { useGoToTop } from '@flypeng/tool/browser'
+import { useGoToTop } from '@flypeng/tool/browser';
 
-useGoToTop()
+useGoToTop();
 ```
 
 ## Type Declaration
@@ -18,5 +18,5 @@ useGoToTop()
 /**
  * 滚到页面顶部
  */
-declare function useGoToTop(): void
+declare function useGoToTop(): void;
 ```

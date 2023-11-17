@@ -13,13 +13,13 @@ Even if user keeps clicking the button, this will avoid performance problems and
 ## Basic Usage
 
 ```ts
-import { useOnce } from '@flypeng/tool/browser'
+import { useOnce } from '@flypeng/tool/browser';
 
 const sendRequestOnce = useOnce(() => {
-	console.log('execute only once')
+  console.log('execute only once');
 });
-const button = document.querySelector("button");
-button.addEventListener("click", sendRequestOnce);
+const button = document.querySelector('button');
+button.addEventListener('click', sendRequestOnce);
 ```
 
 ## Type Declaration
@@ -34,5 +34,5 @@ declare function useOnce(callback: () => void): () => void;
 ```
 
 ## Online Demo
-		
+
 <preview path="./index.vue" title="useOnce" description="To confirm callback function to execute only once"></preview>

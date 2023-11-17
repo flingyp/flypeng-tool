@@ -7,14 +7,14 @@ Custom right click to prevent default method and to execute callback
 ## Basic Usage
 
 ```ts
-import { useCustomContextMenu } from '@flypeng/tool/browser'
+import { useCustomContextMenu } from '@flypeng/tool/browser';
 
 const clearCustomContextMenu = useCustomContextMenu(document, () => {
-  console.log('click context menu')
-})
+  console.log('click context menu');
+});
 
 // The callback needs to be canceled at some time
-clearCustomContextMenu()
+clearCustomContextMenu();
 ```
 
 ## Type Declaration
@@ -25,7 +25,7 @@ clearCustomContextMenu()
  * @param node
  * @param callback
  */
-declare function useCustomContextMenu(node: HTMLElement, callback: () => void): void
+declare function useCustomContextMenu(node: HTMLElement, callback: () => void): void;
 ```
 
 ## Online Demo

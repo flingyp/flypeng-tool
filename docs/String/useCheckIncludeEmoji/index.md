@@ -7,7 +7,7 @@ Check whether string contains Emoji emoticons
 ## Basic Usage
 
 ```ts
-import { useCheckIncludeEmoji } from '@flypeng/tool/browser'
+import { useCheckIncludeEmoji } from '@flypeng/tool/browser';
 ```
 
 ## Type Declaration
@@ -18,7 +18,7 @@ import { useCheckIncludeEmoji } from '@flypeng/tool/browser'
  * @param value
  * @returns
  */
-declare function useCheckIncludeEmoji(value: string): boolean
+declare function useCheckIncludeEmoji(value: string): boolean;
 ```
 
 ## Online Demo

@@ -4,8 +4,8 @@
  * @returns
  */
 export default function useObjectIsEmpty(target: Record<string, unknown> | null | undefined) {
-	if (target === null || target === undefined) {
-    return true
+  if (target === null || target === undefined) {
+    return true;
   }
-  return Object.keys(target).length === 0
+  return Object.keys(target).length === 0;
 }

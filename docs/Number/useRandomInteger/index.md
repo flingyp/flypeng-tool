@@ -3,9 +3,9 @@
 ## Basic Usage
 
 ```ts
-import { useRandomInteger } from '@flypeng/tool/browser'
+import { useRandomInteger } from '@flypeng/tool/browser';
 
-const randomInteger = useRandomInteger(10, 100)
+const randomInteger = useRandomInteger(10, 100);
 ```
 
 ## Online Demo

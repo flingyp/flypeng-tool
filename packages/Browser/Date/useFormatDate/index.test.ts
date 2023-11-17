@@ -1,9 +1,9 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest';
 
-import useCurrentDate from '.'
+import useCurrentDate from '.';
 
 describe('useCurrentDate', () => {
   it('should be defined', () => {
-    expect(useCurrentDate).toBeDefined()
-  })
-})
+    expect(useCurrentDate).toBeDefined();
+  });
+});

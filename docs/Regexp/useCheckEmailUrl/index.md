@@ -7,9 +7,9 @@
 ## Basic Usage
 
 ```ts
-import { useCheckEmailUrl } from '@flypeng/tool/browser'
+import { useCheckEmailUrl } from '@flypeng/tool/browser';
 
-const isCheck = useCheckEmailUrl('flypeng@gmail.com')
+const isCheck = useCheckEmailUrl('flypeng@gmail.com');
 ```
 
 ## Type Declaration
@@ -20,5 +20,5 @@ const isCheck = useCheckEmailUrl('flypeng@gmail.com')
  * @param value
  * @returns
  */
-declare function useCheckEmailUrl(value: string): boolean
+declare function useCheckEmailUrl(value: string): boolean;
 ```

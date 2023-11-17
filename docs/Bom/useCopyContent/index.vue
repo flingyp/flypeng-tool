@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-  import { useCopyContent } from '@flypeng/browser'
+import { useCopyContent } from '@flypeng/browser';
 
-  const copy = () => {
-    useCopyContent('@flypeng/tool')
-  }
+const copy = () => {
+  useCopyContent('@flypeng/tool');
+};
 </script>
 
 <template>
@@ -11,11 +11,11 @@
 </template>
 
 <style scoped>
-  button {
-    border-radius: 4px;
-    color: #ffffff;
-    background-color: var(--vp-c-brand);
-    padding: 4px 6px;
-    margin: 10px 0;
-  }
+button {
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--vp-c-brand);
+  padding: 4px 6px;
+  margin: 10px 0;
+}
 </style>

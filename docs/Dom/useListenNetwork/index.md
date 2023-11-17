@@ -7,7 +7,7 @@ Listen current page network and execute different callback
 ## Basic Usage
 
 ```ts
-import { useListenNetwork } from '@flypeng/tool/browser'
+import { useListenNetwork } from '@flypeng/tool/browser';
 ```
 
 ## Type Declaration
@@ -19,7 +19,7 @@ import { useListenNetwork } from '@flypeng/tool/browser'
  * @param offline
  * @returns
  */
-declare function useListenNetwork(online: (...args: any[]) => void, offline: (...args: any[]) => void): undefined
+declare function useListenNetwork(online: (...args: any[]) => void, offline: (...args: any[]) => void): undefined;
 ```
 
 ## Online Demo

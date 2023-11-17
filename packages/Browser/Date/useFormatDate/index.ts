@@ -1,4 +1,4 @@
-import { useCommonType } from '../../Common'
+import { useCommonType } from '../../Common';
 /**
  * 格式类型
  */
@@ -12,7 +12,7 @@ export type DateFormatOption =
   | 'dd'
   | 'hh'
   | 'mm'
-  | 'ss'
+  | 'ss';
 
 /**
  * 格式化日期函数
@@ -20,19 +20,19 @@ export type DateFormatOption =
  * @param date
  */
 export default function useFormatDate(format: DateFormatOption, date?: string | number | Date) {
-  let resultDate: string = format
-  let handleDate: Date = new Date()
+  let resultDate: string = format;
+  let handleDate: Date = new Date();
 
   if (useCommonType.isString(date)) {
-    handleDate = new Date(date as string)
+    handleDate = new Date(date as string);
   }
 
   if (useCommonType.isNumber(date)) {
-    handleDate = new Date(date as number)
+    handleDate = new Date(date as number);
   }
 
   if (useCommonType.isDate(date)) {
-    handleDate = date as Date
+    handleDate = date as Date;
   }
 
   const defineChars = {
@@ -42,18 +42,18 @@ export default function useFormatDate(format: DateFormatOption, date?: string | 
     'h+': handleDate.getHours(),
     'm+': handleDate.getMinutes(),
     's+': handleDate.getSeconds(),
-  }
+  };
   for (const key in defineChars) {
-    const checkReg = new RegExp(`(${key})`)
+    const checkReg = new RegExp(`(${key})`);
     if (checkReg.test(resultDate)) {
       // @ts-ignore
-      let currentValue = defineChars[key].toString()
+      let currentValue = defineChars[key].toString();
       // 补零操作
       if (currentValue.length === 1) {
-        currentValue = `0${currentValue}`
+        currentValue = `0${currentValue}`;
       }
-      resultDate = resultDate.replace(checkReg, currentValue)
+      resultDate = resultDate.replace(checkReg, currentValue);
     }
   }
-  return resultDate
+  return resultDate;
 }

@@ -5,25 +5,25 @@
 </template>
 
 <script lang="ts" setup>
-  import { onMounted, ref } from 'vue'
-  import { useScrollToElement } from '@flypeng/browser'
+import { onMounted, ref } from 'vue';
+import { useScrollToElement } from '@flypeng/browser';
 
-  const introductionNode = ref<HTMLElement | null>(null)
+const introductionNode = ref<HTMLElement | null>(null);
 
-  onMounted(() => {
-    introductionNode.value = document.querySelector('h2#introduction')
-  })
+onMounted(() => {
+  introductionNode.value = document.querySelector('h2#introduction');
+});
 
-  const scroolToIntroduction = () => {
-    useScrollToElement(introductionNode.value!)
-  }
+const scroolToIntroduction = () => {
+  useScrollToElement(introductionNode.value!);
+};
 </script>
 
 <style scoped>
-  button {
-    padding: 4px 8px;
-    border-radius: 4px;
-    color: #ffffff;
-    background-color: var(--vp-c-brand);
-  }
+button {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--vp-c-brand);
+}
 </style>

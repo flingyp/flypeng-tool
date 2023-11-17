@@ -7,7 +7,7 @@ Copy content to clipboard
 ## Basic Usage
 
 ```ts
-import { useCopyContent } from '@flypeng/tool/browser'
+import { useCopyContent } from '@flypeng/tool/browser';
 ```
 
 ## Type Declaration
@@ -18,7 +18,7 @@ import { useCopyContent } from '@flypeng/tool/browser'
  * @param content
  * @returns
  */
-declare function useCopyContent(content: string): Promise<void>
+declare function useCopyContent(content: string): Promise<void>;
 ```
 
 ## Online Demo

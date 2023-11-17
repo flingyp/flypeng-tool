@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-  import { useDeepClone } from '@flypeng/browser'
-  let targetObj: {
-    name: string
-    address: any
-    origin: any
-  } = { name: '@flypeng-tool', address: { x: 100 }, origin: undefined }
-  targetObj.origin = targetObj
+import { useDeepClone } from '@flypeng/browser';
+let targetObj: {
+  name: string;
+  address: any;
+  origin: any;
+} = { name: '@flypeng-tool', address: { x: 100 }, origin: undefined };
+targetObj.origin = targetObj;
 
-  const resultObj = useDeepClone(targetObj)
-  resultObj.name = 'change-@flypeng-tool'
-  resultObj.address.x = 1000
+const resultObj = useDeepClone(targetObj);
+resultObj.name = 'change-@flypeng-tool';
+resultObj.address.x = 1000;
 </script>
 
 <template>

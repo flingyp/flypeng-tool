@@ -1,21 +1,21 @@
 <script lang="ts" setup>
-  import { useCustomContextMenu } from '@flypeng/browser'
-  import { ref, onMounted, onUnmounted } from 'vue'
+import { useCustomContextMenu } from '@flypeng/browser';
+import { ref, onMounted, onUnmounted } from 'vue';
 
-  const preventButton = ref<HTMLButtonElement | null>(null)
-  let clearCustomContextMenu
+const preventButton = ref<HTMLButtonElement | null>(null);
+let clearCustomContextMenu;
 
-  onMounted(() => {
-    if (preventButton.value) {
-      clearCustomContextMenu = useCustomContextMenu(preventButton.value, () => {
-        console.log('Custom ContextMenu')
-      })
-    }
-  })
+onMounted(() => {
+  if (preventButton.value) {
+    clearCustomContextMenu = useCustomContextMenu(preventButton.value, () => {
+      console.log('Custom ContextMenu');
+    });
+  }
+});
 
-  onUnmounted(() => {
-    clearCustomContextMenu()
-  })
+onUnmounted(() => {
+  clearCustomContextMenu();
+});
 </script>
 
 <template>
@@ -26,11 +26,11 @@
 </template>
 
 <style scoped>
-  button {
-    border-radius: 4px;
-    color: #ffffff;
-    background-color: var(--vp-c-brand);
-    padding: 4px 6px;
-    margin: 10px 0px;
-  }
+button {
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--vp-c-brand);
+  padding: 4px 6px;
+  margin: 10px 0px;
+}
 </style>

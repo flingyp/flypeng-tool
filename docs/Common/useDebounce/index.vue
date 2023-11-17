@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-  import { useDebounce } from '@flypeng/browser'
-  import { ref, onMounted } from 'vue'
-  const content = ref<string>('')
-  const inputDom = ref<HTMLInputElement | null>(null)
-  const inputChange = () => {
-    content.value = inputDom.value?.value as string
-  }
-  onMounted(() => {
-    inputDom.value?.addEventListener('input', useDebounce(inputChange, 500))
-  })
+import { useDebounce } from '@flypeng/browser';
+import { ref, onMounted } from 'vue';
+const content = ref<string>('');
+const inputDom = ref<HTMLInputElement | null>(null);
+const inputChange = () => {
+  content.value = inputDom.value?.value as string;
+};
+onMounted(() => {
+  inputDom.value?.addEventListener('input', useDebounce(inputChange, 500));
+});
 </script>
 
 <template>
@@ -19,17 +19,17 @@
 </template>
 
 <style scoped>
-  input {
-    background: var(--vp-c-bg);
-    border: 1px solid var(--vp-c-bg);
-    color: var(--vp-c-text-1);
-    padding-left: 4px;
-    font-size: 14px;
-    border-radius: 4px;
-  }
+input {
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  padding-left: 4px;
+  font-size: 14px;
+  border-radius: 4px;
+}
 
-  input:focus {
-    border: 1px solid var(--vp-c-brand);
-    transition: all 0.3s linear;
-  }
+input:focus {
+  border: 1px solid var(--vp-c-brand);
+  transition: all 0.3s linear;
+}
 </style>

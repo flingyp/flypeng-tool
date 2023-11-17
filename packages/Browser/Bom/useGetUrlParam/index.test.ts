@@ -1,9 +1,9 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest';
 
-import useGetUrlParam from '.'
+import useGetUrlParam from '.';
 
 describe('useGetUrlParam', () => {
   it('should be defined', () => {
-    expect(useGetUrlParam).toBeDefined()
-  })
-})
+    expect(useGetUrlParam).toBeDefined();
+  });
+});

@@ -4,5 +4,5 @@
  * @returns
  */
 export default function useGetLocalKey(key: string) {
-	return localStorage.getItem(key)
+  return localStorage.getItem(key);
 }

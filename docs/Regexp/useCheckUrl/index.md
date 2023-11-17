@@ -7,7 +7,7 @@
 ## Basic Usage
 
 ```ts
-import { useCheckUrl } from '@flypeng/tool/browser'
+import { useCheckUrl } from '@flypeng/tool/browser';
 ```
 
 ## Type Declaration
@@ -18,5 +18,5 @@ import { useCheckUrl } from '@flypeng/tool/browser'
  * @param value
  * @returns
  */
-declare function useCheckUrl(value: string): boolean
+declare function useCheckUrl(value: string): boolean;
 ```

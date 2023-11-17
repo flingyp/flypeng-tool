@@ -7,7 +7,7 @@ Get value of key from local storage
 ## Basic Usage
 
 ```ts
-import { useGetLocalKey } from '@flypeng/tool/browser'
+import { useGetLocalKey } from '@flypeng/tool/browser';
 
-const value = useGetLocalKey('xx')
+const value = useGetLocalKey('xx');
 ```

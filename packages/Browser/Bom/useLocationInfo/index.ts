@@ -1,10 +1,10 @@
 export interface LocationInfo {
-  href: string
-  hostname: string
-  port: number
-  pathname: string
-  params: string
-  hash: string
+  href: string;
+  hostname: string;
+  port: number;
+  pathname: string;
+  params: string;
+  hash: string;
 }
 
 /**
@@ -20,8 +20,8 @@ export default function useLocationInfo(): Readonly<Partial<LocationInfo>> | nul
       pathname: window.location.pathname,
       params: decodeURIComponent(window.location.search),
       hash: decodeURIComponent(window.location.hash),
-    }
-    return locationInfo
+    };
+    return locationInfo;
   }
-  return null
+  return null;
 }

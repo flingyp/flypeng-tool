@@ -6,5 +6,5 @@ export default function useGoToTop() {
     left: 0,
     top: 0,
     behavior: 'smooth',
-  })
+  });
 }

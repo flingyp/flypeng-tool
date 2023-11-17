@@ -3,10 +3,10 @@
 ## Basic Usage
 
 ```ts
-import { useDeepClone } from '@flypeng/tool/browser'
+import { useDeepClone } from '@flypeng/tool/browser';
 
-const targetObj = { name: '@flypeng-tool', address: { x: 100 }, origin: targetObj }
-const resultObj = useDeepClone(targetObj)
+const targetObj = { name: '@flypeng-tool', address: { x: 100 }, origin: targetObj };
+const resultObj = useDeepClone(targetObj);
 ```
 
 ## Online Demo
@@ -22,5 +22,5 @@ const resultObj = useDeepClone(targetObj)
  * @param hashMap
  * @returns
  */
-declare function useDeepClone(targetObj: any, hashMap?: WeakMap<object, any>): any
+declare function useDeepClone(targetObj: any, hashMap?: WeakMap<object, any>): any;
 ```

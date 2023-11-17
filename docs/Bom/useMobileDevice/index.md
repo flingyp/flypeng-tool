@@ -7,9 +7,9 @@
 ## Basic Usage
 
 ```ts
-import { useMobileDevice } from '@flypeng/tool/browser'
+import { useMobileDevice } from '@flypeng/tool/browser';
 
-const mobileDevice = useMobileDevice()
+const mobileDevice = useMobileDevice();
 ```
 
 ## Type Declaration
@@ -19,5 +19,5 @@ const mobileDevice = useMobileDevice()
  * 如果不是移动设备则返回false，如果是移动设备则会判断是Apple还是Android
  * @returns Apple | Android | false
  */
-declare function useMobileDevice(): false | 'Apple' | 'Android'
+declare function useMobileDevice(): false | 'Apple' | 'Android';
 ```

@@ -1,21 +1,21 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest';
 
-import useTransformCase from '.'
+import useTransformCase from '.';
 
 describe('useTransformCase', () => {
   it('should be defined', () => {
-    expect(useTransformCase).toBeDefined()
-  })
+    expect(useTransformCase).toBeDefined();
+  });
 
   it('string to lowerCase', () => {
-    expect(useTransformCase('Hello WORLD', 0)).toBe('hello world')
-  })
+    expect(useTransformCase('Hello WORLD', 0)).toBe('hello world');
+  });
 
   it('string to upperCase', () => {
-    expect(useTransformCase('Hello WORld', 1)).toBe('HELLO WORLD')
-  })
+    expect(useTransformCase('Hello WORld', 1)).toBe('HELLO WORLD');
+  });
 
   it('string to first lower case', () => {
-    expect(useTransformCase('Hello WORld', 2)).toBe('hello WORld')
-  })
-})
+    expect(useTransformCase('Hello WORld', 2)).toBe('hello WORld');
+  });
+});

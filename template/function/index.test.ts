@@ -1,9 +1,9 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest';
 
-import __template__ from '.'
+import __template__ from '.';
 
 describe('__template__', () => {
   it('should be defined', () => {
-    expect(__template__).toBeDefined()
-  })
-})
+    expect(__template__).toBeDefined();
+  });
+});

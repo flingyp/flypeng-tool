@@ -25,11 +25,11 @@
 此处做法的好处就是：开发者在使用工具库时，在输入 `use` 时 会列出所有的函数名称，会提供极好的类型提示
 
 ```ts
-import { useAaBb } from '@flypeng/tool/browser'
+import { useAaBb } from '@flypeng/tool/browser';
 ```
 
 4. 文档中所出现的如下代码。均可在 `@flypeng/tool` 包中引入，这样做分包的目的是因为 **Vitepress** 中如果导入了 Node 模块在开发和构建当中都会出现一些奇怪的错误。而分包后，在开发阶段我们只在文档中引入 `@flypeng/browser`，而 `@flypeng/node` 模块则另外开了一个 **playground** 来测试相关钩子函数
 
 ```ts
-import { xxx } from '@flypeng/browser'
+import { xxx } from '@flypeng/browser';
 ```

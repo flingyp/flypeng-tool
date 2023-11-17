@@ -7,9 +7,9 @@ Scroll to the corresponding DOM element
 ## Basic Usage
 
 ```ts
-import { useScrollToElement } from '@flypeng/tool/browser'
+import { useScrollToElement } from '@flypeng/tool/browser';
 
-useScrollToElement(HTMLElement)
+useScrollToElement(HTMLElement);
 ```
 
 ## Type Declaration
@@ -19,7 +19,7 @@ useScrollToElement(HTMLElement)
  * 滚动到对应DOM元素节点上
  * @param element
  */
-declare function useScrollToElement(element: HTMLElement): void
+declare function useScrollToElement(element: HTMLElement): void;
 ```
 
 ## Online Demo

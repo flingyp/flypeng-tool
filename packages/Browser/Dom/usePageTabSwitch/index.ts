@@ -3,8 +3,8 @@
  * @param callback
  */
 export default function usePageTabSwitch(callback: () => void) {
-  document.addEventListener('visibilitychange', callback)
+  document.addEventListener('visibilitychange', callback);
   return () => {
-    document.removeEventListener('visibilitychange', callback)
-  }
+    document.removeEventListener('visibilitychange', callback);
+  };
 }

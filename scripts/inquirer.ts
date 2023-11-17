@@ -1,4 +1,4 @@
-import inquirer from 'inquirer'
+import inquirer from 'inquirer';
 
 // 询问是否需要
 export const inquireIsNeed = async (message: string, defaultValue: boolean) => {
@@ -7,9 +7,9 @@ export const inquireIsNeed = async (message: string, defaultValue: boolean) => {
     name: 'value',
     message,
     default: defaultValue,
-  })
-  return value
-}
+  });
+  return value;
+};
 
 // 选择版本
 export const inquireVersion = async () => {
@@ -19,9 +19,9 @@ export const inquireVersion = async () => {
     message: 'Please select the release version from list',
     default: 'patch',
     choices: ['major', 'minor', 'patch', 'premajor', 'preminor', 'prepatch', 'prerelease'],
-  })
-  return version
-}
+  });
+  return version;
+};
 
 // 选择 @flypeng/browser 还是 @flypeng/node
 export const inquirePackageChoice = async (): Promise<'@flypeng/browser' | '@flypeng/node'> => {
@@ -30,9 +30,9 @@ export const inquirePackageChoice = async (): Promise<'@flypeng/browser' | '@fly
     name: 'name',
     message: 'Please select package of hook function',
     choices: ['@flypeng/browser', '@flypeng/node'],
-  })
-  return name
-}
+  });
+  return name;
+};
 
 // 询问钩子函数名称
 export const inquireHookName = async () => {
@@ -40,9 +40,9 @@ export const inquireHookName = async () => {
     type: 'input',
     name: 'name',
     message: 'Please input name of hook function',
-  })
-  return name
-}
+  });
+  return name;
+};
 
 // 询问选择模块名称
 export const inquireModuleChoice = async (modulesList: string[]) => {
@@ -51,6 +51,6 @@ export const inquireModuleChoice = async (modulesList: string[]) => {
     name: 'module',
     message: 'Please input module name of hook function',
     choices: modulesList,
-  })
-  return module
-}
+  });
+  return module;
+};

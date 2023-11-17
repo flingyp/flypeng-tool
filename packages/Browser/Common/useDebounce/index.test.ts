@@ -1,9 +1,9 @@
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest';
 
-import useDebounce from '.'
+import useDebounce from '.';
 
 describe('useDebounce', () => {
   it('should be defined', () => {
-    expect(useDebounce).toBeDefined()
-  })
-})
+    expect(useDebounce).toBeDefined();
+  });
+});

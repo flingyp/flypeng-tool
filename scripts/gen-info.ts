@@ -1,59 +1,57 @@
-import {
-  readFileSync, writeFileSync, unlinkSync, existsSync, readdirSync,
-} from 'fs'
-import { resolve } from 'path'
-import { useIsDirectory } from '../packages/Node/useNodeHook'
-import { getAbsolutePath } from './utils'
-import packageJson from '../package.json'
+import { readFileSync, writeFileSync, unlinkSync, existsSync, readdirSync } from 'fs';
+import { resolve } from 'path';
+import { useIsDirectory } from '../packages/Node/useNodeHook';
+import { getAbsolutePath } from './utils';
+import packageJson from '../package.json';
 
-const docsInfoPath = resolve('./', 'docs/info.ts')
-const changelogPath = resolve('./', 'CHANGELOG.md')
-const tagetChangelogPath = resolve('./', 'docs/guide/CHANGELOG.md')
+const docsInfoPath = resolve('./', 'docs/info.ts');
+const changelogPath = resolve('./', 'CHANGELOG.md');
+const tagetChangelogPath = resolve('./', 'docs/guide/CHANGELOG.md');
 
 if (existsSync(docsInfoPath)) {
-  unlinkSync(docsInfoPath)
+  unlinkSync(docsInfoPath);
 }
 if (existsSync(tagetChangelogPath)) {
-  unlinkSync(tagetChangelogPath)
+  unlinkSync(tagetChangelogPath);
 }
-writeFileSync(docsInfoPath, '')
-writeFileSync(tagetChangelogPath, '')
+writeFileSync(docsInfoPath, '');
+writeFileSync(tagetChangelogPath, '');
 
 // 工具库版本
-const toolVersion = packageJson.version || '1.0.0'
+const toolVersion = packageJson.version || '1.0.0';
 writeFileSync(docsInfoPath, `${readFileSync(docsInfoPath) || ''}\nexport const version = '${toolVersion}'`, {
   encoding: 'utf-8',
-})
+});
 
 // 钩子函数数量统计 读取每个模块下的入口文件
-let hooksNum = 0
-const browserPath = getAbsolutePath('../packages/Browser')
-const nodePath = getAbsolutePath('../packages/Node')
-let browserModules = readdirSync(browserPath)
+let hooksNum = 0;
+const browserPath = getAbsolutePath('../packages/Browser');
+const nodePath = getAbsolutePath('../packages/Node');
+let browserModules = readdirSync(browserPath);
 browserModules = browserModules.filter((file) => {
-  if (useIsDirectory(`${browserPath}/${file}`)) return file
-})
+  if (useIsDirectory(`${browserPath}/${file}`)) return file;
+});
 browserModules.forEach((module) => {
-  const moduleEntryPath = `${browserPath}/${module}/index.ts`
-  const entryContent = readFileSync(moduleEntryPath, { encoding: 'utf-8' })
-  const curModuleNum = entryContent.match(/export\s\{.*\}\sfrom\s'.*'/g)?.length || 0
-  hooksNum += curModuleNum
-})
+  const moduleEntryPath = `${browserPath}/${module}/index.ts`;
+  const entryContent = readFileSync(moduleEntryPath, { encoding: 'utf-8' });
+  const curModuleNum = entryContent.match(/export\s\{.*\}\sfrom\s'.*'/g)?.length || 0;
+  hooksNum += curModuleNum;
+});
 
-const nodeModuleEntryPath = `${nodePath}/index.ts`
-const nodeModuleContent = readFileSync(nodeModuleEntryPath, { encoding: 'utf-8' })
-const nodeModuleNum = nodeModuleContent.match(/export\s\{.*\}\sfrom\s'.*'/g)?.length || 0
-hooksNum += nodeModuleNum
+const nodeModuleEntryPath = `${nodePath}/index.ts`;
+const nodeModuleContent = readFileSync(nodeModuleEntryPath, { encoding: 'utf-8' });
+const nodeModuleNum = nodeModuleContent.match(/export\s\{.*\}\sfrom\s'.*'/g)?.length || 0;
+hooksNum += nodeModuleNum;
 
 writeFileSync(docsInfoPath, `${readFileSync(docsInfoPath) || ''}\nexport const HooksNum = ${hooksNum}`, {
   encoding: 'utf-8',
-})
+});
 
 // CHANGELOG文件的拷贝
-const changelogContent = readFileSync(changelogPath, { encoding: 'utf-8' })
+const changelogContent = readFileSync(changelogPath, { encoding: 'utf-8' });
 // 从这个字符串的最后一个字符开始，删除CHANGELOG文件头部不重要的信息
-const findStr = 'commit guidelines.'
-const firstFindStrIndex = changelogContent.indexOf(findStr)
-const changelogNeedContent = changelogContent.slice(firstFindStrIndex + findStr.length + 1)
+const findStr = 'commit guidelines.';
+const firstFindStrIndex = changelogContent.indexOf(findStr);
+const changelogNeedContent = changelogContent.slice(firstFindStrIndex + findStr.length + 1);
 
-writeFileSync(tagetChangelogPath, changelogNeedContent)
+writeFileSync(tagetChangelogPath, changelogNeedContent);

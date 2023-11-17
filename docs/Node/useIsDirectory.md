@@ -7,7 +7,7 @@ Judge whether the path is directory
 ## Basic Usage
 
 ```ts
-import { useIsDirectory } from '@flypeng/tool/node'
+import { useIsDirectory } from '@flypeng/tool/node';
 ```
 
 ## Type Declaration
@@ -18,5 +18,5 @@ import { useIsDirectory } from '@flypeng/tool/node'
  * @param path
  * @returns
  */
-declare const useIsDirectory: (path: string) => boolean
+declare const useIsDirectory: (path: string) => boolean;
 ```

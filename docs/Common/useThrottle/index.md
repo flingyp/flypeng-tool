@@ -7,8 +7,8 @@
 ## Basic Usage
 
 ```ts
-import { useThrottle } from '@flypeng/tool/browser'
-const throttleFunction = useThrottle(() => {}, 1000)
+import { useThrottle } from '@flypeng/tool/browser';
+const throttleFunction = useThrottle(() => {}, 1000);
 ```
 
 ## Online Demo
@@ -23,5 +23,5 @@ const throttleFunction = useThrottle(() => {}, 1000)
  * @param callback
  * @param delay
  */
-declare function useThrottle(callback: Function, delay: number): () => void
+declare function useThrottle(callback: Function, delay: number): () => void;
 ```

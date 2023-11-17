@@ -7,9 +7,9 @@ Judge whether the target object is empty
 ## Basic Usage
 
 ```ts
-import { useObjectIsEmpty } from '@flypeng/tool/browser'
+import { useObjectIsEmpty } from '@flypeng/tool/browser';
 
-const isEmpty = useObjectIsEmpty({})
+const isEmpty = useObjectIsEmpty({});
 ```
 
 ## Type Declaration
@@ -20,5 +20,5 @@ const isEmpty = useObjectIsEmpty({})
  * @param target
  * @returns
  */
-declare function useObjectIsEmpty(target: Object): boolean
+declare function useObjectIsEmpty(target: Object): boolean;
 ```

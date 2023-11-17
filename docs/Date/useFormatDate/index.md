@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useFormatDate } from '@flypeng/tool/browser'
+import { useFormatDate } from '@flypeng/tool/browser';
 ```
 
 ## Type Declaration
@@ -22,13 +22,13 @@ type DateFormatOption =
   | 'dd'
   | 'hh'
   | 'mm'
-  | 'ss'
+  | 'ss';
 /**
  * 格式化日期函数
  * @param format
  * @param date
  */
-declare function useFormatDate(format: DateFormatOption, date?: string | number | Date): string
+declare function useFormatDate(format: DateFormatOption, date?: string | number | Date): string;
 ```
 
 ## Online Demo

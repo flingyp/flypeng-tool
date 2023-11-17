@@ -7,7 +7,7 @@ useTemplate Introduction
 ## Basic Usage
 
 ```ts
-import { useTemplate } from '2@flypeng/tool/browser'
+import { useTemplate } from '2@flypeng/tool/browser';
 // import { useTemplate } from '@flypeng/tool/node'
 ```
 

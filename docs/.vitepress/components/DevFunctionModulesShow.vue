@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-  // @ts-ignore
-  import navBar from '../../nav-bar'
+// @ts-ignore
+import navBar from '../../nav-bar';
 </script>
 
 <template>
@@ -12,18 +12,18 @@
 </template>
 
 <style scoped>
-  #modules-show-container {
-    font-size: var(--vp-code-font-size);
-    background: var(--vp-code-block-bg);
-    padding: 2em;
-    position: relative;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    transition: background-color 0.5s;
-    color: var(--vp-c-text-1);
-  }
+#modules-show-container {
+  font-size: var(--vp-code-font-size);
+  background: var(--vp-code-block-bg);
+  padding: 2em;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background-color 0.5s;
+  color: var(--vp-c-text-1);
+}
 
-  #modules-show-container > div:not(:last-of-type) {
-    margin-bottom: 0.6em;
-  }
+#modules-show-container > div:not(:last-of-type) {
+  margin-bottom: 0.6em;
+}
 </style>

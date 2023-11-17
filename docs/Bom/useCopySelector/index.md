@@ -3,7 +3,7 @@
 ## Basic Usage
 
 ```ts
-import { useCopySelector } from '@flypeng/tool/browser'
+import { useCopySelector } from '@flypeng/tool/browser';
 ```
 
 ## Online Demo
@@ -22,5 +22,5 @@ demo-preview=./index.vue
  * @param selector DOM selector
  * @returns
  */
-declare function useCopySelector(selector: string): boolean
+declare function useCopySelector(selector: string): boolean;
 ```

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-  import { useGetUrlParam } from '@flypeng/browser'
+import { useGetUrlParam } from '@flypeng/browser';
 
-  const customParams = '?name=@flypeng/tool&description=工具库'
+const customParams = '?name=@flypeng/tool&description=工具库';
 </script>
 
 <template>

@@ -16,9 +16,9 @@ const { get, set, remove, clear } = useLocalStorage();
 
 ```ts
 declare function useLocalStorage(): {
-	get: (key: string) => string | null;
-	set: (key: string, value: any) => string | null;
-	clear: () => void;
-	remove: (key: string) => void;
+  get: (key: string) => string | null;
+  set: (key: string, value: any) => string | null;
+  clear: () => void;
+  remove: (key: string) => void;
 };
-```		
+```

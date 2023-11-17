@@ -7,9 +7,9 @@ Get browser version information (browser type and version number)
 ## Basic Usage
 
 ```ts
-import { useGetBrowserInfo } from '@flypeng/browser'
+import { useGetBrowserInfo } from '@flypeng/browser';
 
-const {type, version} = useGetBrowserInfo()
+const { type, version } = useGetBrowserInfo();
 ```
 
 ## Type Declaration
@@ -20,8 +20,7 @@ const {type, version} = useGetBrowserInfo()
  * @returns
  */
 declare function useGetBrowserInfo(): {
-	type: string;
-	version: number;
+  type: string;
+  version: number;
 };
 ```
-		

@@ -7,7 +7,7 @@ Set value of key to local storage
 ## Basic Usage
 
 ```ts
-import { useSetLocalKey } from '@flypeng/tool/browser'
+import { useSetLocalKey } from '@flypeng/tool/browser';
 
-useSetLocalKey('xx', 'mm')
+useSetLocalKey('xx', 'mm');
 ```

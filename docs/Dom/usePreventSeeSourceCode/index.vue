@@ -1,16 +1,16 @@
 <script lang="ts" setup>
-  import { usePreventSeeSourceCode } from '@flypeng/browser'
-  import { onMounted, onUnmounted } from 'vue'
+import { usePreventSeeSourceCode } from '@flypeng/browser';
+import { onMounted, onUnmounted } from 'vue';
 
-  let clear
+let clear;
 
-  onMounted(() => {
-    clear = usePreventSeeSourceCode()
-  })
+onMounted(() => {
+  clear = usePreventSeeSourceCode();
+});
 
-  onUnmounted(() => {
-    clear()
-  })
+onUnmounted(() => {
+  clear();
+});
 </script>
 
 <template>
