@@ -18,23 +18,23 @@ hero:
       link: https://github.com/flingyp/-flingyp-util
 
 features:
-  - title: 工具方法丰富
-    details: 各种各样常用方法集成，供你选择
+  - title: 工具函数丰富
+    details: 常用业务工具函数
     icon: 🦾
-  - title: 无缝兼容
-    details: 可在原生JS、Vue、React等多种环境工作
-    icon: 🚀
   - title: 类型支持
-    details: 使用TypeScript编写，提供类型提示
+    details: 提供良好的类型提示
     icon: ⚡
+  - title: Tree Shaking
+    details: 支持 Tree Shaking 功能
+    icon: 💖
   - title: 测试覆盖
-    details: 使用vitest来进行工具方法测试，测试覆盖率拉满
+    details: 使用 Vitest 进行单元测试
     icon: 🛠
-  - title: 不依赖其他工具
-    details: 无需任何捆绑程序
-    icon: ☁️
-  - title: VitePress 文档
-    details: 工具方法文档介绍，附带Demo演示
+  - title: 环境支持
+    details: 区分 Browser 和 Node 函数管理
+    icon: 🌍
+  - title: 文档完善
+    details: 工具函数介绍附带 Demo 功能预览
     icon: 🎪
 ---
 

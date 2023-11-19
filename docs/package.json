@@ -10,7 +10,7 @@
   "devDependencies": {
     "@vitepress-demo-preview/component": "^2.3.0",
     "@vitepress-demo-preview/plugin": "^1.1.11",
-    "vitepress": "1.0.0-rc.4",
+    "vitepress": "1.0.0-rc.28",
     "vue": "^3.3.4"
   },
   "dependencies": {
