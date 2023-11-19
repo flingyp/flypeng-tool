@@ -9,25 +9,26 @@ const buildBrowserEntryFile = async () => {
   const directories = resultFiles.filter((filePath) => {
     if (filePath === 'node') return;
 
-    const _path = `${packagesAbsolutePath}/${filePath}`;
-    if (!isFile(_path) && isDirectory(_path)) {
-      return filePath;
-    }
+    const fileAbsolutePath = `${packagesAbsolutePath}/${filePath}`;
+
+    if (!isFile(fileAbsolutePath) && isDirectory(fileAbsolutePath)) return true;
+    return false;
   });
 
   const entryPath = `${packagesAbsolutePath}/index.ts`;
 
   // 删除原有的入口文件
   if (existsSync(entryPath)) unlinkSync(entryPath);
-  writeFileSync(`${packagesAbsolutePath}/index.ts`, '// Tip: 文件由 build:entry 脚本生成\r', { encoding: 'utf-8' });
+  writeFileSync(entryPath, '// Tip: 文件由 build:entry 脚本生成\r', { encoding: 'utf-8' });
   // 新建并且追加内容到入口文件中
   directories.forEach((moduleName) => {
-    writeFileSync(`${packagesAbsolutePath}/index.ts`, `export * from './${moduleName}'\r`, {
+    writeFileSync(entryPath, `export * from './${moduleName}'\n`, {
       encoding: 'utf8',
       flag: 'a',
     });
   });
-  // execSync(`npx prettier --write ${packagesAbsolutePath}/index.ts`, { stdio: 'inherit' })
+
+  execSync(`npx prettier --write "${entryPath}"`, { stdio: 'inherit' });
 };
 
 const buildNodeEntryFile = async () => {
@@ -55,7 +56,7 @@ const buildNodeEntryFile = async () => {
   	`,
     { encoding: 'utf-8' },
   );
-  // execSync(`npx prettier --write ${entryPath}`, { stdio: 'inherit' })
+  execSync(`npx prettier --write "${entryPath}"`, { stdio: 'inherit' });
 };
 
 buildBrowserEntryFile();
