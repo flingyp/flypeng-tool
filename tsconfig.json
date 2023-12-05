@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["esnext", "DOM"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "paths": {
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
+    }
+  },
+  "include": ["./**/**/*.ts", "./docs/.vitepress/**/*.ts", "./docs/**/**/*.vue", "./types/*.ts", "playground/*.ts"],
+  "exclude": ["**/node_modules", "**/dist"]
+}
