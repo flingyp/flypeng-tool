@@ -1,5 +1,3 @@
-export default () => {
-  console.log('Browser');
-};
-
-export const a = 2;
+export * from './Common';
+export * from './String';
+export * from './Number';
