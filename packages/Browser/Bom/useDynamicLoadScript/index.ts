@@ -1,4 +1,4 @@
-import { useCheckUrl } from '../../index';
+import { useCheckUrl } from '../../Regexp';
 
 /**
  * 动态加载脚本文件
@@ -6,13 +6,11 @@ import { useCheckUrl } from '../../index';
  * @param callback
  */
 export default async function useDynamicLoadScript(url: string, callback = (...args: unknown[]) => false) {
-  if (!useCheckUrl(url)) {
-    throw new Error('invalid url');
-  }
+  if (!useCheckUrl(url)) throw new Error('invalid url');
+
   const headTag = document.querySelector('head');
-  if (!headTag) {
-    throw new Error('head tag is null');
-  }
+  if (!headTag) throw new Error('head tag is null');
+
   const scriptTag = document.createElement('script');
   scriptTag.type = 'text/javascript';
   scriptTag.src = url;

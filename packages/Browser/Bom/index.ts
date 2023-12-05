@@ -7,7 +7,6 @@ export { default as useDynamicLoadScript } from './useDynamicLoadScript';
 export { default as useToggleFullScreen } from './useToggleFullScreen';
 export { TouchBottomClass } from './useScrollToBottom';
 export { default as useScrollToBottom } from './useScrollToBottom';
-
 export { default as useGetLocalKey } from './useGetLocalKey';
 export { default as useSetLocalKey } from './useSetLocalKey';
 export { default as useClearLocal } from './useClearLocal';
