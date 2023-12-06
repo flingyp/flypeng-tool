@@ -32,9 +32,9 @@ export const build = async () => {
 };
 
 export const docsDev = async () => {
-  // await buildPackage();
+  await buildPackage();
   await buildDocs();
-  // await execSync('pnpm run --filter=docs dev', { stdio: 'inherit' });
+  await execSync('pnpm run --filter=docs dev', { stdio: 'inherit' });
 };
 
 export const docsBuild = async () => {

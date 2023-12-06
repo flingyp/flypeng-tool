@@ -1,6 +1,6 @@
 import { writeFileSync } from 'fs';
 import { getAbsolutePath } from '../utils';
-import { browserAllDirectory, nodeAllDirectory, browserFunctionsArrays, nodeFunctionsArrays } from './common';
+import buildFunction from './common';
 
 interface VitepressNavBar {
   text: string;
@@ -8,8 +8,10 @@ interface VitepressNavBar {
   items?: { text: string; link: string }[];
 }
 
-const generateNavBar = () => {
-  const allNavBar: VitepressNavBar[] = [];
+const generateNavBar = async () => {
+  const { browserAllDirectory, nodeAllDirectory, browserFunctionsArrays, nodeFunctionsArrays } = await buildFunction();
+
+  const allNavbar: VitepressNavBar[] = [];
   const allFunctionArrays = { ...browserFunctionsArrays, ...nodeFunctionsArrays };
   const allDirectory = [...browserAllDirectory, ...nodeAllDirectory];
   allDirectory.forEach((module) => {
@@ -20,14 +22,17 @@ const generateNavBar = () => {
     } else {
       generateItem.link = `/${module}/${allFunctionArrays[module][0]}/`;
     }
-    allNavBar.push(generateItem);
+    allNavbar.push(generateItem);
   });
-  return allNavBar;
+
+  // 生成文档顶部栏
+  await writeFileSync(
+    getAbsolutePath('../docs/nav-bar.ts'),
+    `export default JSON.parse('${JSON.stringify(allNavbar)}')`,
+    {
+      encoding: 'utf8',
+    },
+  );
 };
 
-const navBar = generateNavBar();
-
-// 生成文档顶部栏
-writeFileSync(getAbsolutePath('../docs/nav-bar.ts'), `export default JSON.parse('${JSON.stringify(navBar)}')`, {
-  encoding: 'utf8',
-});
+generateNavBar();

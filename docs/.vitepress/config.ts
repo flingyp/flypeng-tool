@@ -1,8 +1,49 @@
 import { defineConfig, DefaultTheme } from 'vitepress';
 
+import sidebar from '../side-bar';
+import navbar from '../nav-bar';
+
+const defaultSideBar = [
+  {
+    text: 'Guide',
+    items: [
+      { text: 'Get Started', link: '/guide/' },
+      { text: 'Dev Function', link: '/guide/devFunction' },
+      { text: 'Contributing', link: '/guide/contributing' },
+    ],
+  },
+];
+
+const docsSidebar = [...defaultSideBar, ...sidebar];
+
+const guideNav = [{ text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] }];
+
+const navBarModules = navbar.map((module: DefaultTheme.NavItemWithLink) => {
+  return {
+    text: `${module.text} Functions`,
+    link: module.link,
+  };
+});
+
+const docsNavbar = [...guideNav, { text: 'Modules', items: navBarModules }];
+
 export default defineConfig({
   base: '/flypeng-tool',
   title: '@flypeng/tool',
   description: 'Integrate a collection of common tools and methods',
   lastUpdated: true,
+  themeConfig: {
+    nav: docsNavbar,
+    sidebar: docsSidebar,
+    socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/flypeng-tool' }],
+    editLink: {
+      pattern: 'https://github.com/flingyp/flypeng-tool/blob/dev/docs/:path',
+      text: 'Edit this p,age on GitHub',
+    },
+    lastUpdatedText: 'Last updated',
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2022-present FlingYP',
+    },
+  },
 });
