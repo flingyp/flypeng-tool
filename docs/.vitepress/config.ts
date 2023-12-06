@@ -4,7 +4,7 @@ import { componentPreview, containerPreview } from '@vitepress-demo-preview/plug
 import sidebar from '../side-bar';
 import navbar from '../nav-bar';
 
-const defaultSideBar = [
+const defaultSidebar = [
   {
     text: 'Guide',
     items: [
@@ -15,18 +15,25 @@ const defaultSideBar = [
   },
 ];
 
-const docsSidebar = [...defaultSideBar, ...sidebar];
+const docsSidebar = [...defaultSidebar, ...sidebar];
 
-const guideNav = [{ text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] }];
+const guideNavbar = [{ text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] }];
 
-const navBarModules = navbar.map((module: DefaultTheme.NavItemWithLink) => {
+const changelogNavbar = [
+  {
+    text: `CHANGELOG`,
+    link: '/guide/CHANGELOG',
+  },
+];
+
+const navbarModules = navbar.map((module: DefaultTheme.NavItemWithLink) => {
   return {
     text: `${module.text} Functions`,
     link: module.link,
   };
 });
 
-const docsNavbar = [...guideNav, { text: 'Modules', items: navBarModules }];
+const docsNavbar = [...guideNavbar, { text: 'Modules', items: navbarModules }, ...changelogNavbar];
 
 export default defineConfig({
   base: '/flypeng-tool',
