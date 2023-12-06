@@ -10,7 +10,15 @@ import { execSync } from 'child_process';
  * 构建包相关入口文件
  */
 const buildPackage = async () => {
-  await execSync('npx esno ./build/packages/entry.ts', { stdio: 'inherit' });
+  await execSync('npx esno ./build/packages/index.ts', { stdio: 'inherit' });
+};
+
+/**
+ * 构建文档相关入口文件
+ */
+const buildDocs = async () => {
+  await execSync('npx esno ./build/docs/Sidebar.ts', { stdio: 'inherit' });
+  await execSync('npx esno ./build/docs/Navbar.ts', { stdio: 'inherit' });
 };
 
 export const dev = async () => {
@@ -24,16 +32,19 @@ export const build = async () => {
 };
 
 export const docsDev = async () => {
-  await buildPackage();
-  await execSync('pnpm run --filter=docs dev', { stdio: 'inherit' });
+  // await buildPackage();
+  await buildDocs();
+  // await execSync('pnpm run --filter=docs dev', { stdio: 'inherit' });
 };
 
 export const docsBuild = async () => {
   await buildPackage();
+  await buildDocs();
   await execSync('pnpm run --filter=docs build', { stdio: 'inherit' });
 };
 
 export const docsServer = async () => {
   await buildPackage();
+  await buildDocs();
   await execSync('pnpm run --filter=docs server', { stdio: 'inherit' });
 };
