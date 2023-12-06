@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useCommonType, useToggleFullScreen } from '@flypeng/browser';
+import { useCommonType, useToggleFullScreen } from '@flypeng/tool/browser';
 
 const triggerFullScreen = async () => {
   const isSupportFullScreen = await useToggleFullScreen();

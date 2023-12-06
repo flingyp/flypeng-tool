@@ -12,7 +12,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "paths": {
-      "tslib": ["node_modules/tslib/tslib.d.ts"]
+      "tslib": ["node_modules/tslib/tslib.d.ts"],
+      "@flypeng/tool/browser": ["./dist/browser/index.d.ts"],
+      "@flypeng/tool/node": ["./dist/node/index.d.ts"]
     }
   },
   "include": ["./**/**/*.ts", "./docs/.vitepress/**/*.ts", "./docs/**/**/*.vue", "./types/*.ts", "playground/*.ts"],

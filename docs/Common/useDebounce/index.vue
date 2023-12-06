@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useDebounce } from '@flypeng/browser';
+import { useDebounce } from '@flypeng/tool/browser';
 import { ref, onMounted } from 'vue';
 const content = ref<string>('');
 const inputDom = ref<HTMLInputElement | null>(null);

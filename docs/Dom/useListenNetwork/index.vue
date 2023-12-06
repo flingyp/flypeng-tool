@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useListenNetwork } from '@flypeng/browser';
+import { useListenNetwork } from '@flypeng/tool/browser';
 import { ref } from 'vue';
 
 const isOnLine = ref(true);

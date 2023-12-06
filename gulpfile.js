@@ -19,6 +19,7 @@ const buildPackage = async () => {
 const buildDocs = async () => {
   await execSync('npx esno ./build/docs/Sidebar.ts', { stdio: 'inherit' });
   await execSync('npx esno ./build/docs/Navbar.ts', { stdio: 'inherit' });
+  await execSync('npx esno ./build/docs/Version.ts', { stdio: 'inherit' });
 };
 
 export const dev = async () => {

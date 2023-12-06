@@ -5,7 +5,7 @@
 
 <script lang="ts" setup>
 import { ref, computed } from 'vue';
-import { useCheckPasswordStrength } from '@flypeng/browser';
+import { useCheckPasswordStrength } from '@flypeng/tool/browser';
 
 const checkValue = ref('');
 

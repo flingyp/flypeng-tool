@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useOnce } from '@flypeng/browser';
+import { useOnce } from '@flypeng/tool/browser';
 import { ref } from 'vue';
 
 const message = ref<'未发送请求' | '已发生请求'>('未发送请求');

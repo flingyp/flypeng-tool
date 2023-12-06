@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useRandomString } from '@flypeng/browser';
+import { useRandomString } from '@flypeng/tool/browser';
 </script>
 
 <template>

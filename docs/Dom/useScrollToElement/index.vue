@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
-import { useScrollToElement } from '@flypeng/browser';
+import { useScrollToElement } from '@flypeng/tool/browser';
 
 const introductionNode = ref<HTMLElement | null>(null);
 

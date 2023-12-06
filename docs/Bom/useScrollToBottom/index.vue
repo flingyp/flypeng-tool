@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useScrollToBottom, TouchBottomClass } from '@flypeng/browser';
+import { useScrollToBottom, TouchBottomClass } from '@flypeng/tool/browser';
 import { onMounted, onUnmounted, ref } from 'vue';
 
 const scrollElement = ref<Element | null>(null);

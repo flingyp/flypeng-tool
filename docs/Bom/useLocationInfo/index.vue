@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useLocationInfo } from '@flypeng/browser';
+import { useLocationInfo } from '@flypeng/tool/browser';
 
 const locationInfo = useLocationInfo();
 </script>

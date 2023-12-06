@@ -1,4 +1,5 @@
 import { defineConfig, DefaultTheme } from 'vitepress';
+import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin';
 
 import sidebar from '../side-bar';
 import navbar from '../nav-bar';
@@ -32,6 +33,12 @@ export default defineConfig({
   title: '@flypeng/tool',
   description: 'Integrate a collection of common tools and methods',
   lastUpdated: true,
+  markdown: {
+    config(md) {
+      md.use(componentPreview);
+      md.use(containerPreview);
+    },
+  },
   themeConfig: {
     nav: docsNavbar,
     sidebar: docsSidebar,

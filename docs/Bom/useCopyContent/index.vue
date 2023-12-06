@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useCopyContent } from '@flypeng/browser';
+import { useCopyContent } from '@flypeng/tool/browser';
 
 const copy = () => {
   useCopyContent('@flypeng/tool');

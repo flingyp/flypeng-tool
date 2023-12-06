@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { usePreventSeeSourceCode } from '@flypeng/browser';
+import { usePreventSeeSourceCode } from '@flypeng/tool/browser';
 import { onMounted, onUnmounted } from 'vue';
 
 let clear;
