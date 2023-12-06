@@ -40,6 +40,9 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
+    "docs:dev": "gulp docsDev",
+    "docs:build": "gulp docsBuild",
+    "docs:server": "gulp docsServer",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "lint": "prettier . --write && eslint .",
@@ -63,6 +66,8 @@
     "eslint": "^8.55.0",
     "esno": "^4.0.0",
     "gulp": "^4.0.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.1.0",
     "standard-version": "^9.5.0",
     "stylelint": "^15.11.0",

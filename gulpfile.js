@@ -6,12 +6,34 @@ import { execSync } from 'child_process';
  * 3. 文档打包
  */
 
-export const dev = async () => {
+/**
+ * 构建包相关入口文件
+ */
+const buildPackage = async () => {
   await execSync('npx esno ./build/packages/entry.ts', { stdio: 'inherit' });
+};
+
+export const dev = async () => {
+  await buildPackage();
   await execSync('cross-env NODE_ENV=dev tsup --watch', { stdio: 'inherit' });
 };
 
 export const build = async () => {
-  await execSync('npx esno ./build/packages/entry.ts', { stdio: 'inherit' });
+  await buildPackage();
   await execSync('cross-env NODE_ENV=build tsup', { stdio: 'inherit' });
+};
+
+export const docsDev = async () => {
+  await buildPackage();
+  await execSync('pnpm run --filter=docs dev', { stdio: 'inherit' });
+};
+
+export const docsBuild = async () => {
+  await buildPackage();
+  await execSync('pnpm run --filter=docs build', { stdio: 'inherit' });
+};
+
+export const docsServer = async () => {
+  await buildPackage();
+  await execSync('pnpm run --filter=docs server', { stdio: 'inherit' });
 };

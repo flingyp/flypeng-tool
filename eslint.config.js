@@ -3,6 +3,9 @@ import flypeng from '@flypeng/eslint-config';
 export default [
   ...flypeng(),
   {
+    ignores: ['**/.vitepress/cache/*'],
+  },
+  {
     rules: {
       'no-useless-escape': 'off',
     },
