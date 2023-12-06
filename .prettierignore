@@ -6,3 +6,4 @@
 **/*.sh
 /public/*
 **/*.yaml
+**/.vitepress/cache/*
