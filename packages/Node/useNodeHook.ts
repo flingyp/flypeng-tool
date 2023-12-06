@@ -25,7 +25,7 @@ type FileName = string | { name: string; suffix: string };
  * 如果路径Path的是一个文件则会返回文件名和后罪名，否则返回目录名
  * @param path
  */
-export const useGetFileName = (path: string) => {
+export const useGetFileName = (path: string): FileName => {
   const lastFileNameStr = basename(path);
   if (!useIsFile(path) && useIsDirectory(path)) {
     return lastFileNameStr;
