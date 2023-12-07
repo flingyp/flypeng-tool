@@ -4,30 +4,62 @@
 
 # Get Started
 
-**<span style="color: var(--component-preview-primary-color); font-size: 16px;">@flypeng/tool</span>** 是一个集成各种实用功能的开发工具箱
+**<span style="color: var(--vp-c-brand); font-size: 16px;">@flypeng/tool</span>** 是一个集成业务中常用的工具函数库。集成封装常用业务函数库，可以极大程度上的提高开发者的效率。
 
-当前版本：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">v{{version}}</span>
+搭建这么一个函数库的灵感来自于 [VueUse](https://vueuse.org/)，把每一个工具函数想象成为一个钩子函数去使用。目标就是集成所有常用的工具函数，并且可以轻松使用它。
 
-函数统计：<span style="color: var(--component-preview-primary-color); font-weight: 600; font-size: 16px;">{{HooksNum}} Functions</span>
+当前版本：<span style="color: var(--vp-c-brand); font-weight: 600; font-size: 16px;">v{{version}}</span>
+
+函数统计：<span style="color: var(--vp-c-brand); font-weight: 600; font-size: 16px;">{{HooksNum}} Functions</span>
 
 ## Installation
 
-```sh
-pnpm install @flypeng/tool@latest
+::: code-group
+
+```sh [npm]
+npm install @flypeng/tool@latest
 ```
 
-## Usage
+```sh [yarn]
+yarn add @flypeng/tool@latest
+```
+
+```sh [pnpm]
+pnpm add @flypeng/tool@latest
+```
+
+:::
+
+## Usage Example
+
+### `@flypeng/tool/browser`
+
+集成所有非 `Node Functions` 环境下的工具函数
 
 ```ts
 import { useRandomInteger, useIsMobile } from '@flypeng/tool/browser';
-import { useGetCurrentPath, useIsFile } from '@flypeng/tool/node';
 
 const isMobile = useIsMobile(); // isMobile is Boolean
 const randomInteger = useRandomInteger(10, 100); // Integer in [10, 100]
+```
+
+### `@flypeng/tool/node`
+
+集成 Node 环境下的工具函数
+
+```ts
+import { useGetCurrentPath, useIsFile } from '@flypeng/tool/node';
+
 const isFile = useIsFile(useGetCurrentPath()); // isFile is Boolean
 ```
 
-## 通过 CDN 引入
+## Usage CDN
+
+:::tip
+
+这里使用了 [unpkg](https://unpkg.com/) ，但也可以使用其他提供包服务的 CDN，例如 [jsdelivr](https://www.jsdelivr.com/) 或 [cdnjs](https://cdnjs.com/)，也可以下载此文件并自行提供服务。
+
+:::
 
 ```js
 <script src="https://unpkg.com/@flypeng/tool@${version}/browser/index-browser.js"></script>
@@ -39,20 +71,10 @@ const isFile = useIsFile(useGetCurrentPath()); // isFile is Boolean
 </script>
 ```
 
-:::tip
-这里使用了 [unpkg](https://unpkg.com/) ，但也可以使用其他提供包服务的 CDN，例如 [jsdelivr](https://www.jsdelivr.com/) 或 [cdnjs](https://cdnjs.com/)。
+## Technology Stack
 
-也可以下载此文件并自行提供服务。
-:::
-
-## Project introduction
-
-项目的灵感来自于 VueUse。开发这样一个工具库来用于平时开发中，可以极大的提高开发者的效率
-
-**@flypeng/tool**：
-
-1. 使用 TypeScript 语言 配置 tsup 打包工具进行实用函数的编写和打包
-
-2. 使用 vitest 进行功能测试，每个实用函数应配备 `index.test.ts` 测试文件
-
-3. 工具箱使用 vitepress 文档，各种实用函数 Introduction、在线 Demo 演示编写。确保在不好书写测试用例的情况下，进行 Demo 演示
+- [tsup](https://github.com/egoist/tsup) 构建工具
+- [vitest](https://github.com/vitest-dev/vitest) 测试工具
+- [vitepress](https://github.com/vuejs/vitepress) 文档工具
+- [vitepress-demo-preview](https://github.com/flingyp/vitepress-demo-preview) 组件预览工具
+- [gulp](https://github.com/gulpjs/gulp) 流程构建工具

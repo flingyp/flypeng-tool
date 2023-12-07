@@ -9,8 +9,8 @@ const defaultSidebar = [
     text: 'Guide',
     items: [
       { text: 'Get Started', link: '/guide/' },
-      { text: 'Dev Function', link: '/guide/devFunction' },
-      { text: 'Contributing', link: '/guide/contributing' },
+      { text: 'Create Function', link: '/guide/devFunction' },
+      { text: 'Contribution', link: '/guide/contribution' },
     ],
   },
 ];

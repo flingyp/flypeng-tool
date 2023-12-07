@@ -34,7 +34,7 @@ onUnmounted(() => {
   left: 50%;
   transform: translateX(-50%);
   top: 10px;
-  color: var(--component-preview-primary-color);
+  color: var(--vp-c-brand);
   font-size: 16px;
   font-weight: 600;
 }

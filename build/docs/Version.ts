@@ -51,6 +51,12 @@ const changelogContent = readFileSync(changelogPath, { encoding: 'utf-8' });
 // 从这个字符串的最后一个字符开始，删除CHANGELOG文件头部不重要的信息
 const findStr = 'commit guidelines.';
 const firstFindStrIndex = changelogContent.indexOf(findStr);
-const changelogNeedContent = changelogContent.slice(firstFindStrIndex + findStr.length + 1);
+let changelogNeedContent = changelogContent.slice(firstFindStrIndex + findStr.length + 1);
+
+changelogNeedContent = `
+# CHANGELOG
+
+${changelogNeedContent}
+`;
 
 writeFileSync(targetChangelogPath, changelogNeedContent);

@@ -1,3 +1,4 @@
+# CHANGELOG
 
 ## [5.4.0](https://github.com/flingyp/flypeng-tool/compare/v5.3.2...v5.4.0) (2023-10-19)
 
