@@ -22,6 +22,13 @@ const buildDocs = async () => {
   await execSync('npx esno ./build/docs/Version.ts', { stdio: 'inherit' });
 };
 
+/**
+ * 代码格式化
+ */
+const codeFormatting = async () => {
+  await execSync('npx prettier . --write', { stdio: 'inherit' });
+};
+
 export const dev = async () => {
   await buildPackage();
   await execSync('cross-env NODE_ENV=dev tsup --watch', { stdio: 'inherit' });
@@ -35,21 +42,25 @@ export const build = async () => {
 export const docsDev = async () => {
   await buildPackage();
   await buildDocs();
+  await codeFormatting();
   await execSync('pnpm run --filter=docs dev', { stdio: 'inherit' });
 };
 
 export const docsBuild = async () => {
   await buildPackage();
   await buildDocs();
+  await codeFormatting();
   await execSync('pnpm run --filter=docs build', { stdio: 'inherit' });
 };
 
 export const docsServer = async () => {
   await buildPackage();
   await buildDocs();
+  await codeFormatting();
   await execSync('pnpm run --filter=docs server', { stdio: 'inherit' });
 };
 
 export const newFunction = async () => {
   await execSync('npx esno ./build/packages/new.ts', { stdio: 'inherit' });
+  await codeFormatting();
 };

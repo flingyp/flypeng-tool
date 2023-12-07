@@ -1,12 +1,18 @@
 <script lang="ts" setup>
-// @ts-ignore
+import { useRouter } from 'vitepress';
 import navBar from '../../nav-bar';
+
+const router = useRouter();
+
+const navigatorTo = (item: any) => {
+  router.go(`/flypeng-tool${item.link}`);
+};
 </script>
 
 <template>
   <div id="modules-show-container">
     <div v-for="(item, index) in navBar" :key="index">
-      <a :href="`/flypeng-tool${item.link}`">- {{ item.text }} Functions 模块</a>
+      <span class="item" @click="navigatorTo(item)">- {{ item.text }} Functions 模块</span>
     </div>
   </div>
 </template>
@@ -25,5 +31,10 @@ import navBar from '../../nav-bar';
 
 #modules-show-container > div:not(:last-of-type) {
   margin-bottom: 0.6em;
+}
+
+#modules-show-container > div > .item {
+  cursor: pointer;
+  color: var(--vp-c-brand);
 }
 </style>
