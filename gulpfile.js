@@ -49,3 +49,7 @@ export const docsServer = async () => {
   await buildDocs();
   await execSync('pnpm run --filter=docs server', { stdio: 'inherit' });
 };
+
+export const newFunction = async () => {
+  await execSync('npx esno ./build/packages/new.ts', { stdio: 'inherit' });
+};
