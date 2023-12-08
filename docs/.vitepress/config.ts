@@ -50,6 +50,9 @@ export default defineConfig({
     nav: docsNavbar,
     sidebar: docsSidebar,
     socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/flypeng-tool' }],
+    search: {
+      provider: 'local',
+    },
     editLink: {
       pattern: 'https://github.com/flingyp/flypeng-tool/blob/dev/docs/:path',
       text: 'Edit this p,age on GitHub',
