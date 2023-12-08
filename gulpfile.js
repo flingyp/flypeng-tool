@@ -31,11 +31,13 @@ const codeFormatting = async () => {
 
 export const dev = async () => {
   await buildPackage();
+  await codeFormatting();
   await execSync('cross-env NODE_ENV=dev tsup --watch', { stdio: 'inherit' });
 };
 
 export const build = async () => {
   await buildPackage();
+  await codeFormatting();
   await execSync('cross-env NODE_ENV=build tsup', { stdio: 'inherit' });
 };
 

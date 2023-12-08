@@ -4,7 +4,6 @@ const currentNodeEnv = process.env.NODE_ENV;
 const isProd = currentNodeEnv === 'build';
 
 const commonConfig: Options = {
-  format: ['esm', 'cjs'],
   minify: isProd,
   sourcemap: !isProd,
   shims: true,
@@ -14,12 +13,19 @@ const commonConfig: Options = {
 
 export default defineConfig([
   {
+    format: ['esm', 'cjs', 'iife'],
     entry: ['./packages/Browser/index.ts'],
     outDir: 'dist/browser',
     platform: 'neutral',
+    globalName: 'fy',
+    outExtension({ format }) {
+      if (format === 'iife') return { js: '.browser.js' };
+      return { js: `.${format}.js` };
+    },
     ...commonConfig,
   },
   {
+    format: ['esm', 'cjs'],
     entry: ['./packages/Node/index.ts'],
     outDir: 'dist/node',
     platform: 'node',
