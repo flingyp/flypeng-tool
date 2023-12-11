@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Clear local storage
+清除本地存储
 
 ## Basic Usage
 

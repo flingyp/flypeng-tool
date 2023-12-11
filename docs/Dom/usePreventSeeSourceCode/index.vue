@@ -14,8 +14,5 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <p>
-    Prevent default method and click keyboard shortcuts that F12, Ctrl+S, Ctrl+U, Ctrl+Shift+I, Ctrl+Shift+C or right
-    click not have response
-  </p>
+  <p>阻止默认方法并单击键盘快捷键F12、Ctrl+S、Ctrl+U、Ctrl+Shift+I、Ctrl+Shift+C或Right。单击无响应</p>
 </template>

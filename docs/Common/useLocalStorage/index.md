@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Simply encapsulate CURD method of localStorage.
+本地存储的方法的集合
 
 ## Basic Usage
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Check strength level of password
+检查密码的强度级别
 
 ## Basic Usage
 
@@ -17,7 +17,7 @@ const isCheckedValue = useCheckIncludeNumber('XXX'); // 0 | 1 | 2 | 3
 ```ts
 type StrengthLevel = 0 | 1 | 2 | 3;
 /**
- * Check strength level of password
+ * 检查密码的强度级别
  * @param password
  * @param defineLength
  * @returns
@@ -27,4 +27,4 @@ declare function useCheckPasswordStrength(password: string, defineLength?: numbe
 
 ## Online Demo
 
-<preview path="./index.vue" title="useCheckPasswordStrength" description="Check strength level of password"></preview>
+<preview path="./index.vue" title="useCheckPasswordStrength" description="检查密码的强度级别"></preview>

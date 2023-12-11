@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Scroll to top of page
+滚到页面顶部
 
 ## Basic Usage
 

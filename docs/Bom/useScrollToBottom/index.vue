@@ -17,7 +17,7 @@ let touchBottomInstance: TouchBottomClass;
 onMounted(() => {
   if (scrollElement.value) {
     touchBottomInstance = useScrollToBottom(scrollElement.value, () => {
-      console.log('Container scroll to bottom and execute callback');
+      console.log('Container 滚动到底部并执行回调函数');
     });
   }
 });

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Check whether string contains Emoji emoticons
+判断字符串中是否包含 Emoji 表情
 
 ## Basic Usage
 
@@ -23,4 +23,4 @@ declare function useCheckIncludeEmoji(value: string): boolean;
 
 ## Online Demo
 
-<preview path="./index.vue" title="useCheckIncludeEmoji" description="check whether string contains Emoji emoticons"></preview>
+<preview path="./index.vue" title="useCheckIncludeEmoji" description="判断字符串中是否包含 Emoji 表情"></preview>

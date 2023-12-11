@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Sometimes object params are used to provide background services, but you do not want to pass null values. So I want to give some parameters that are not null.
+删除对象中属性为 Null 的值
 
 ## Basic Usage
 

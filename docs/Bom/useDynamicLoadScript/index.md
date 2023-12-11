@@ -2,7 +2,7 @@
 
 ## Introduction
 
-dynamic loading script file
+动态加载脚本文件
 
 ## Basic Usage
 
@@ -25,4 +25,4 @@ declare function useDynamicLoadScript(url: string, callback?: (...args: unknown[
 
 ## Online Demo
 
-<preview path="./index.vue" title="useDynamicLoadScript" description="dynamic loading script file"></preview>
+<preview path="./index.vue" title="useDynamicLoadScript" description="动态加载脚本文件"></preview>

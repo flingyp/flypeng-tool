@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Get file name from path
+如果路径Path的是一个文件则会返回文件名和后罪名，否则返回目录名
 
 ## Basic Usage
 

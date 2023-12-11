@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Generate random string value
+生成随机字符串
 
 ## Basic Usage
 

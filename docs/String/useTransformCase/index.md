@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Convert string case
+将字符串转换大小写
 
 ## Basic Usage
 

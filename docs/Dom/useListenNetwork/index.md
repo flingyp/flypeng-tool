@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Listen current page network and execute different callback
+监听当前网页是否在线执行回调
 
 ## Basic Usage
 
@@ -24,4 +24,4 @@ declare function useListenNetwork(online: (...args: any[]) => void, offline: (..
 
 ## Online Demo
 
-<preview path="./index.vue" title="useListenNetwork" description="listen current page network and execute different callback"></preview>
+<preview path="./index.vue" title="useListenNetwork" description="监听当前网页是否在线执行回调"></preview>

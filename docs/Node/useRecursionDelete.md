@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Recursion delete directory
+递归删除目录
 
 ## Basic Usage
 

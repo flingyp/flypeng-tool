@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Get path where executing command
+获取执行该方法时所在的目录
 
 ## Basic Usage
 

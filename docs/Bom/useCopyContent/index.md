@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Copy content to clipboard
+拷贝指定内容到剪贴板中
 
 ## Basic Usage
 
@@ -23,4 +23,4 @@ declare function useCopyContent(content: string): Promise<void>;
 
 ## Online Demo
 
-<preview path="./index.vue" title="useCopyContent" description="Copy content to clipboard"></preview>
+<preview path="./index.vue" title="useCopyContent" description="拷贝指定内容到剪贴板中"></preview>

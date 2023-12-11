@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Judge whether the target object is empty
+判断对象是否为空对象
 
 ## Basic Usage
 

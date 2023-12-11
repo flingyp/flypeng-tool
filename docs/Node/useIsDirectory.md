@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Judge whether the path is directory
+判断当前路径是否是目录
 
 ## Basic Usage
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Execute callback when the browser page switches
+当浏览器页面切换时执行的回调函数
 
 ## Basic Usage
 
@@ -29,4 +29,4 @@ declare function usePageTabSwitch(callback: () => void): () => void;
 
 ## Online Demo
 
-<preview path="./index.vue" title="usePageTabSwitch" description="Execute callback when the browser page switches"></preview>
+<preview path="./index.vue" title="usePageTabSwitch" description="当浏览器页面切换时执行的回调函数"></preview>

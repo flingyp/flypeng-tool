@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Judge whether the path is file
+判断当前路径是否是文件
 
 ## Basic Usage
 

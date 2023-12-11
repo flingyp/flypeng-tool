@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Set value of key to local storage
+设置本地存储的Key
 
 ## Basic Usage
 

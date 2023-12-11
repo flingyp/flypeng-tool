@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Execute command
+执行命令
 
 ## Basic Usage
 

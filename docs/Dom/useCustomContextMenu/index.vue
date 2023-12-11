@@ -20,8 +20,8 @@ onUnmounted(() => {
 
 <template>
   <div>
-    <div>Click F12 to see console</div>
-    <button ref="preventButton">Click right and not show context menu</button>
+    <div>点击 F12 查看控制台</div>
+    <button ref="preventButton">单击鼠标右键而不显示上下文菜单</button>
   </div>
 </template>
 

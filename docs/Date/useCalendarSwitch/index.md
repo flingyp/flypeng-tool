@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Calendar switch
+获取当前日期阳历或阴历的信息
 
 ## Basic Usage
 
@@ -14,7 +14,7 @@ import { useCalendarSwitch } from '@flypeng/tool/browser';
 
 ```ts
 /**
- * Calendar switch
+ * 获取当前日期阳历或阴历的信息
  * @param date: date format yyyy-MM-dd
  * @param type: 'solar' | 'lunar'
  * @returns
@@ -49,4 +49,4 @@ declare function useCalendarSwitch(
 
 ## Online Demo
 
-<preview path="./index.vue" title="useCalendarSwitch" description="Calendar switch"></preview>
+<preview path="./index.vue" title="useCalendarSwitch" description="获取当前日期阳历或阴历的信息"></preview>

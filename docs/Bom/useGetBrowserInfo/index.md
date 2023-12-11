@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Get browser version information (browser type and version number)
+获取浏览器版本信息（浏览器类型和版本号）
 
 ## Basic Usage
 

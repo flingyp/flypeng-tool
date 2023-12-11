@@ -1,5 +1,9 @@
 # useFormatDate
 
+## Introduction
+
+格式化日期函数
+
 ## Basic Usage
 
 ```ts
@@ -33,4 +37,4 @@ declare function useFormatDate(format: DateFormatOption, date?: string | number 
 
 ## Online Demo
 
-<preview path="./index.vue" title="useFormatDate" description="Format Date"></preview>
+<preview path="./index.vue" title="useFormatDate" description="格式化日期函数"></preview>

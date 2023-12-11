@@ -3,7 +3,7 @@ import calendarFormatter from './calendarUtil';
 const { solar2lunar, lunar2solar } = calendarFormatter;
 
 /**
- * Calendar switch
+ * 获取当前日期阳历或阴历的信息
  * @param date: date format yyyy-MM-dd
  * @param type: 'solar' | 'lunar'
  * @returns

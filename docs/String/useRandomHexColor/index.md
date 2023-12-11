@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Generate random HEX color value
+随机生成HEX色值的颜色
 
 ## Basic Usage
 

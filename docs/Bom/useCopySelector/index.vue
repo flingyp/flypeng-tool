@@ -1,5 +1,5 @@
 <template>
-  <div class="copyDom">@flypeng-tool：useCopy function</div>
+  <div class="copyDom">@flypeng-tool - useCopySelector</div>
   <button @click="copy">点击</button>
   <div>复制结果：{{ copyResult ? '成功' : '失败' }}</div>
 </template>

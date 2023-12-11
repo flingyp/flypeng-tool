@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Remove key from local storage
+移除本地存储的Key
 
 ## Basic Usage
 

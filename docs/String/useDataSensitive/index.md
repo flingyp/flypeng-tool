@@ -1,5 +1,9 @@
 # useDataSensitive
 
+## Introduction
+
+敏感数据进行脱敏处理
+
 ## Basic Usage
 
 ```ts

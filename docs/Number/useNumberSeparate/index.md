@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The number is divided according to the specified quantity
+数字根据指定数量进行分割
 
 ## Basic Usage
 
@@ -24,4 +24,4 @@ declare function useNumberSeparate(value: number, separateNumber?: number = 3): 
 
 ## Online Demo
 
-<preview path="./index.vue" title="useNumberSeparate" description="The number is divided according to the specified quantity"></preview>
+<preview path="./index.vue" title="useNumberSeparate" description="数字根据指定数量进行分割"></preview>

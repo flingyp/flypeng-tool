@@ -1,5 +1,9 @@
 # useRandomInteger
 
+## Introduction
+
+生成指定区间内随机整数
+
 ## Basic Usage
 
 ```ts

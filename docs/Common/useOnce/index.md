@@ -2,12 +2,12 @@
 
 ## Introduction
 
-To confirm callback function to execute only once.
+确保回调函数只执行一次
 
 :::tip
-For example, there is a function that sends a request to the server to load data. Using the `useOnce()`, it can ensure that the request is not incoked more than once.
+例如，有一个函数向服务器发送加载数据的请求。使用`useOnce()`，可以确保请求不会被多次执行。
 
-Even if user keeps clicking the button, this will avoid performance problems and confirm request to execute only once.
+即使用户一直点击该按钮，这也将避免性能问题，并确认请求只执行一次。
 :::
 
 ## Basic Usage
@@ -35,4 +35,4 @@ declare function useOnce(callback: () => void): () => void;
 
 ## Online Demo
 
-<preview path="./index.vue" title="useOnce" description="To confirm callback function to execute only once"></preview>
+<preview path="./index.vue" title="useOnce" description="确保回调函数只执行一次"></preview>

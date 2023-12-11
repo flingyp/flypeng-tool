@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Scroll to the corresponding DOM element
+滚动到对应DOM元素节点上
 
 ## Basic Usage
 
@@ -24,4 +24,4 @@ declare function useScrollToElement(element: HTMLElement): void;
 
 ## Online Demo
 
-<preview path="./index.vue" title="useScrollToElement" description="Scroll to the corresponding DOM element"></preview>
+<preview path="./index.vue" title="useScrollToElement" description="滚动到对应DOM元素节点上"></preview>

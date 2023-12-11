@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Get extend name of path
+获取路径的后缀名
 
 ## Basic Usage
 

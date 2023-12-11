@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Custom right click to prevent default method and to execute callback
+自定义右击以阻止默认方法并执行回调
 
 ## Basic Usage
 
@@ -30,4 +30,4 @@ declare function useCustomContextMenu(node: HTMLElement, callback: () => void): 
 
 ## Online Demo
 
-<preview path="./index.vue" title="useCustomContextMenu" description="Custom right click to prevent default method and to execute callback"></preview>
+<preview path="./index.vue" title="useCustomContextMenu" description="阻止鼠标右键点击默认事件并且执行回调函数"></preview>

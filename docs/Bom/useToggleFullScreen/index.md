@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Trigger page full screen
+触发页面全屏
 
 ## Basic Usage
 
@@ -23,4 +23,4 @@ declare function useToggleFullScreen(): Promise<void>;
 
 ## Online Demo
 
-<preview path="./index.vue" title="useToggleFullScreen" description="Trigger page full screen"></preview>
+<preview path="./index.vue" title="useToggleFullScreen" description="触发页面全屏"></preview>

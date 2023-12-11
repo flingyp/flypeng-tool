@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Get value of key from local storage
+获取本地存储Key的值
 
 ## Basic Usage
 
