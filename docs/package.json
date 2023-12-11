@@ -8,6 +8,8 @@
     "serve": "vitepress serve"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "vite": "^5.0.7",
     "vitepress": "1.0.0-rc.31"
   },
   "dependencies": {

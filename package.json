@@ -22,14 +22,14 @@
   ],
   "exports": {
     "./browser": {
-      "import": "./dist/browser/index.js",
-      "node": "./dist/browser/index.cjs",
+      "import": "./dist/browser/index.esm.js",
+      "node": "./dist/browser/index.cjs.js",
       "types": "./dist/browser/index.d.ts",
       "default": "./dist/browser/index.d.ts"
     },
     "./node": {
-      "import": "./dist/node/index.js",
-      "node": "./dist/node/index.cjs",
+      "import": "./dist/node/index.esm.js",
+      "node": "./dist/node/index.cjs.js",
       "types": "./dist/node/index.d.ts",
       "default": "./dist/node/index.d.ts"
     }
@@ -42,14 +42,14 @@
     "build": "gulp build",
     "docs:dev": "gulp docsDev",
     "docs:build": "gulp docsBuild",
-    "docs:server": "gulp docsServer",
+    "docs:serve": "gulp docsServe",
     "new": "gulp newFunction",
+    "release": "gulp release",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "lint": "prettier . --write && eslint .",
     "lint:fix": "prettier . --write && eslint . --fix",
     "commit": "cz",
-    "release": "standard-version",
     "first-release": "pnpm run release -- --first-release",
     "prepare": "husky install"
   },
