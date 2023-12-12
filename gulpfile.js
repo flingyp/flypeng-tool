@@ -50,6 +50,7 @@ export const docsDev = async () => {
 
 export const docsBuild = async () => {
   await buildPackage();
+  await execSync('cross-env NODE_ENV=build tsup', { stdio: 'inherit' });
   await buildDocs();
   await codeFormatting();
   await execSync('pnpm run --filter=docs build', { stdio: 'inherit' });
