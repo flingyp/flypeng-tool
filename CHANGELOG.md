@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.5.0](https://github.com/flingyp/flypeng-tool/compare/v5.4.0...v5.5.0) (2023-12-12)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* handle docs building error ([eedad0f](https://github.com/flingyp/flypeng-tool/commit/eedad0f3833b303938f4a0bbb1d9af2a87a45ece))
+
+
+### ✏️ Documentation | 文档
+
+* improve guide content ([3f9c204](https://github.com/flingyp/flypeng-tool/commit/3f9c204683d898b23ac10c5875e47dfcd845b335))
+* organize document content ([8140155](https://github.com/flingyp/flypeng-tool/commit/814015586a30ad6459397518273eab43e7fa1bfb))
+
 ## [5.4.0](https://github.com/flingyp/flypeng-tool/compare/v5.3.2...v5.4.0) (2023-10-19)
 
 ### ✨ Features | 新功能
