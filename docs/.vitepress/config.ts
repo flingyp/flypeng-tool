@@ -53,6 +53,10 @@ export default defineConfig({
     search: {
       provider: 'local',
     },
+    outline: {
+      label: '大纲',
+      level: [2, 3],
+    },
     editLink: {
       pattern: 'https://github.com/flingyp/flypeng-tool/blob/dev/docs/:path',
       text: 'Edit this p,age on GitHub',
