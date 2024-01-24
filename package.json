@@ -28,8 +28,8 @@
       "default": "./dist/browser/index.d.ts"
     },
     "./node": {
-      "import": "./dist/node/index.esm.js",
-      "node": "./dist/node/index.cjs.js",
+      "import": "./dist/node/index.js",
+      "node": "./dist/node/index.cjs",
       "types": "./dist/node/index.d.ts",
       "default": "./dist/node/index.d.ts"
     }
