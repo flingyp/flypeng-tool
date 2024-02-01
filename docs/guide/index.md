@@ -14,6 +14,8 @@
 
 ## Installation
 
+<img src="https://img.shields.io/npm/v/%40flypeng%2Ftool?style=plastic&logo=npm&label=%40flypeng%2Ftool&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40flypeng%2Ftool" alt="@flypeng/tool" style="margin-top: 10px" />
+
 ::: code-group
 
 ```sh [npm]

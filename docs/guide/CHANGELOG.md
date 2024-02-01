@@ -1,5 +1,18 @@
 # CHANGELOG
 
+### [5.5.2](https://github.com/flingyp/flypeng-tool/compare/v5.5.1...v5.5.2) (2024-01-24)
+
+### 🐛 Bug Fixes | Bug 修复
+
+- node module path error ([a548889](https://github.com/flingyp/flypeng-tool/commit/a548889e9d8a0146bdb814d801cdfde9d710dfe4))
+
+### [5.5.1](https://github.com/flingyp/flypeng-tool/compare/v5.5.0...v5.5.1) (2024-01-12)
+
+### ✏️ Documentation | 文档
+
+- change vitepress config ([72b0b4f](https://github.com/flingyp/flypeng-tool/commit/72b0b4f351cf189a4c2d08810a650991ebce6484))
+- update guide about typescript ([5dd3b39](https://github.com/flingyp/flypeng-tool/commit/5dd3b39e340724be7e30c5f3d63de2c423a03fe9))
+
 ## [5.5.0](https://github.com/flingyp/flypeng-tool/compare/v5.4.0...v5.5.0) (2023-12-12)
 
 ### 🐛 Bug Fixes | Bug 修复

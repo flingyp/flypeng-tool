@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [5.5.2](https://github.com/flingyp/flypeng-tool/compare/v5.5.1...v5.5.2) (2024-01-24)
 
-
 ### 🐛 Bug Fixes | Bug 修复
 
-* node module path error ([a548889](https://github.com/flingyp/flypeng-tool/commit/a548889e9d8a0146bdb814d801cdfde9d710dfe4))
+- node module path error ([a548889](https://github.com/flingyp/flypeng-tool/commit/a548889e9d8a0146bdb814d801cdfde9d710dfe4))
 
 ### [5.5.1](https://github.com/flingyp/flypeng-tool/compare/v5.5.0...v5.5.1) (2024-01-12)
 
