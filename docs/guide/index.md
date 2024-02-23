@@ -62,11 +62,11 @@ const isFile = useIsFile(useGetCurrentPath()); // isFile is Boolean
 
 :::
 
-```js
+```html
 // All non-Node module methods are injected into the fy global variable
 <script src="https://unpkg.com/@flypeng/tool@${version}/browser/index.browser.js"></script>
 <script type="text/javascript">
-	console.log(fy)
+  console.log(fy);
 </script>
 ```
 

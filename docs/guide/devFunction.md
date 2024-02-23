@@ -23,7 +23,6 @@
 3. 函数命名时要确保名称唯一，不可重复
 
 ```ts
-import { useAaBb } from '@flypeng/tool/browser';
-
-import { useAaBb } from '@flypeng/tool/node';
+import { useBrowser } from '@flypeng/tool/browser';
+import { useNode } from '@flypeng/tool/node';
 ```
