@@ -22,8 +22,8 @@
   ],
   "exports": {
     "./browser": {
-      "import": "./dist/browser/index.esm.js",
-      "node": "./dist/browser/index.cjs.js",
+      "import": "./dist/browser/index.js",
+      "node": "./dist/browser/index.cjs",
       "types": "./dist/browser/index.d.ts",
       "default": "./dist/browser/index.d.ts"
     },

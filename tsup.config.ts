@@ -18,10 +18,6 @@ export default defineConfig([
     outDir: 'dist/browser',
     platform: 'neutral',
     globalName: 'fy',
-    outExtension({ format }) {
-      if (format === 'iife') return { js: '.browser.js' };
-      return { js: `.${format}.js` };
-    },
     ...commonConfig,
   },
   {
