@@ -36,7 +36,7 @@ const navbarModules = navbar.map((module: DefaultTheme.NavItemWithLink) => {
 const docsNavbar = [...guideNavbar, { text: 'Modules', items: navbarModules }, ...changelogNavbar];
 
 export default defineConfig({
-  base: '/',
+  base: '/flypeng-tool',
   title: '@flypeng/tool',
   description: 'Integrate a collection of common tools and methods',
   lastUpdated: true,
