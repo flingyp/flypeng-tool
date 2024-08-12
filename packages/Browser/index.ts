@@ -5,5 +5,6 @@ export * from './Date';
 export * from './Dom';
 export * from './Number';
 export * from './Object';
+export * from './Plugin';
 export * from './Regexp';
 export * from './String';

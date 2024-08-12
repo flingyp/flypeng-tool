@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [5.5.3](https://github.com/flingyp/flypeng-tool/compare/v5.5.2...v5.5.3) (2024-06-12)
 
-
 ### ✨ Features | 新功能
 
-* **useDayjs:** new Function ([e9d4dd9](https://github.com/flingyp/flypeng-tool/commit/e9d4dd9a7452a9fa1b5fe3b39d105694f4d7c07f))
+- **useDayjs:** new Function ([e9d4dd9](https://github.com/flingyp/flypeng-tool/commit/e9d4dd9a7452a9fa1b5fe3b39d105694f4d7c07f))
 
 ### [5.5.2](https://github.com/flingyp/flypeng-tool/compare/v5.5.1...v5.5.2) (2024-01-24)
 
