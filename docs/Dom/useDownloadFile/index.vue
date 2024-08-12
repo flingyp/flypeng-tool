@@ -2,7 +2,7 @@
 import { useDownloadFile } from '@flypeng/tool/browser';
 
 const downloadFile = () => {
-  useDownloadFile('https://yyblog.top/flypeng-tool/favicon.png', '@flypeng-tool.png');
+  useDownloadFile('https://flingyp.github.io/flypeng-tool/favicon.png', '@flypeng-tool.png');
 };
 </script>
 
