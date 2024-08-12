@@ -1,6 +1,6 @@
 {
   "name": "@flypeng/tool",
-  "version": "5.5.3",
+  "version": "5.5.4",
   "type": "module",
   "packageManager": "pnpm@8.5.1",
   "description": "Integrate a collection of common tools and methods",

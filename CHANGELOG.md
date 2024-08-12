@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.5.4](https://github.com/flingyp/flypeng-tool/compare/v5.5.3...v5.5.4) (2024-08-12)
+
 ### [5.5.3](https://github.com/flingyp/flypeng-tool/compare/v5.5.2...v5.5.3) (2024-06-12)
 
 ### ✨ Features | 新功能
