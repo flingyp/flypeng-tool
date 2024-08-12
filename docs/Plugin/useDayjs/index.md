@@ -4,8 +4,6 @@
 
 使用 [`dayjs`](https://day.js.org/zh-CN/) 库来处理日期和时间
 
-需要添加相关插件：[插件](https://day.js.org/docs/zh-CN/plugin/plugin)
-
 ## Basic Usage
 
 ```ts
