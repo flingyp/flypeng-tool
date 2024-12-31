@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.6.0](https://github.com/flingyp/flypeng-tool/compare/v5.5.4...v5.6.0) (2024-12-31)
+
+
+### ✨ Features | 新功能
+
+* **useLodash:** new Function ([0a416d2](https://github.com/flingyp/flypeng-tool/commit/0a416d2a31e6b14552c9bca801df89087114372f))
+
 ### [5.5.4](https://github.com/flingyp/flypeng-tool/compare/v5.5.3...v5.5.4) (2024-08-12)
 
 ### [5.5.3](https://github.com/flingyp/flypeng-tool/compare/v5.5.2...v5.5.3) (2024-06-12)
