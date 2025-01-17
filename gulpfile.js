@@ -10,7 +10,7 @@ import { execSync } from 'child_process';
  * 代码格式化
  */
 const codeFormatting = async () => {
-  await execSync('npx prettier . --write', { stdio: 'inherit' });
+  await execSync('npx prettier --write $(git diff --name-only HEAD)', { stdio: 'inherit' });
 };
 
 /**
