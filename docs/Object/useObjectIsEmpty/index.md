@@ -20,5 +20,5 @@ const isEmpty = useObjectIsEmpty({});
  * @param target
  * @returns
  */
-declare function useObjectIsEmpty(target: Object): boolean;
+declare function useObjectIsEmpty(target: object): boolean;
 ```

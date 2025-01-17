@@ -3,7 +3,7 @@ import { useCommonType } from '../../index';
 /**
  * 删除对象中属性为Null的值
  */
-export default function useDelEmptyValue<T extends Object>(targetObj: T) {
+export default function useDelEmptyValue<T extends object>(targetObj: T) {
   const newObj = {} as T;
   for (const key in targetObj) {
     const curValue = targetObj[key];

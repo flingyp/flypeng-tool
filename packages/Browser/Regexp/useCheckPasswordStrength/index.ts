@@ -1,10 +1,10 @@
 const checkPwdLevel = (value: string) => {
   let checkPwdRankValue = -1;
 
-  value.match(/[a-z]/g) && checkPwdRankValue++;
-  value.match(/[A-Z]/g) && checkPwdRankValue++;
-  value.match(/[0-9]/g) && checkPwdRankValue++;
-  value.match(/[^a-zA-Z0-9]/g) && checkPwdRankValue++;
+  checkPwdRankValue += value.match(/[a-z]/g) ? 1 : 0;
+  checkPwdRankValue += value.match(/[A-Z]/g) ? 1 : 0;
+  checkPwdRankValue += value.match(/[0-9]/g) ? 1 : 0;
+  checkPwdRankValue += value.match(/[^a-zA-Z0-9]/g) ? 1 : 0;
 
   checkPwdRankValue = checkPwdRankValue > 3 ? 3 : checkPwdRankValue;
 

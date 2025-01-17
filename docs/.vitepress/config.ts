@@ -47,6 +47,7 @@ export default defineConfig({
     },
   },
   themeConfig: {
+    siteTitle: '@flypeng/tool',
     nav: docsNavbar,
     sidebar: docsSidebar,
     socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/flypeng-tool' }],

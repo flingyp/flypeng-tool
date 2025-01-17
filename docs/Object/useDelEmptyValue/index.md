@@ -19,5 +19,5 @@ const getObj = useDelEmptyValue(handleObj); // { name: '@flypeng/tool', date: '2
 /**
  * 删除对象中属性为Null的值
  */
-declare function useDelEmptyValue<T extends Object>(targetObj: T): T | undefined;
+declare function useDelEmptyValue<T extends object>(targetObj: T): T | undefined;
 ```

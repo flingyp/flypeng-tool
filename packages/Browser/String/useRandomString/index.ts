@@ -40,7 +40,7 @@ const letters = [
 export default function useRandomString(length = 10, supportNumber = false) {
   let chars = [];
 
-  supportNumber ? (chars = [...numbers, ...letters]) : (chars = [...letters]);
+  chars = supportNumber ? [...numbers, ...letters] : [...letters];
 
   let res = '';
   for (let i = 0; i < length; i++) {

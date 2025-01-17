@@ -260,7 +260,7 @@
   --vp-z-index-nav: 30;
   --vp-z-index-layout-top: 40;
   --vp-z-index-backdrop: 50;
-  --vp-z-index-sidebar: 60;
+  --vp-z-index-sidebar: 25;
 }
 
 /**
