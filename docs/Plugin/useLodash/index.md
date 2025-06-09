@@ -2,14 +2,14 @@
 
 ## Introduction
 
-使用 [`lodash`](https://lodash.com/) 的工具函数
+使用 [`lodash-es`](https://lodash.com/) 的工具函数
 
 ## Basic Usage
 
 ```ts
 import { useLodash } from '@flypeng/tool/browser';
 
-const lodash = useLodash();
+const { isArray, cloneDeepWith } = useLodash();
 ```
 
 ## Type Declaration
@@ -19,5 +19,5 @@ const lodash = useLodash();
  * 使用lodash
  * @returns
  */
-declare function useLodash(): _.LoDashStatic;
+declare function useLodash(): typeof _;
 ```

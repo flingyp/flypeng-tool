@@ -9,13 +9,13 @@
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.1",
-    "vite": "^5.4.14",
+    "vite": "^5.4.19",
     "vitepress": "^1.6.3"
   },
   "dependencies": {
     "@flypeng/tool": "workspace:^",
     "@vitepress-demo-preview/component": "^2.3.2",
     "@vitepress-demo-preview/plugin": "^1.4.0",
-    "vue": "^3.5.13"
+    "vue": "^3.5.16"
   }
 }
