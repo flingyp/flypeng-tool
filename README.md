@@ -48,8 +48,8 @@ const isFile = useIsFile(useGetCurrentPath()); // isFile is Boolean
 {
   "compilerOptions": {
     "paths": {
-      "@flypeng/tool/browser": ["node_modules/@flypeng/tool/dist/browser/index.d.ts"],
-      "@flypeng/tool/node": ["node_modules/@flypeng/tool/dist/node/index.d.ts"]
+      "@flypeng/tool/browser": ["node_modules/@flypeng/tool/dist/browser"],
+      "@flypeng/tool/node": ["node_modules/@flypeng/tool/dist/node"]
     }
   }
 }

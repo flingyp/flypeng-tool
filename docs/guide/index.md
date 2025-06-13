@@ -72,14 +72,14 @@ const isFile = useIsFile(useGetCurrentPath()); // isFile is Boolean
 
 ## Typescript
 
-使用 Typescript 开发时，由于 `@flypeng/tool` 构建设计问题，需要在 `tsconfig.json` 文件中重新指定对应模块包 `browser`、`node` 的类型声明文件路径
+使用 Typescript 开发时，由于 `@flypeng/tool` 构建设计问题，需要在 `tsconfig.json` 文件中重新指定对应模块包文件路径
 
 ```json
 {
   "compilerOptions": {
     "paths": {
-      "@flypeng/tool/browser": ["node_modules/@flypeng/tool/dist/browser/index.d.ts"],
-      "@flypeng/tool/node": ["node_modules/@flypeng/tool/dist/node/index.d.ts"]
+      "@flypeng/tool/browser": ["node_modules/@flypeng/tool/dist/browser"],
+      "@flypeng/tool/node": ["node_modules/@flypeng/tool/dist/node"]
     }
   }
 }
