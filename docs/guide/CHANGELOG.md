@@ -1,5 +1,11 @@
 # CHANGELOG
 
+### [5.7.1](https://github.com/flingyp/flypeng-tool/compare/v5.7.0...v5.7.1) (2025-06-15)
+
+### ✨ Features | 新功能
+
+- **useHtmlToImage:** new Function ([fe7c51b](https://github.com/flingyp/flypeng-tool/commit/fe7c51b9be7ea637495da5f2c6ca4dc65068f779))
+
 ## [5.7.0](https://github.com/flingyp/flypeng-tool/compare/v5.5.4...v5.7.0) (2024-12-31)
 
 ### ✨ Features | 新功能

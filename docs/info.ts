@@ -1,2 +1,2 @@
-export const version = '5.7.0';
-export const HooksNum = 57;
+export const version = '5.7.1';
+export const HooksNum = 59;

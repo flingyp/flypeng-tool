@@ -8,4 +8,6 @@
 // export { default as useGetExtensionName } from './useGetExtensionName'
 // export { default as useExecCommand } from './useExecCommand'
 // export { default as useRecursionDelete } from './useRecursionDelete'
+// export { default as useGetFilePath } from './useGetFilePath'
+// export { default as useIsTTY } from './useIsTTY'
 export * from './useNodeHook';
