@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [5.7.2](https://github.com/flingyp/flypeng-tool/compare/v5.7.1...v5.7.2) (2025-07-14)
+
+
+### ✨ Features | 新功能
+
+* **useGetFilePath useIsTTY:** new Function ([a82926e](https://github.com/flingyp/flypeng-tool/commit/a82926ee08beb7448804274fac4bce9f6d9b7ffd))
+
 ### [5.7.1](https://github.com/flingyp/flypeng-tool/compare/v5.7.0...v5.7.1) (2025-06-15)
 
 
