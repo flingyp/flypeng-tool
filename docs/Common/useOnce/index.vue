@@ -1,5 +1,9 @@
 <template>
-  <button ref="buttonSend" @click="sendRequestOnce" :disabled="message === '未发送请求' ? false : true">
+  <button
+    ref="buttonSend"
+    @click="sendRequestOnce"
+    :disabled="message === '未发送请求' ? false : true"
+  >
     点击发送请求
   </button>
 </template>

@@ -4,17 +4,15 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [5.7.2](https://github.com/flingyp/flypeng-tool/compare/v5.7.1...v5.7.2) (2025-07-14)
 
-
 ### ✨ Features | 新功能
 
-* **useGetFilePath useIsTTY:** new Function ([a82926e](https://github.com/flingyp/flypeng-tool/commit/a82926ee08beb7448804274fac4bce9f6d9b7ffd))
+- **useGetFilePath useIsTTY:** new Function ([a82926e](https://github.com/flingyp/flypeng-tool/commit/a82926ee08beb7448804274fac4bce9f6d9b7ffd))
 
 ### [5.7.1](https://github.com/flingyp/flypeng-tool/compare/v5.7.0...v5.7.1) (2025-06-15)
 
-
 ### ✨ Features | 新功能
 
-* **useHtmlToImage:** new Function ([fe7c51b](https://github.com/flingyp/flypeng-tool/commit/fe7c51b9be7ea637495da5f2c6ca4dc65068f779))
+- **useHtmlToImage:** new Function ([fe7c51b](https://github.com/flingyp/flypeng-tool/commit/fe7c51b9be7ea637495da5f2c6ca4dc65068f779))
 
 ## [5.7.0](https://github.com/flingyp/flypeng-tool/compare/v5.5.4...v5.7.0) (2024-12-31)
 

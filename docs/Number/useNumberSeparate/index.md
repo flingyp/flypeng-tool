@@ -19,7 +19,10 @@ import { useNumberSeparate } from '@flypeng/tool/browser';
  * @param separateNumber
  * @returns
  */
-declare function useNumberSeparate(value: number, separateNumber?: number = 3): string;
+declare function useNumberSeparate(
+  value: number,
+  separateNumber?: number = 3,
+): string;
 ```
 
 ## Online Demo

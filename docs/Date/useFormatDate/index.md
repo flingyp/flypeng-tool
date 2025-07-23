@@ -32,7 +32,10 @@ type DateFormatOption =
  * @param format
  * @param date
  */
-declare function useFormatDate(format: DateFormatOption, date?: string | number | Date): string;
+declare function useFormatDate(
+  format: DateFormatOption,
+  date?: string | number | Date,
+): string;
 ```
 
 ## Online Demo

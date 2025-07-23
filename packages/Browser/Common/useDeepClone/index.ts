@@ -20,7 +20,7 @@ export default function useDeepClone(targetObj: any, hashMap = new WeakMap()) {
   // 将 targetObj 和 resultObj 对应起来，防止重复引用的情况
   hashMap.set(targetObj, resultObj);
   for (const key in targetObj) {
-    // @ts-ignore
+    // @ts-expect-error 忽略类型错误
     resultObj[key] = useDeepClone(targetObj[key], hashMap);
   }
   return resultObj;

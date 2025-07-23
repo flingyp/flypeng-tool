@@ -7,7 +7,9 @@ const separateNumber = ref(123456789);
 <template>
   <div>
     <h4>Default Separation Number is 3</h4>
-    <span>{{ separateNumber }}：{{ useNumberSeparate(separateNumber, 3) }}</span>
+    <span
+      >{{ separateNumber }}：{{ useNumberSeparate(separateNumber, 3) }}</span
+    >
   </div>
   <div>
     <h4>Config Separation Number is 4</h4>

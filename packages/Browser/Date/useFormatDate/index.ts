@@ -19,7 +19,10 @@ export type DateFormatOption =
  * @param format
  * @param date
  */
-export default function useFormatDate(format: DateFormatOption, date?: string | number | Date) {
+export default function useFormatDate(
+  format: DateFormatOption,
+  date?: string | number | Date,
+) {
   let resultDate: string = format;
   let handleDate: Date = new Date();
 
@@ -46,7 +49,7 @@ export default function useFormatDate(format: DateFormatOption, date?: string | 
   for (const key in defineChars) {
     const checkReg = new RegExp(`(${key})`);
     if (checkReg.test(resultDate)) {
-      // @ts-ignore
+      // @ts-expect-error 忽略类型错误
       let currentValue = defineChars[key].toString();
       // 补零操作
       if (currentValue.length === 1) {

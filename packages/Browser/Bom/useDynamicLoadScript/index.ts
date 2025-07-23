@@ -5,7 +5,10 @@ import { useCheckUrl } from '../../Regexp';
  * @param url
  * @param callback
  */
-export default async function useDynamicLoadScript(url: string, callback = (...args: unknown[]) => false) {
+export default async function useDynamicLoadScript(
+  url: string,
+  callback = (...args: unknown[]) => false,
+) {
   if (!useCheckUrl(url)) throw new Error('invalid url');
 
   const headTag = document.querySelector('head');

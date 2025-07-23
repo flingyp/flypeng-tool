@@ -39,5 +39,7 @@ interface DataSensitiveOptions {
  * @param options
  * @returns
  */
-declare function useDataSensitive(options: DataSensitiveOptions): string | undefined;
+declare function useDataSensitive(
+  options: DataSensitiveOptions,
+): string | undefined;
 ```

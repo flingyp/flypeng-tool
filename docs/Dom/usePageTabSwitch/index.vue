@@ -8,7 +8,10 @@ const clear = usePageTabSwitch(() => {
     document.title = 'usePageTabSwitch | Hidden';
   } else {
     document.title = 'usePageTabSwitch | Show';
-    setTimeout(() => (document.title = 'usePageTabSwitch | @flypeng/tool'), 1000);
+    setTimeout(
+      () => (document.title = 'usePageTabSwitch | @flypeng/tool'),
+      1000,
+    );
   }
 });
 

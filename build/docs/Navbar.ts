@@ -9,10 +9,18 @@ interface VitepressNavBar {
 }
 
 const generateNavBar = async () => {
-  const { browserAllDirectory, nodeAllDirectory, browserFunctionsArrays, nodeFunctionsArrays } = await buildFunction();
+  const {
+    browserAllDirectory,
+    nodeAllDirectory,
+    browserFunctionsArrays,
+    nodeFunctionsArrays,
+  } = await buildFunction();
 
   const allNavbar: VitepressNavBar[] = [];
-  const allFunctionArrays = { ...browserFunctionsArrays, ...nodeFunctionsArrays };
+  const allFunctionArrays = {
+    ...browserFunctionsArrays,
+    ...nodeFunctionsArrays,
+  };
   const allDirectory = [...browserAllDirectory, ...nodeAllDirectory];
   allDirectory.forEach((module) => {
     const generateItem: VitepressNavBar = { text: '', link: '' };

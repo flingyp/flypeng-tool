@@ -4,7 +4,10 @@
  * @param offline
  * @returns
  */
-export default function useListenNetwork(online: (...args: any[]) => void, offline: (...args: any[]) => void) {
+export default function useListenNetwork(
+  online: (...args: any[]) => void,
+  offline: (...args: any[]) => void,
+) {
   // listen page online to execute callback
   window.addEventListener('online', () => {
     online();

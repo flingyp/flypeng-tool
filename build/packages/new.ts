@@ -1,7 +1,18 @@
-import { readdirSync, writeFileSync, readFileSync, existsSync, rmdirSync } from 'fs';
+import {
+  readdirSync,
+  writeFileSync,
+  readFileSync,
+  existsSync,
+  rmdirSync,
+} from 'fs';
 import { resolve } from 'path';
 import { getAbsolutePath, isDirectory, mkdirs } from '../utils';
-import { inquireHookName, inquireIsNeed, inquireModuleChoice, inquirePackageChoice } from '../inquirer';
+import {
+  inquireHookName,
+  inquireIsNeed,
+  inquireModuleChoice,
+  inquirePackageChoice,
+} from '../inquirer';
 
 /**
  * 每次创建一个新钩子函数时，运行此脚本文件帮助我们创建
@@ -53,13 +64,23 @@ const createHook = async () => {
   let isNeedTestFile = false;
   let isNeedPreviewFile = false;
   if (packageName === 'Browser') {
-    isNeedTestFile = (await inquireIsNeed('Whether test file are required', isNeedTestFile)) as boolean;
-    isNeedPreviewFile = (await inquireIsNeed('Whether preview file are required', isNeedPreviewFile)) as boolean;
+    isNeedTestFile = (await inquireIsNeed(
+      'Whether test file are required',
+      isNeedTestFile,
+    )) as boolean;
+    isNeedPreviewFile = (await inquireIsNeed(
+      'Whether preview file are required',
+      isNeedPreviewFile,
+    )) as boolean;
   }
 
   let hookPath = '';
   if (packageName === 'Browser') {
-    const hookDirPath = resolve(browserPath, `./${moduleName}`, `./${hookName}`);
+    const hookDirPath = resolve(
+      browserPath,
+      `./${moduleName}`,
+      `./${hookName}`,
+    );
     hookPath = `${hookDirPath}/index.ts`;
     const hookTestPath = `${hookDirPath}/index.test.ts`;
 
@@ -131,14 +152,24 @@ describe('${hookName}', () => {
     }
 
     // 给入口文件添加导出代码
-    const moduleEntryPath = resolve(browserPath, `./${moduleName}`, './index.ts');
+    const moduleEntryPath = resolve(
+      browserPath,
+      `./${moduleName}`,
+      './index.ts',
+    );
     const oldContent = readFileSync(moduleEntryPath, { encoding: 'utf-8' });
-    writeFileSync(moduleEntryPath, `${oldContent}\nexport { default as ${hookName} } from './${hookName}'`);
+    writeFileSync(
+      moduleEntryPath,
+      `${oldContent}\nexport { default as ${hookName} } from './${hookName}'`,
+    );
   } else {
     hookPath = resolve(nodePath, './useNodeHook.ts');
     const docsEntryPath = resolve(docsPath, './Node', `${hookName}.md`);
     const oldContent = readFileSync(hookPath, { encoding: 'utf-8' });
-    writeFileSync(hookPath, `${oldContent}\nexport const ${hookName} = () => {}`);
+    writeFileSync(
+      hookPath,
+      `${oldContent}\nexport const ${hookName} = () => {}`,
+    );
 
     writeFileSync(
       docsEntryPath,

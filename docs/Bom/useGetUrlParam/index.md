@@ -14,7 +14,10 @@ const param1 = useGetUrlParam('name');
 
 // 获取指定字符串的参数
 const param2 = useGetUrlParam('name', '?name=@flypeng/tool&description=工具库');
-const param3 = useGetUrlParam('description', '?name=@flypeng/tool&description=工具库');
+const param3 = useGetUrlParam(
+  'description',
+  '?name=@flypeng/tool&description=工具库',
+);
 ```
 
 ## Online Demo

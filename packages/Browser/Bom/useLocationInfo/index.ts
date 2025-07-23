@@ -11,7 +11,9 @@ export interface LocationInfo {
  * 返回当前页面链接相关信息
  * @returns
  */
-export default function useLocationInfo(): Readonly<Partial<LocationInfo>> | null {
+export default function useLocationInfo(): Readonly<
+  Partial<LocationInfo>
+> | null {
   if (typeof window !== 'undefined') {
     const locationInfo: LocationInfo = {
       href: window.location.href,

@@ -72,7 +72,14 @@ export interface HtmlToImageOptions {
   /**
    * The preferred font format. If specified all other font formats are ignored.
    */
-  preferredFontFormat?: 'woff' | 'woff2' | 'truetype' | 'opentype' | 'embedded-opentype' | 'svg' | string;
+  preferredFontFormat?:
+    | 'woff'
+    | 'woff2'
+    | 'truetype'
+    | 'opentype'
+    | 'embedded-opentype'
+    | 'svg'
+    | string;
   /**
    * A CSS string to specify for font embeds. If specified only this CSS will
    * be present in the resulting image. Use with `getFontEmbedCSS()` to
@@ -112,8 +119,16 @@ export interface UseHtmlToImageOptions {
  * 下载指定DOM元素内容为图片
  * @param htmlToImageOptions
  */
-export default async function useHtmlToImage(htmlToImageOptions: UseHtmlToImageOptions) {
-  const { target = document.body, filename = 'screenshot.png', options, preCapture, nextCapture } = htmlToImageOptions;
+export default async function useHtmlToImage(
+  htmlToImageOptions: UseHtmlToImageOptions,
+) {
+  const {
+    target = document.body,
+    filename = 'screenshot.png',
+    options,
+    preCapture,
+    nextCapture,
+  } = htmlToImageOptions;
 
   try {
     if (preCapture) {

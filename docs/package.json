@@ -17,6 +17,6 @@
     "@vitepress-demo-preview/component": "^2.5.1",
     "@vitepress-demo-preview/core": "^0.2.0",
     "@vitepress-demo-preview/plugin": "^1.4.0",
-    "vue": "^3.5.17"
+    "vue": "^3.5.18"
   }
 }

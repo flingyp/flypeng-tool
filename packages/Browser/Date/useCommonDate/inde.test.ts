@@ -10,10 +10,16 @@ describe('useCommonDate', () => {
     expect(useCommonDate.useAddDateDay(2)).toBe(
       useFormatDate(
         'yyyy-MM-dd',
-        new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 2),
+        new Date(
+          currentDate.getFullYear(),
+          currentDate.getMonth(),
+          currentDate.getDate() + 2,
+        ),
       ),
     );
-    expect(useCommonDate.useAddDateDay(5, '2022/10/09', 'yyyy-MM-dd')).toBe('2022-10-14');
+    expect(useCommonDate.useAddDateDay(5, '2022/10/09', 'yyyy-MM-dd')).toBe(
+      '2022-10-14',
+    );
   });
 
   it('获取两个日期的间隔天数', () => {
@@ -22,13 +28,19 @@ describe('useCommonDate', () => {
 
   it('获取每月的第一天', () => {
     expect(useCommonDate.useGetFirstDay()).toBe(
-      useFormatDate('yyyy-MM-dd', new Date(currentDate.getFullYear(), currentDate.getMonth(), 1)),
+      useFormatDate(
+        'yyyy-MM-dd',
+        new Date(currentDate.getFullYear(), currentDate.getMonth(), 1),
+      ),
     );
   });
 
   it('获取每月的最后一天', () => {
     expect(useCommonDate.useGetLastDay()).toBe(
-      useFormatDate('yyyy-MM-dd', new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0)),
+      useFormatDate(
+        'yyyy-MM-dd',
+        new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0),
+      ),
     );
   });
 });

@@ -43,12 +43,20 @@ declare function useTodayWeek(): string;
  * @param month
  * @returns
  */
-declare function useMonthNumber(year: number, month: number): number | undefined;
+declare function useMonthNumber(
+  year: number,
+  month: number,
+): number | undefined;
 /**
  * 指定日期添加天数
  * @param number
  */
-declare type AddDateDayFormatOption<T> = T extends 'yyyy-MM-dd hh:mm:ss' | 'yyyy-MM-dd' | 'yyyy/MM/dd' ? T : never;
+declare type AddDateDayFormatOption<T> = T extends
+  | 'yyyy-MM-dd hh:mm:ss'
+  | 'yyyy-MM-dd'
+  | 'yyyy/MM/dd'
+  ? T
+  : never;
 declare function useAddDateDay(
   value: number,
   date?: string | Date,
@@ -60,7 +68,10 @@ declare function useAddDateDay(
  * @param dateTwo
  * @returns
  */
-declare function useDifDaysValue(dateOne: string | Date, dateTwo?: string | Date): number;
+declare function useDifDaysValue(
+  dateOne: string | Date,
+  dateTwo?: string | Date,
+): number;
 /**
  * 获取当月的第一天的日期
  */

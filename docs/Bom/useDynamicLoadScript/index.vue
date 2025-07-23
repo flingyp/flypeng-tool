@@ -2,7 +2,9 @@
 import { useDynamicLoadScript } from '@flypeng/tool/browser';
 
 const copy = async () => {
-  await useDynamicLoadScript('https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js');
+  await useDynamicLoadScript(
+    'https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js',
+  );
 };
 </script>
 

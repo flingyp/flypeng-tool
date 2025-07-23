@@ -23,7 +23,7 @@ export default function usePreventSeeSourceCode(callback?: () => void) {
     return false;
   };
   document.addEventListener('keydown', keyDownCallback);
-  // @ts-ignore
+  // @ts-expect-error 忽略类型错误
   const clearCustomContextMenu = useCustomContextMenu(document, customCallback);
   return () => {
     document.removeEventListener('keydown', keyDownCallback);

@@ -9,7 +9,7 @@ export default function useOnce(callback: () => void) {
   let run = false;
   return function () {
     if (run) return;
-    // @ts-ignore
+    // @ts-expect-error 忽略类型错误
     callback.apply(this, arguments);
     run = true;
   };

@@ -22,7 +22,10 @@ type StrengthLevel = 0 | 1 | 2 | 3;
  * @param defineLength
  * @returns
  */
-declare function useCheckPasswordStrength(password: string, defineLength?: number): StrengthLevel;
+declare function useCheckPasswordStrength(
+  password: string,
+  defineLength?: number,
+): StrengthLevel;
 ```
 
 ## Online Demo

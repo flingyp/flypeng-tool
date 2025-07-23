@@ -12,7 +12,9 @@ const navigatorTo = (item: any) => {
 <template>
   <div id="modules-show-container">
     <div v-for="(item, index) in navBar" :key="index">
-      <span class="item" @click="navigatorTo(item)">- {{ item.text }} Functions 模块</span>
+      <span class="item" @click="navigatorTo(item)"
+        >- {{ item.text }} Functions 模块</span
+      >
     </div>
   </div>
 </template>

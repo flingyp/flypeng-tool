@@ -18,7 +18,10 @@ export type StrengthLevel = 0 | 1 | 2 | 3;
  * @param defineLength
  * @returns
  */
-export default function useCheckPasswordStrength(password: string, defineLength = 8): StrengthLevel {
+export default function useCheckPasswordStrength(
+  password: string,
+  defineLength = 8,
+): StrengthLevel {
   if (password.length === 0) return 0;
 
   // risk password of length less than defineLength and password only accord with one match

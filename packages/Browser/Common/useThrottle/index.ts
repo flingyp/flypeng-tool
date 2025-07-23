@@ -6,7 +6,11 @@
  * @param delay
  * @param isExecute
  */
-export default function useThrottle(callback: Function, delay: number, isExecute = true) {
+export default function useThrottle(
+  callback: Function,
+  delay: number,
+  isExecute = true,
+) {
   let timeoutId: ReturnType<typeof setTimeout> | null = null;
 
   return function (this: unknown, ...rest: unknown[]) {

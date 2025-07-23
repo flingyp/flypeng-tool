@@ -13,7 +13,12 @@ export default defineConfig({
       plugins: [
         alias({
           // deal with package mapping problem
-          entries: [{ find: '@flypeng/tool/browser', replacement: '../dist/browser/index.esm.js' }],
+          entries: [
+            {
+              find: '@flypeng/tool/browser',
+              replacement: '../dist/browser/index.esm.js',
+            },
+          ],
         }),
       ],
     },

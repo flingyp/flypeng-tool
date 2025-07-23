@@ -56,7 +56,10 @@ export class TouchBottomClass {
  * @param callback
  * @returns
  */
-export default function useScrollToBottom(selector: Element, callback: Function) {
+export default function useScrollToBottom(
+  selector: Element,
+  callback: Function,
+) {
   const touchBottomInstance = new TouchBottomClass(callback, selector);
   return touchBottomInstance;
 }

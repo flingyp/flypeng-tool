@@ -37,7 +37,10 @@ declare class TouchBottomClass {
  * @param callback
  * @returns
  */
-declare function useScrollToBottom(selector: Element, callback: Function): TouchBottomClass;
+declare function useScrollToBottom(
+  selector: Element,
+  callback: Function,
+): TouchBottomClass;
 ```
 
 ## Online Demo

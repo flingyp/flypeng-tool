@@ -248,7 +248,18 @@ const solarMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
  * @return Cn string
  */
 
-const Gan = ['\u7532', '\u4e59', '\u4e19', '\u4e01', '\u620a', '\u5df1', '\u5e9a', '\u8f9b', '\u58ec', '\u7678'];
+const Gan = [
+  '\u7532',
+  '\u4e59',
+  '\u4e19',
+  '\u4e01',
+  '\u620a',
+  '\u5df1',
+  '\u5e9a',
+  '\u8f9b',
+  '\u58ec',
+  '\u7678',
+];
 
 /**
  * 天干地支之地支速查表
@@ -982,7 +993,9 @@ function solar2lunar(y: number, m: string | number, d: number | undefined) {
   d = objDate.getDate();
 
   let offset =
-    (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
+    (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) -
+      Date.UTC(1900, 0, 31)) /
+    86400000;
 
   for (i = 1900; i < 2101 && offset > 0; i++) {
     temp = lYearDays(i);
@@ -1001,7 +1014,11 @@ function solar2lunar(y: number, m: string | number, d: number | undefined) {
 
   let isToday = false;
 
-  if (isTodayObj.getFullYear() === y && isTodayObj.getMonth() + 1 === m && isTodayObj.getDate() === d) {
+  if (
+    isTodayObj.getFullYear() === y &&
+    isTodayObj.getMonth() + 1 === m &&
+    isTodayObj.getDate() === d
+  ) {
     isToday = true;
   }
 
@@ -1166,12 +1183,15 @@ const calendarFormatter = {
   lunar2solar(y: number, m: number, d: number, isLeapMonth: boolean) {
     // 参数区间1900.1.31~2100.12.1
     isLeapMonth = !!isLeapMonth;
-    // @ts-ignore
+    // @ts-expect-error 忽略类型错误
     if (isLeapMonth && leapMonth !== m) {
       return -1;
     } // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
 
-    if ((y === 2100 && m === 12 && d > 1) || (y === 1900 && m === 1 && d < 31)) {
+    if (
+      (y === 2100 && m === 12 && d > 1) ||
+      (y === 1900 && m === 1 && d < 31)
+    ) {
       return -1;
     } // 超出了最大极限值
 

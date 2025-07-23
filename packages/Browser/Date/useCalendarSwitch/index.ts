@@ -8,7 +8,10 @@ const { solar2lunar, lunar2solar } = calendarFormatter;
  * @param type: 'solar' | 'lunar'
  * @returns
  */
-export default function useCalendarSwitch(date: string, type: 'solar' | 'lunar') {
+export default function useCalendarSwitch(
+  date: string,
+  type: 'solar' | 'lunar',
+) {
   const year = Number(date.split('-')[0]);
   const month = Number(date.split('-')[1]);
   const day = Number(date.split('-')[2]);

@@ -39,7 +39,12 @@ function useMonthNumber(year: number, month: number) {
  * 指定日期添加天数
  * @param number
  */
-export type AddDateDayFormatOption<T> = T extends 'yyyy-MM-dd hh:mm:ss' | 'yyyy-MM-dd' | 'yyyy/MM/dd' ? T : never;
+export type AddDateDayFormatOption<T> = T extends
+  | 'yyyy-MM-dd hh:mm:ss'
+  | 'yyyy-MM-dd'
+  | 'yyyy/MM/dd'
+  ? T
+  : never;
 function useAddDateDay(
   value: number,
   date?: string | Date,
@@ -57,7 +62,10 @@ function useAddDateDay(
  * @param dateTwo
  * @returns
  */
-function useDifDaysValue(dateOne: string | Date, dateTwo: string | Date = new Date()) {
+function useDifDaysValue(
+  dateOne: string | Date,
+  dateTwo: string | Date = new Date(),
+) {
   if (useCommonType.isString(dateOne)) {
     dateOne = new Date(dateOne);
   }
@@ -118,7 +126,10 @@ function useIsValidDate(value: string) {
  * @returns
  */
 function useIsSameMonth(dateOne: Date, dateTwo = new Date()) {
-  if (dateOne.getFullYear() === dateTwo.getFullYear() && dateOne.getMonth() + 1 === dateTwo.getMonth() + 1) {
+  if (
+    dateOne.getFullYear() === dateTwo.getFullYear() &&
+    dateOne.getMonth() + 1 === dateTwo.getMonth() + 1
+  ) {
     return true;
   } else {
     return false;

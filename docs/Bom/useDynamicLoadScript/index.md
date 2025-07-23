@@ -20,7 +20,10 @@ await useDynamicLoadScript(validUrl);
  * @param url
  * @param callback
  */
-declare function useDynamicLoadScript(url: string, callback?: (...args: unknown[]) => void): Promise<void>;
+declare function useDynamicLoadScript(
+  url: string,
+  callback?: (...args: unknown[]) => void,
+): Promise<void>;
 ```
 
 ## Online Demo

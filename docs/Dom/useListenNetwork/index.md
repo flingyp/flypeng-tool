@@ -19,7 +19,10 @@ import { useListenNetwork } from '@flypeng/tool/browser';
  * @param offline
  * @returns
  */
-declare function useListenNetwork(online: (...args: any[]) => void, offline: (...args: any[]) => void): undefined;
+declare function useListenNetwork(
+  online: (...args: any[]) => void,
+  offline: (...args: any[]) => void,
+): undefined;
 ```
 
 ## Online Demo

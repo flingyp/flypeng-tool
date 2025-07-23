@@ -42,7 +42,8 @@ export const useGetFileName = (path: string): FileName => {
  * @param path 要获取后缀名的路径
  * @returns 文件后缀名（不包含点号）
  */
-export const useGetExtensionName = (path: string) => extname(path).toLowerCase().slice(1);
+export const useGetExtensionName = (path: string) =>
+  extname(path).toLowerCase().slice(1);
 
 interface ExecCommandOptions {
   cwd: string;
@@ -52,7 +53,10 @@ interface ExecCommandOptions {
  * @param command 要执行的命令
  * @param options 执行选项，包含工作目录
  */
-export const useExecCommand = (command: string, options: ExecCommandOptions = { cwd: useGetCurrentPath() }) => {
+export const useExecCommand = (
+  command: string,
+  options: ExecCommandOptions = { cwd: useGetCurrentPath() },
+) => {
   const { cwd } = options;
   execSync(command, { stdio: 'inherit', cwd });
 };
@@ -81,7 +85,8 @@ export const useRecursionDelete = (path: string) => {
  * @param filename 文件名
  * @returns 文件的绝对路径
  */
-export const useGetFilePath = (filename: string) => resolve(process.cwd(), filename);
+export const useGetFilePath = (filename: string) =>
+  resolve(process.cwd(), filename);
 
 /**
  * 检查当前进程的标准输入是否是TTY（终端环境）

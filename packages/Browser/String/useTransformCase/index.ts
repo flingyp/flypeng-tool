@@ -4,7 +4,8 @@ export enum TransformCaseTypeEnum {
   FIRST_LOWER_CASE = 2,
 }
 
-export type TransformCaseType = (typeof TransformCaseTypeEnum)[keyof typeof TransformCaseTypeEnum];
+export type TransformCaseType =
+  (typeof TransformCaseTypeEnum)[keyof typeof TransformCaseTypeEnum];
 
 /**
  * 将字符串转换大小写

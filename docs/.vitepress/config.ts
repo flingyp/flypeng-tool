@@ -1,5 +1,8 @@
 import { defineConfig, DefaultTheme } from 'vitepress';
-import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin';
+import {
+  componentPreview,
+  containerPreview,
+} from '@vitepress-demo-preview/plugin';
 
 import sidebar from '../side-bar';
 import navbar from '../nav-bar';
@@ -17,7 +20,9 @@ const defaultSidebar = [
 
 const docsSidebar = [...defaultSidebar, ...sidebar];
 
-const guideNavbar = [{ text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] }];
+const guideNavbar = [
+  { text: 'Guide', items: [{ text: 'Get Started', link: '/guide/' }] },
+];
 
 const changelogNavbar = [
   {
@@ -33,7 +38,11 @@ const navbarModules = navbar.map((module: DefaultTheme.NavItemWithLink) => {
   };
 });
 
-const docsNavbar = [...guideNavbar, { text: 'Modules', items: navbarModules }, ...changelogNavbar];
+const docsNavbar = [
+  ...guideNavbar,
+  { text: 'Modules', items: navbarModules },
+  ...changelogNavbar,
+];
 
 export default defineConfig({
   base: '/flypeng-tool',
@@ -50,7 +59,9 @@ export default defineConfig({
     siteTitle: '@flypeng/tool',
     nav: docsNavbar,
     sidebar: docsSidebar,
-    socialLinks: [{ icon: 'github', link: 'https://github.com/flingyp/flypeng-tool' }],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/flingyp/flypeng-tool' },
+    ],
     search: {
       provider: 'local',
     },

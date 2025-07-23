@@ -13,6 +13,8 @@ describe('useRandomInteger', () => {
   it('如果最小值大于最大值, 应返报错提示', () => {
     const min = 10;
     const max = 1;
-    expect(() => useRandomInteger(min, max)).toThrowError(`min: ${min}, max: ${max}`);
+    expect(() => useRandomInteger(min, max)).toThrowError(
+      `min: ${min}, max: ${max}`,
+    );
   });
 });

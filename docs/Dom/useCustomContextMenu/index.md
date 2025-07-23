@@ -25,7 +25,10 @@ clearCustomContextMenu();
  * @param node
  * @param callback
  */
-declare function useCustomContextMenu(node: HTMLElement, callback: () => void): void;
+declare function useCustomContextMenu(
+  node: HTMLElement,
+  callback: () => void,
+): void;
 ```
 
 ## Online Demo

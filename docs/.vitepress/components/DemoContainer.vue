@@ -8,7 +8,9 @@ let sourcePath = ref('');
 
 onMounted(() => {
   // @ts-ignore
-  moduleFilePath.value = window.location.pathname.match(/\/flypeng-tool\/(.+)\//)[1];
+  moduleFilePath.value = window.location.pathname.match(
+    /\/flypeng-tool\/(.+)\//,
+  )[1];
   sourcePath.value = `${prefixUrl}/${moduleFilePath.value}/index.ts`;
 });
 </script>
@@ -37,9 +39,13 @@ onMounted(() => {
 
 @media (max-width: 720px) {
   #demo-container {
-    --width: calc(100vw - var(--sidebar-width) - var(--scrollbar-width)) !important;
+    --width: calc(
+      100vw - var(--sidebar-width) - var(--scrollbar-width)
+    ) !important;
     --content-width: min(48rem, var(--width)) !important;
-    --margin-left: calc(calc(calc(var(--content-width) - var(--width)) / 2) - 1.5rem) !important;
+    --margin-left: calc(
+      calc(calc(var(--content-width) - var(--width)) / 2) - 1.5rem
+    ) !important;
   }
 }
 

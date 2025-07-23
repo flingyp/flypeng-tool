@@ -27,5 +27,8 @@ const randomStr3 = useRandomString(20, true);
  * @param supportNumber 是否参杂数字（默认不参杂）
  * @returns
  */
-declare function useRandomString(length?: number, supportNumber?: boolean): string;
+declare function useRandomString(
+  length?: number,
+  supportNumber?: boolean,
+): string;
 ```

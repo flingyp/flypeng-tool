@@ -3,7 +3,10 @@
  * @param node
  * @param callback
  */
-export default function useCustomContextMenu(node: HTMLElement, callback: () => void) {
+export default function useCustomContextMenu(
+  node: HTMLElement,
+  callback: () => void,
+) {
   const customCallback = (e: MouseEvent) => {
     e.preventDefault();
     callback();
