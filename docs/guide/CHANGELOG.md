@@ -1,5 +1,9 @@
 # CHANGELOG
 
+### [5.7.4](https://github.com/flingyp/flypeng-tool/compare/v5.7.3...v5.7.4) (2025-08-08)
+
+### [5.7.3](https://github.com/flingyp/flypeng-tool/compare/v5.7.2...v5.7.3) (2025-08-08)
+
 ### [5.7.2](https://github.com/flingyp/flypeng-tool/compare/v5.7.1...v5.7.2) (2025-07-14)
 
 ### ✨ Features | 新功能
