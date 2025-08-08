@@ -8,11 +8,3 @@ import * as _es from 'lodash-es';
 export function useLodash() {
   return _;
 }
-
-/**
- * 使用 lodash-es
- * @returns
- */
-export function useLodashEs() {
-  return _es;
-}

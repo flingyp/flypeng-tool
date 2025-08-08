@@ -7,10 +7,9 @@
 ## Basic Usage
 
 ```ts
-import { useLodash, useLodashEs } from '@flypeng/tool/browser';
+import { useLodash } from '@flypeng/tool/browser';
 
 const { isArray, cloneDeepWith } = useLodash();
-// const { isArray, cloneDeepWith } = useLodashEs();
 ```
 
 ## Type Declaration
@@ -21,9 +20,4 @@ const { isArray, cloneDeepWith } = useLodash();
  * @returns
  */
 declare function useLodash(): _.LoDashStatic;
-/**
- * 使用 lodash-es
- * @returns
- */
-declare function useLodashEs(): typeof _es;
 ```
