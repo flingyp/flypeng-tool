@@ -1,9 +1,18 @@
-import * as _ from 'lodash-es';
+import _ from 'lodash';
+import * as _es from 'lodash-es';
 
 /**
- * 使用lodash
+ * 使用 lodash
  * @returns
  */
-export default function useLodash() {
+export function useLodash() {
   return _;
+}
+
+/**
+ * 使用 lodash-es
+ * @returns
+ */
+export function useLodashEs() {
+  return _es;
 }
